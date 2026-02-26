@@ -66,10 +66,10 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
   const [draftFilters, setDraftFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [appliedFilters, setAppliedFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [sortBy, setSortBy] = useState<string>('profit-desc');
-  const [jpShop, setJpShop] = useState<'japan-toreca' | 'toretoku' | 'torecacamp' | 'best'>('japan-toreca');
+  const [jpShop, setJpShop] = useState<'japan-toreca' | 'toretoku' | 'torecacamp' | 'hareruya2' | 'hobibinet' | 'dorasuta' | 'best'>('japan-toreca');
 
   const jpSources = useMemo(() => {
-    if (jpShop === 'best') return new Set<string>(['japan-toreca', 'toretoku', 'torecacamp']);
+    if (jpShop === 'best') return new Set<string>(['japan-toreca', 'toretoku', 'torecacamp', 'hareruya2', 'hobibinet', 'dorasuta']);
     return new Set<string>([jpShop]);
   }, [jpShop]);
 
@@ -212,6 +212,9 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
               <option value="japan-toreca" className="bg-gray-900">Japan-Toreca</option>
               <option value="toretoku" className="bg-gray-900">Toretoku</option>
               <option value="torecacamp" className="bg-gray-900">Torecacamp</option>
+            <option value="hareruya2" className="bg-gray-900">Hareruya2</option>
+            <option value="hobibinet" className="bg-gray-900">Hobibinet</option>
+            <option value="dorasuta" className="bg-gray-900">Dorasuta</option>
               <option value="best" className="bg-gray-900">Best (all)</option>
             </select>
           </div>

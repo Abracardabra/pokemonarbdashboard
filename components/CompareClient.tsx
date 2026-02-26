@@ -8,7 +8,7 @@ const JPY_TO_USD = 0.0065;
 
 type Mode = 'set' | 'card';
 
-type ShopKey = 'japan-toreca' | 'toretoku' | 'torecacamp';
+type ShopKey = 'japan-toreca' | 'toretoku' | 'torecacamp' | 'hareruya2' | 'hobibinet' | 'dorasuta';
 
 type Offer = {
   shop: ShopKey;
@@ -236,7 +236,7 @@ export function CompareClient({ builder }: { builder: BuilderDashboardData | nul
     return visibleCards.find((c) => `${c.setId}:${c.number}` === selectedCardId) || null;
   }, [visibleCards, selectedCardId]);
 
-  const activeShops = useMemo(() => new Set<ShopKey>(['japan-toreca', 'toretoku', 'torecacamp']), []);
+  const activeShops = useMemo(() => new Set<ShopKey>(['japan-toreca', 'toretoku', 'torecacamp', 'hareruya2', 'hobibinet', 'dorasuta']), []);
 
   if (!builder) {
     return <p className="text-white/70">No builder dataset loaded.</p>;
@@ -446,8 +446,8 @@ function CompareCardRow({ card, shops, compact }: { card: BuilderOpportunity; sh
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3">
-              {(['japan-toreca', 'toretoku', 'torecacamp'] as ShopKey[]).map((shop) => {
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-3">
+              {(['japan-toreca', 'toretoku', 'torecacamp', 'hareruya2', 'hobibinet', 'dorasuta'] as ShopKey[]).map((shop) => {
                 const shopBest = pickBaseline(offers, new Set<ShopKey>([shop]));
                 const shopBestProfit = shopBest ? profitPercent(usMarket, shopBest.priceJPY) : null;
 
