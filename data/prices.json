@@ -101,7 +101,7 @@
       "A-",
       "B"
     ],
-    "builtAt": "2026-02-26T02:50:08.375Z"
+    "builtAt": "2026-02-26T17:26:15.747Z"
   },
   "cards": [
     {
@@ -88114,13 +88114,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 32000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221343-a-damaged?_pos=10&_sid=6f8a9b5c2&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221343-a-damaged?_pos=10&_sid=3c4e96754&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 24000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221343-b?_pos=15&_sid=6f8a9b5c2&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221343-b?_pos=15&_sid=3c4e96754&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88152,7 +88152,7 @@
           "sellerCount": 29
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.094Z"
+      "updatedAt": "2026-02-26T17:09:28.000Z"
     },
     {
       "set": "M1L",
@@ -88167,13 +88167,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221342-a-damaged?_pos=2&_sid=6f8a9b5c2&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221342-a-damaged?_pos=2&_sid=3c4e96754&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221342-b?_pos=11&_sid=6f8a9b5c2&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221342-b?_pos=11&_sid=3c4e96754&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88205,7 +88205,7 @@
           "sellerCount": 43
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.095Z"
+      "updatedAt": "2026-02-26T17:09:28.000Z"
     },
     {
       "set": "M1L",
@@ -88220,13 +88220,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 2800,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220953-a-damaged?_pos=5&_sid=6f8a9b5c2&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220953-a-damaged?_pos=5&_sid=3c4e96754&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 2100,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220953-b?_pos=12&_sid=6f8a9b5c2&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220953-b?_pos=12&_sid=3c4e96754&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88242,13 +88242,13 @@
           "priceJPY": 2980,
           "url": "https://torecacamp-pokemon.com/products/rc_it0dfa39kjpc_oocd",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 2780,
           "url": "https://torecacamp-pokemon.com/products/rc_it0dfa39kjpc_oocd",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
@@ -88258,7 +88258,7 @@
           "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.000Z"
     },
     {
       "set": "M1L",
@@ -88273,13 +88273,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 9900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220952-a-damaged?_pos=6&_sid=6f8a9b5c2&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220952-a-damaged?_pos=6&_sid=3c4e96754&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 8400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220952-b?_pos=13&_sid=6f8a9b5c2&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220952-b?_pos=13&_sid=3c4e96754&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88311,7 +88311,7 @@
           "sellerCount": 32
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.000Z"
     },
     {
       "set": "M1L",
@@ -88326,13 +88326,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 5700,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220951-a-damaged?_pos=8&_sid=6f8a9b5c2&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220951-a-damaged?_pos=8&_sid=3c4e96754&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 4700,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220951-b?_pos=14&_sid=6f8a9b5c2&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220951-b?_pos=14&_sid=3c4e96754&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88364,7 +88364,7 @@
           "sellerCount": 26
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.000Z"
     },
     {
       "set": "M1L",
@@ -88379,13 +88379,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 11000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220950-a-damaged?_pos=23&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220950-a-damaged?_pos=23&_sid=25ed2b7e7&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 9400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220950-b?_pos=33&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220950-b?_pos=33&_sid=25ed2b7e7&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88417,7 +88417,7 @@
           "sellerCount": 50
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.000Z"
     },
     {
       "set": "M1L",
@@ -88432,13 +88432,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220949-a-damaged?_pos=14&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220949-a-damaged?_pos=14&_sid=25ed2b7e7&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 150,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220949-b?_pos=28&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220949-b?_pos=28&_sid=25ed2b7e7&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88454,7 +88454,7 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itbbmwx6u2ze_qhpf",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 180,
@@ -88470,7 +88470,7 @@
           "sellerCount": 66
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.000Z"
     },
     {
       "set": "M1L",
@@ -88485,13 +88485,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220948-a-damaged?_pos=25&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220948-a-damaged?_pos=25&_sid=25ed2b7e7&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220948-b?_pos=24&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220948-b?_pos=24&_sid=25ed2b7e7&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88507,7 +88507,7 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itts4pn3bonk_mozb",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 180,
@@ -88523,7 +88523,7 @@
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.000Z"
     },
     {
       "set": "M1L",
@@ -88538,13 +88538,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220947-a-damaged?_pos=4&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220947-a-damaged?_pos=4&_sid=25ed2b7e7&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220947-b?_pos=26&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220947-b?_pos=26&_sid=25ed2b7e7&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88576,7 +88576,7 @@
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.000Z"
     },
     {
       "set": "M1L",
@@ -88591,13 +88591,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220946-a-damaged?_pos=8&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220946-a-damaged?_pos=8&_sid=25ed2b7e7&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220946-b?_pos=27&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220946-b?_pos=27&_sid=25ed2b7e7&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88629,7 +88629,7 @@
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.000Z"
     },
     {
       "set": "M1L",
@@ -88644,13 +88644,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220945-a-damaged?_pos=19&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220945-a-damaged?_pos=19&_sid=25ed2b7e7&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220945-b?_pos=29&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220945-b?_pos=29&_sid=25ed2b7e7&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88682,7 +88682,7 @@
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.000Z"
     },
     {
       "set": "M1L",
@@ -88697,13 +88697,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220944-a-damaged?_pos=15&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220944-a-damaged?_pos=15&_sid=25ed2b7e7&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220944-b?_pos=6&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220944-b?_pos=6&_sid=25ed2b7e7&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -88735,7 +88735,7 @@
           "sellerCount": 74
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -88750,13 +88750,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 700,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220943-a-damaged?_pos=16&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220943-a-damaged?_pos=16&_sid=25ed2b7e7&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 550,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220943-b?_pos=7&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220943-b?_pos=7&_sid=25ed2b7e7&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -88772,13 +88772,13 @@
           "priceJPY": 480,
           "url": "https://torecacamp-pokemon.com/products/rc_ita5d48qq2ao_qwmw",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 380,
           "url": "https://torecacamp-pokemon.com/products/rc_ita5d48qq2ao_qwmw",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
@@ -88788,7 +88788,7 @@
           "sellerCount": 59
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -88803,13 +88803,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220942-a-damaged?_pos=17&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220942-a-damaged?_pos=17&_sid=25ed2b7e7&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 950,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220942-b?_pos=31&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220942-b?_pos=31&_sid=25ed2b7e7&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88841,7 +88841,7 @@
           "sellerCount": 43
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -88856,13 +88856,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220941-a-damaged?_pos=18&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220941-a-damaged?_pos=18&_sid=25ed2b7e7&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220941-b?_pos=30&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220941-b?_pos=30&_sid=25ed2b7e7&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88894,7 +88894,7 @@
           "sellerCount": 72
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -88909,13 +88909,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220940-a-damaged?_pos=21&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220940-a-damaged?_pos=21&_sid=25ed2b7e7&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 850,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220940-b?_pos=32&_sid=08af2337d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220940-b?_pos=32&_sid=25ed2b7e7&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -88937,7 +88937,7 @@
           "priceJPY": 780,
           "url": "https://torecacamp-pokemon.com/products/rc_it2xc4c4sxve_cncx",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
@@ -88947,7 +88947,7 @@
           "sellerCount": 60
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -88962,13 +88962,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220939-a-damaged?_pos=25&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220939-a-damaged?_pos=25&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220939-b?_pos=9&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220939-b?_pos=9&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -89000,7 +89000,7 @@
           "sellerCount": 141
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -89015,13 +89015,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220938-a-damaged?_pos=24&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220938-a-damaged?_pos=24&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220938-b?_pos=10&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220938-b?_pos=10&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -89053,7 +89053,7 @@
           "sellerCount": 118
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -89068,13 +89068,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 550,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220937-a-damaged?_pos=26&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220937-a-damaged?_pos=26&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220937-b?_pos=11&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220937-b?_pos=11&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -89106,7 +89106,7 @@
           "sellerCount": 147
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -89121,13 +89121,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220936-a-damaged?_pos=32&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220936-a-damaged?_pos=32&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220936-b?_pos=21&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220936-b?_pos=21&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -89159,7 +89159,7 @@
           "sellerCount": 112
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -89174,13 +89174,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 550,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220935-a-damaged?_pos=14&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220935-a-damaged?_pos=14&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220935-b?_pos=3&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220935-b?_pos=3&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -89212,7 +89212,7 @@
           "sellerCount": 120
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -89227,13 +89227,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220934-a-damaged?_pos=33&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220934-a-damaged?_pos=33&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220934-b?_pos=22&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220934-b?_pos=22&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -89265,7 +89265,7 @@
           "sellerCount": 121
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -89280,13 +89280,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 650,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220933-a-damaged?_pos=34&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220933-a-damaged?_pos=34&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220933-b?_pos=23&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220933-b?_pos=23&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -89302,13 +89302,13 @@
           "priceJPY": 500,
           "url": "https://torecacamp-pokemon.com/products/rc_itjtav4cxv88_sveo",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 480,
           "url": "https://torecacamp-pokemon.com/products/rc_itjtav4cxv88_sveo",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
@@ -89318,7 +89318,7 @@
           "sellerCount": 101
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -89333,13 +89333,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220932-a-damaged?_pos=5&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220932-a-damaged?_pos=5&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220932-b?_pos=1&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220932-b?_pos=1&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -89371,7 +89371,7 @@
           "sellerCount": 95
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -89386,13 +89386,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 550,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220931-a-damaged?_pos=6&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220931-a-damaged?_pos=6&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220931-b?_pos=35&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220931-b?_pos=35&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -89424,7 +89424,7 @@
           "sellerCount": 77
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -89439,13 +89439,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220930-a-damaged?_pos=15&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220930-a-damaged?_pos=15&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220930-b?_pos=4&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220930-b?_pos=4&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -89477,7 +89477,7 @@
           "sellerCount": 124
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -89492,13 +89492,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220929-a-damaged?_pos=27&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220929-a-damaged?_pos=27&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 580,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220929-b?_pos=12&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220929-b?_pos=12&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -89514,13 +89514,13 @@
           "priceJPY": 680,
           "url": "https://torecacamp-pokemon.com/products/rc_ito51xdbsd3o_jw2b",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 580,
           "url": "https://torecacamp-pokemon.com/products/rc_ito51xdbsd3o_jw2b",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
@@ -89530,7 +89530,7 @@
           "sellerCount": 90
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1L",
@@ -89545,13 +89545,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 950,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220928-a-damaged?_pos=28&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220928-a-damaged?_pos=28&_sid=fdf69aece&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 780,
-          "url": "https://shop.japan-toreca.com/products/pokemon-220928-b?_pos=13&_sid=1984ce768&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-220928-b?_pos=13&_sid=fdf69aece&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -89567,13 +89567,13 @@
           "priceJPY": 880,
           "url": "https://torecacamp-pokemon.com/products/rc_itskee33an3m_9xrf",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 780,
           "url": "https://torecacamp-pokemon.com/products/rc_itskee33an3m_9xrf",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
@@ -89583,7 +89583,7 @@
           "sellerCount": 87
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.096Z"
+      "updatedAt": "2026-02-26T17:09:28.001Z"
     },
     {
       "set": "M1S",
@@ -89598,13 +89598,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1800,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221346-a-damaged?_pos=6&_sid=0f73344a4&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221346-a-damaged?_pos=6&_sid=76ba0300a&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 1500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221346-b?_pos=11&_sid=0f73344a4&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221346-b?_pos=12&_sid=76ba0300a&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -89626,17 +89626,17 @@
           "priceJPY": 1480,
           "url": "https://torecacamp-pokemon.com/products/rc_itj51yrsvd06_rgqi",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 9.74,
+          "marketPrice": 9.78,
           "url": "https://www.tcgplayer.com/product/647223",
           "sellerCount": 34
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -89651,13 +89651,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 6200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221345-a-damaged?_pos=9&_sid=0f73344a4&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221345-a-damaged?_pos=10&_sid=76ba0300a&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 4400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221345-b?_pos=14&_sid=0f73344a4&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221345-b?_pos=15&_sid=76ba0300a&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -89679,7 +89679,7 @@
           "priceJPY": 5480,
           "url": "https://torecacamp-pokemon.com/products/rc_itznnsmfyfdc_miam",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
@@ -89689,7 +89689,7 @@
           "sellerCount": 32
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -89704,13 +89704,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 4300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221042-a-damaged?_pos=3&_sid=0f73344a4&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221042-a-damaged?_pos=3&_sid=76ba0300a&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 2700,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221042-b?_pos=10&_sid=0f73344a4&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221042-b?_pos=11&_sid=76ba0300a&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -89742,7 +89742,7 @@
           "sellerCount": 33
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -89757,13 +89757,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 5100,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221041-a-damaged?_pos=8&_sid=0f73344a4&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221041-a-damaged?_pos=9&_sid=76ba0300a&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 4200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221041-b?_pos=12&_sid=0f73344a4&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221041-b?_pos=13&_sid=76ba0300a&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -89779,23 +89779,23 @@
           "priceJPY": 4480,
           "url": "https://torecacamp-pokemon.com/products/rc_it7339jf2zvb_v62u",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 4980,
           "url": "https://torecacamp-pokemon.com/products/rc_it7339jf2zvb_v62u",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 39.96,
+          "marketPrice": 39.91,
           "url": "https://www.tcgplayer.com/product/647217",
           "sellerCount": 33
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -89810,13 +89810,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 16000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221040-a-damaged?_pos=15&_sid=0f73344a4&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221040-a-damaged?_pos=8&_sid=76ba0300a&_ss=r",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 12000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221040-b?_pos=13&_sid=0f73344a4&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221040-b?_pos=14&_sid=76ba0300a&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -89832,7 +89832,7 @@
           "priceJPY": 14800,
           "url": "https://torecacamp-pokemon.com/products/rc_itcwifgco79k_fc7c",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 12800,
@@ -89848,7 +89848,7 @@
           "sellerCount": 21
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -89863,13 +89863,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221039-a-damaged?_pos=15&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221039-a-damaged?_pos=16&_sid=cf1c17dac&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 150,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221039-b?_pos=24&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221039-b?_pos=25&_sid=cf1c17dac&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -89891,17 +89891,17 @@
           "priceJPY": 180,
           "url": "https://torecacamp-pokemon.com/products/rc_ita7qs8mqp3c_nyzp",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.48,
+          "marketPrice": 0.51,
           "url": "https://www.tcgplayer.com/product/647225",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -89916,13 +89916,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221038-a-damaged?_pos=31&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221038-a-damaged?_pos=31&_sid=cf1c17dac&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 750,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221038-b?_pos=30&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221038-b?_pos=30&_sid=cf1c17dac&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -89938,13 +89938,13 @@
           "priceJPY": 580,
           "url": "https://torecacamp-pokemon.com/products/rc_itidobe915a0_tj6j",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 480,
           "url": "https://torecacamp-pokemon.com/products/rc_itidobe915a0_tj6j",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
@@ -89954,7 +89954,7 @@
           "sellerCount": 78
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -89969,13 +89969,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221037-a-damaged?_pos=32&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221037-a-damaged?_pos=32&_sid=cf1c17dac&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 1300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221037-b?_pos=16&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221037-b?_pos=17&_sid=cf1c17dac&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -90002,12 +90002,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 4.98,
+          "marketPrice": 4.87,
           "url": "https://www.tcgplayer.com/product/647236",
           "sellerCount": 80
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90022,13 +90022,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221036-a-damaged?_pos=21&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221036-a-damaged?_pos=22&_sid=cf1c17dac&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221036-b?_pos=20&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221036-b?_pos=21&_sid=cf1c17dac&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90050,17 +90050,17 @@
           "priceJPY": 180,
           "url": "https://torecacamp-pokemon.com/products/rc_it6b2zslpeq0_jaak",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.46,
+          "marketPrice": 0.42,
           "url": "https://www.tcgplayer.com/product/647220",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90075,13 +90075,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221035-a-damaged?_pos=4&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221035-a-damaged?_pos=4&_sid=cf1c17dac&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221035-b?_pos=22&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221035-b?_pos=23&_sid=cf1c17dac&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90094,13 +90094,13 @@
       },
       "torecacamp": {
         "aMinus": {
-          "priceJPY": 380,
+          "priceJPY": 480,
           "url": "https://torecacamp-pokemon.com/products/rc_it94xh8e3uru_pm6v",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
-          "priceJPY": 280,
+          "priceJPY": 380,
           "url": "https://torecacamp-pokemon.com/products/rc_it94xh8e3uru_pm6v",
           "quality": "B",
           "inStock": false
@@ -90108,12 +90108,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.58,
+          "marketPrice": 0.61,
           "url": "https://www.tcgplayer.com/product/647202",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90128,13 +90128,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221034-a-damaged?_pos=34&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221034-a-damaged?_pos=34&_sid=cf1c17dac&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221034-b?_pos=33&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221034-b?_pos=33&_sid=cf1c17dac&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90161,12 +90161,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.66,
+          "marketPrice": 0.65,
           "url": "https://www.tcgplayer.com/product/647203",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90181,13 +90181,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 650,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221033-a-damaged?_pos=5&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221033-a-damaged?_pos=5&_sid=cf1c17dac&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221033-b?_pos=23&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221033-b?_pos=24&_sid=cf1c17dac&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90200,13 +90200,13 @@
       },
       "torecacamp": {
         "aMinus": {
-          "priceJPY": 480,
+          "priceJPY": 680,
           "url": "https://torecacamp-pokemon.com/products/rc_iti3j0dco1ko_edgd",
           "quality": "A-",
           "inStock": false
         },
         "b": {
-          "priceJPY": 380,
+          "priceJPY": 580,
           "url": "https://torecacamp-pokemon.com/products/rc_iti3j0dco1ko_edgd",
           "quality": "B",
           "inStock": false
@@ -90214,12 +90214,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 4.41,
+          "marketPrice": 4.29,
           "url": "https://www.tcgplayer.com/product/647239",
           "sellerCount": 75
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90234,13 +90234,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 650,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221032-a-damaged?_pos=11&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221032-a-damaged?_pos=12&_sid=cf1c17dac&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221032-b?_pos=25&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221032-b?_pos=26&_sid=cf1c17dac&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90267,12 +90267,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 4.5,
+          "marketPrice": 4.49,
           "url": "https://www.tcgplayer.com/product/647216",
           "sellerCount": 71
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90287,13 +90287,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221031-a-damaged?_pos=12&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221031-a-damaged?_pos=13&_sid=cf1c17dac&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 750,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221031-b?_pos=26&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221031-b?_pos=27&_sid=cf1c17dac&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90309,23 +90309,23 @@
           "priceJPY": 680,
           "url": "https://torecacamp-pokemon.com/products/rc_itlnyvrmsflc_r06w",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 580,
           "url": "https://torecacamp-pokemon.com/products/rc_itlnyvrmsflc_r06w",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 5.21,
+          "marketPrice": 5.15,
           "url": "https://www.tcgplayer.com/product/647205",
           "sellerCount": 86
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90340,13 +90340,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 550,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221030-a-damaged?_pos=13&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221030-a-damaged?_pos=14&_sid=cf1c17dac&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221030-b?_pos=27&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221030-b?_pos=28&_sid=cf1c17dac&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90362,7 +90362,7 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_it64hzapadlq_o2ya",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 180,
@@ -90378,7 +90378,7 @@
           "sellerCount": 93
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90393,13 +90393,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221029-a-damaged?_pos=14&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221029-a-damaged?_pos=15&_sid=cf1c17dac&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221029-b?_pos=28&_sid=724032ea6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221029-b?_pos=29&_sid=cf1c17dac&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90415,7 +90415,7 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itr96itipn86_rmdl",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 180,
@@ -90426,12 +90426,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.45,
+          "marketPrice": 2.48,
           "url": "https://www.tcgplayer.com/product/647248",
           "sellerCount": 101
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90446,13 +90446,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221028-a-damaged?_pos=35&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221028-a-damaged?_pos=35&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221028-b?_pos=2&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221028-b?_pos=2&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -90479,12 +90479,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.43,
+          "marketPrice": 2.54,
           "url": "https://www.tcgplayer.com/product/647292",
           "sellerCount": 105
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90499,13 +90499,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221027-a-damaged?_pos=21&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221027-a-damaged?_pos=21&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221027-b?_pos=3&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221027-b?_pos=3&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -90532,12 +90532,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.62,
+          "marketPrice": 1.59,
           "url": "https://www.tcgplayer.com/product/647256",
           "sellerCount": 128
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90552,13 +90552,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221026-a-damaged?_pos=17&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221026-a-damaged?_pos=17&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221026-b?_pos=4&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221026-b?_pos=4&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -90585,12 +90585,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.56,
+          "marketPrice": 1.44,
           "url": "https://www.tcgplayer.com/product/647288",
           "sellerCount": 134
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90605,13 +90605,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221025-a-damaged?_pos=7&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221025-a-damaged?_pos=7&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221025-b?_pos=32&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221025-b?_pos=32&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90633,17 +90633,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itwkzvd0sp47_4dpd",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.52,
+          "marketPrice": 1.46,
           "url": "https://www.tcgplayer.com/product/647230",
           "sellerCount": 121
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90658,13 +90658,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221024-a-damaged?_pos=31&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221024-a-damaged?_pos=31&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221024-b?_pos=28&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221024-b?_pos=28&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -90680,23 +90680,23 @@
           "priceJPY": 580,
           "url": "https://torecacamp-pokemon.com/products/rc_ited4r5fw3ux_gwpa",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 480,
           "url": "https://torecacamp-pokemon.com/products/rc_ited4r5fw3ux_gwpa",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 3.68,
+          "marketPrice": 3.55,
           "url": "https://www.tcgplayer.com/product/647234",
           "sellerCount": 104
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90710,14 +90710,14 @@
       },
       "japanToreca": {
         "aMinus": {
-          "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221023-a-damaged?_pos=18&_sid=297725130&_ss=r",
+          "priceJPY": 190,
+          "url": "https://shop.japan-toreca.com/products/pokemon-221023-a-damaged?_pos=18&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221023-b?_pos=5&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221023-b?_pos=5&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -90744,12 +90744,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.82,
+          "marketPrice": 1.83,
           "url": "https://www.tcgplayer.com/product/647282",
           "sellerCount": 139
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90764,13 +90764,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221022-a-damaged?_pos=23&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221022-a-damaged?_pos=23&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221022-b?_pos=16&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221022-b?_pos=16&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -90797,12 +90797,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.32,
+          "marketPrice": 1.26,
           "url": "https://www.tcgplayer.com/product/647211",
           "sellerCount": 158
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90816,14 +90816,14 @@
       },
       "japanToreca": {
         "aMinus": {
-          "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221021-a-damaged?_pos=19&_sid=297725130&_ss=r",
+          "priceJPY": 190,
+          "url": "https://shop.japan-toreca.com/products/pokemon-221021-a-damaged?_pos=19&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221021-b?_pos=33&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221021-b?_pos=33&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90850,12 +90850,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.2,
+          "marketPrice": 1.15,
           "url": "https://www.tcgplayer.com/product/647274",
           "sellerCount": 139
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90870,13 +90870,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221020-a-damaged?_pos=20&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221020-a-damaged?_pos=20&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221020-b?_pos=34&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221020-b?_pos=34&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90903,12 +90903,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.25,
+          "marketPrice": 1.21,
           "url": "https://www.tcgplayer.com/product/647246",
           "sellerCount": 117
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90923,13 +90923,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221019-a-damaged?_pos=26&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221019-a-damaged?_pos=26&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221019-b?_pos=36&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221019-b?_pos=36&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -90956,12 +90956,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.85,
+          "marketPrice": 1.81,
           "url": "https://www.tcgplayer.com/product/647264",
           "sellerCount": 135
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -90976,13 +90976,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221018-a-damaged?_pos=15&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221018-a-damaged?_pos=15&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221018-b?_pos=6&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221018-b?_pos=6&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -91004,17 +91004,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itc4s8qf1cfr_9ggm",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.66,
+          "marketPrice": 1.67,
           "url": "https://www.tcgplayer.com/product/647228",
           "sellerCount": 126
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M1S",
@@ -91029,13 +91029,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221017-a-damaged?_pos=29&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221017-a-damaged?_pos=29&_sid=f3ffcefbf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-221017-b?_pos=25&_sid=297725130&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-221017-b?_pos=25&_sid=f3ffcefbf&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -91057,17 +91057,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itg1v2wvhhem_mfdt",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.22,
+          "marketPrice": 2.36,
           "url": "https://www.tcgplayer.com/product/647261",
           "sellerCount": 106
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.109Z"
+      "updatedAt": "2026-02-26T17:12:56.614Z"
     },
     {
       "set": "M2",
@@ -91082,7 +91082,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 4800,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222988-a-damaged?_pos=2&_sid=cd70bb941&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222988-a-damaged?_pos=2&_sid=414e6f0c5&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -91105,17 +91105,17 @@
           "priceJPY": 3980,
           "url": "https://torecacamp-pokemon.com/products/rc_itn4w8wc2b8q_auqw",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 32.45,
+          "marketPrice": 32.39,
           "url": "https://www.tcgplayer.com/product/655891",
           "sellerCount": 74
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91130,7 +91130,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222987-a-damaged?_pos=11&_sid=cd70bb941&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222987-a-damaged?_pos=11&_sid=414e6f0c5&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -91144,26 +91144,26 @@
       },
       "torecacamp": {
         "aMinus": {
-          "priceJPY": 1180,
-          "url": "https://torecacamp-pokemon.com/products/rc_itzt1ngfgofo_4jbz",
-          "quality": "A-",
-          "inStock": false
-        },
-        "b": {
           "priceJPY": 980,
           "url": "https://torecacamp-pokemon.com/products/rc_itzt1ngfgofo_4jbz",
+          "quality": "A-",
+          "inStock": true
+        },
+        "b": {
+          "priceJPY": 780,
+          "url": "https://torecacamp-pokemon.com/products/rc_itzt1ngfgofo_4jbz",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 12.48,
+          "marketPrice": 12.17,
           "url": "https://www.tcgplayer.com/product/655890",
           "sellerCount": 68
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91178,13 +91178,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222986-a-damaged?_pos=10&_sid=cd70bb941&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222986-a-damaged?_pos=10&_sid=414e6f0c5&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 1000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222986-b?_pos=43&_sid=cd70bb941&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222986-b?_pos=43&_sid=414e6f0c5&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -91200,23 +91200,23 @@
           "priceJPY": 1180,
           "url": "https://torecacamp-pokemon.com/products/rc_ittxm0jos7z0_u5ss",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 980,
           "url": "https://torecacamp-pokemon.com/products/rc_ittxm0jos7z0_u5ss",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 10.96,
+          "marketPrice": 10.61,
           "url": "https://www.tcgplayer.com/product/655889",
           "sellerCount": 61
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91231,13 +91231,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222985-a-damaged?_pos=14&_sid=cd70bb941&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222985-a-damaged?_pos=14&_sid=414e6f0c5&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 750,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222985-b?_pos=46&_sid=cd70bb941&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222985-b?_pos=46&_sid=414e6f0c5&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -91253,7 +91253,7 @@
           "priceJPY": 980,
           "url": "https://torecacamp-pokemon.com/products/rc_iteut9f675yw_p7tj",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 780,
@@ -91264,12 +91264,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 8.99,
+          "marketPrice": 8.86,
           "url": "https://www.tcgplayer.com/product/655888",
           "sellerCount": 32
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91284,7 +91284,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 5200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222984-a-damaged?_pos=7&_sid=cd70bb941&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222984-a-damaged?_pos=7&_sid=414e6f0c5&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -91317,7 +91317,7 @@
           "sellerCount": 66
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91332,7 +91332,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 70000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222983-a-damaged?_pos=45&_sid=cd70bb941&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222983-a-damaged?_pos=45&_sid=414e6f0c5&_ss=r",
           "quality": "A-",
           "inStock": false
         },
@@ -91365,7 +91365,7 @@
           "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91380,13 +91380,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222811-a-damaged?_pos=51&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222811-a-damaged?_pos=51&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222811-b?_pos=47&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222811-b?_pos=47&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -91399,13 +91399,13 @@
       },
       "torecacamp": {
         "aMinus": {
-          "priceJPY": 380,
+          "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itas48yy6br0_msgr",
           "quality": "A-",
           "inStock": true
         },
         "b": {
-          "priceJPY": 280,
+          "priceJPY": 180,
           "url": "https://torecacamp-pokemon.com/products/rc_itas48yy6br0_msgr",
           "quality": "B",
           "inStock": false
@@ -91413,12 +91413,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.3,
+          "marketPrice": 0.28,
           "url": "https://www.tcgplayer.com/product/655900",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91433,13 +91433,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222810-a-damaged?_pos=23&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222810-a-damaged?_pos=23&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222810-b?_pos=7&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222810-b?_pos=7&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -91466,12 +91466,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.35,
+          "marketPrice": 0.34,
           "url": "https://www.tcgplayer.com/product/655885",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91486,13 +91486,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222809-a-damaged?_pos=70&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222809-a-damaged?_pos=70&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222809-b?_pos=68&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222809-b?_pos=68&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -91519,12 +91519,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.65,
+          "marketPrice": 1.6,
           "url": "https://www.tcgplayer.com/product/655884",
           "sellerCount": 100
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91539,13 +91539,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1700,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222808-a-damaged?_pos=1&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222808-a-damaged?_pos=1&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 1400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222808-b?_pos=49&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222808-b?_pos=49&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -91561,7 +91561,7 @@
           "priceJPY": 1480,
           "url": "https://torecacamp-pokemon.com/products/rc_itjwsqya4gm4_l6bm",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 1280,
@@ -91572,12 +91572,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 5.86,
+          "marketPrice": 5.66,
           "url": "https://www.tcgplayer.com/product/655883",
           "sellerCount": 51
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91592,13 +91592,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222807-a-damaged?_pos=38&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222807-a-damaged?_pos=38&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222807-b?_pos=69&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222807-b?_pos=69&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -91614,7 +91614,7 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itrt82r4xl3k_9y3k",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 180,
@@ -91625,12 +91625,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.65,
+          "marketPrice": 1.68,
           "url": "https://www.tcgplayer.com/product/655882",
           "sellerCount": 67
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91645,13 +91645,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222806-a-damaged?_pos=50&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222806-a-damaged?_pos=50&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 100,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222806-b?_pos=48&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222806-b?_pos=48&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -91678,12 +91678,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.3,
+          "marketPrice": 0.31,
           "url": "https://www.tcgplayer.com/product/655897",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91698,13 +91698,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222805-a-damaged?_pos=63&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222805-a-damaged?_pos=63&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 100,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222805-b?_pos=62&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222805-b?_pos=62&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -91726,7 +91726,7 @@
           "priceJPY": 100,
           "url": "https://torecacamp-pokemon.com/products/rc_itf16t0t1t0j_avuf",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
@@ -91736,7 +91736,7 @@
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91751,13 +91751,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222803-a-damaged?_pos=2&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222803-a-damaged?_pos=2&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 150,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222803-b?_pos=46&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222803-b?_pos=46&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -91789,7 +91789,7 @@
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91804,13 +91804,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222802-a-damaged?_pos=24&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222802-a-damaged?_pos=24&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222802-b?_pos=53&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222802-b?_pos=53&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -91837,12 +91837,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 3.15,
+          "marketPrice": 3.13,
           "url": "https://www.tcgplayer.com/product/655879",
           "sellerCount": 59
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91857,7 +91857,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222801-a-damaged?_pos=16&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222801-a-damaged?_pos=16&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -91885,12 +91885,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.35,
+          "marketPrice": 1.34,
           "url": "https://www.tcgplayer.com/product/655878",
           "sellerCount": 71
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91905,7 +91905,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 550,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222800-a-damaged?_pos=17&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222800-a-damaged?_pos=17&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -91933,12 +91933,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 3.02,
+          "marketPrice": 2.99,
           "url": "https://www.tcgplayer.com/product/655877",
           "sellerCount": 73
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -91953,13 +91953,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222799-a-damaged?_pos=18&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222799-a-damaged?_pos=18&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222799-b?_pos=59&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222799-b?_pos=59&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -91986,12 +91986,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.79,
+          "marketPrice": 1.67,
           "url": "https://www.tcgplayer.com/product/655876",
           "sellerCount": 66
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92006,13 +92006,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222798-a-damaged?_pos=34&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222798-a-damaged?_pos=34&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222798-b?_pos=64&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222798-b?_pos=64&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92028,7 +92028,7 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itnsq8cf6pty_njku",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 180,
@@ -92039,12 +92039,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.07,
+          "marketPrice": 1.06,
           "url": "https://www.tcgplayer.com/product/655875",
           "sellerCount": 79
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92059,13 +92059,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222797-a-damaged?_pos=20&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222797-a-damaged?_pos=20&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222797-b?_pos=52&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222797-b?_pos=52&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92081,7 +92081,7 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itcfyeacjbuo_u1qn",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 180,
@@ -92092,12 +92092,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.34,
+          "marketPrice": 1.33,
           "url": "https://www.tcgplayer.com/product/655874",
           "sellerCount": 73
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92112,13 +92112,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 4700,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222796-a-damaged?_pos=21&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222796-a-damaged?_pos=21&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 3800,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222796-b?_pos=8&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222796-b?_pos=8&_sid=295dfba29&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -92145,12 +92145,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 28.01,
+          "marketPrice": 27.79,
           "url": "https://www.tcgplayer.com/product/655873",
           "sellerCount": 60
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92165,7 +92165,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222795-a-damaged?_pos=19&_sid=06fe15790&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222795-a-damaged?_pos=19&_sid=295dfba29&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -92193,12 +92193,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.49,
+          "marketPrice": 2.5,
           "url": "https://www.tcgplayer.com/product/655872",
           "sellerCount": 71
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92213,13 +92213,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222794-a-damaged?_pos=8&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222794-a-damaged?_pos=8&_sid=910837023&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222794-b?_pos=72&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222794-b?_pos=70&_sid=910837023&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92241,17 +92241,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itle04fvami2_lrre",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.54,
+          "marketPrice": 1.51,
           "url": "https://www.tcgplayer.com/product/655871",
           "sellerCount": 130
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92266,13 +92266,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222793-a-damaged?_pos=9&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222793-a-damaged?_pos=9&_sid=910837023&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222793-b?_pos=67&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222793-b?_pos=65&_sid=910837023&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92294,17 +92294,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itiu1fbt0upw_kb4g",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.9,
+          "marketPrice": 1.94,
           "url": "https://www.tcgplayer.com/product/655870",
           "sellerCount": 137
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92319,13 +92319,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222792-a-damaged?_pos=1&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222792-a-damaged?_pos=1&_sid=910837023&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222792-b?_pos=71&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222792-b?_pos=69&_sid=910837023&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92347,17 +92347,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_it1eklxjsqlk_etvk",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.52,
+          "marketPrice": 1.54,
           "url": "https://www.tcgplayer.com/product/655869",
           "sellerCount": 109
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92372,13 +92372,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222791-a-damaged?_pos=2&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222791-a-damaged?_pos=2&_sid=910837023&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222791-b?_pos=63&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222791-b?_pos=61&_sid=910837023&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92405,12 +92405,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.29,
+          "marketPrice": 1.22,
           "url": "https://www.tcgplayer.com/product/655868",
           "sellerCount": 186
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92425,13 +92425,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222790-a-damaged?_pos=3&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222790-a-damaged?_pos=3&_sid=910837023&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222790-b?_pos=68&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222790-b?_pos=66&_sid=910837023&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92458,12 +92458,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2,
+          "marketPrice": 1.79,
           "url": "https://www.tcgplayer.com/product/655867",
           "sellerCount": 134
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92478,13 +92478,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222789-a-damaged?_pos=4&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222789-a-damaged?_pos=4&_sid=910837023&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222789-b?_pos=64&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222789-b?_pos=62&_sid=910837023&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92511,12 +92511,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.56,
+          "marketPrice": 1.44,
           "url": "https://www.tcgplayer.com/product/655866",
           "sellerCount": 118
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92531,13 +92531,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222788-a-damaged?_pos=44&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222788-a-damaged?_pos=42&_sid=910837023&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222788-b?_pos=89&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222788-b?_pos=88&_sid=910837023&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92564,12 +92564,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.92,
+          "marketPrice": 1.86,
           "url": "https://www.tcgplayer.com/product/655865",
           "sellerCount": 134
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92597,12 +92597,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 5.98,
+          "marketPrice": 5.65,
           "url": "https://www.tcgplayer.com/product/655864",
           "sellerCount": 99
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92617,15 +92617,15 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222786-a-damaged?_pos=6&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222786-a-damaged?_pos=6&_sid=910837023&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222786-b?_pos=69&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222786-b?_pos=67&_sid=910837023&_ss=r",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "toretoku": {
@@ -92645,17 +92645,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_ittu65gf0ss6_9e1f",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.21,
+          "marketPrice": 2.3,
           "url": "https://www.tcgplayer.com/product/655863",
           "sellerCount": 135
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92670,13 +92670,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222785-a-damaged?_pos=7&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222785-a-damaged?_pos=7&_sid=910837023&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222785-b?_pos=70&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222785-b?_pos=68&_sid=910837023&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92703,12 +92703,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.38,
+          "marketPrice": 1.58,
           "url": "https://www.tcgplayer.com/product/655862",
           "sellerCount": 126
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92723,13 +92723,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222784-a-damaged?_pos=45&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222784-a-damaged?_pos=43&_sid=910837023&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222784-b?_pos=88&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222784-b?_pos=87&_sid=910837023&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92756,12 +92756,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.1,
+          "marketPrice": 0.96,
           "url": "https://www.tcgplayer.com/product/655861",
           "sellerCount": 121
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2",
@@ -92776,13 +92776,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222783-a-damaged?_pos=10&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222783-a-damaged?_pos=10&_sid=910837023&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-222783-b?_pos=66&_sid=45941454a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-222783-b?_pos=64&_sid=910837023&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92809,12 +92809,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.53,
+          "marketPrice": 1.49,
           "url": "https://www.tcgplayer.com/product/655860",
           "sellerCount": 149
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.174Z"
+      "updatedAt": "2026-02-26T17:19:33.118Z"
     },
     {
       "set": "M2A",
@@ -92829,13 +92829,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-225004-a-damaged?_pos=3&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-225004-a-damaged?_pos=3&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 750,
-          "url": "https://shop.japan-toreca.com/products/pokemon-225004-b?_pos=49&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-225004-b?_pos=49&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92851,7 +92851,7 @@
           "priceJPY": 880,
           "url": "https://torecacamp-pokemon.com/products/rc_it2h5o4qng49_nl9w",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 780,
@@ -92867,7 +92867,7 @@
           "sellerCount": 30
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -92882,13 +92882,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 5200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-225003-a-damaged?_pos=2&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-225003-a-damaged?_pos=2&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 3700,
-          "url": "https://shop.japan-toreca.com/products/pokemon-225003-b?_pos=45&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-225003-b?_pos=44&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92915,12 +92915,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 37.08,
+          "marketPrice": 37.01,
           "url": "https://www.tcgplayer.com/product/665919",
           "sellerCount": 30
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -92935,13 +92935,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 3200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-225002-a-damaged?_pos=9&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-225002-a-damaged?_pos=10&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 2100,
-          "url": "https://shop.japan-toreca.com/products/pokemon-225002-b?_pos=52&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-225002-b?_pos=52&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -92968,12 +92968,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 28.95,
+          "marketPrice": 28.84,
           "url": "https://www.tcgplayer.com/product/665918",
           "sellerCount": 35
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -92988,13 +92988,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 23000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-225001-a-damaged?_pos=15&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-225001-a-damaged?_pos=16&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 15000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-225001-b?_pos=54&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-225001-b?_pos=54&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93016,17 +93016,17 @@
           "priceJPY": 19800,
           "url": "https://torecacamp-pokemon.com/products/rc_itfsbjccjfta_0ykz",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 193.64,
+          "marketPrice": 193.58,
           "url": "https://www.tcgplayer.com/product/665917",
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93041,7 +93041,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 4500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-225000-a-damaged?_pos=28&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-225000-a-damaged?_pos=29&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -93074,7 +93074,7 @@
           "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93089,13 +93089,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 3200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224999-a-damaged?_pos=7&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224999-a-damaged?_pos=8&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 2500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224999-b?_pos=50&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224999-b?_pos=50&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93117,17 +93117,17 @@
           "priceJPY": 2780,
           "url": "https://torecacamp-pokemon.com/products/rc_ite1mpsxck08_farl",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 24.14,
+          "marketPrice": 24.38,
           "url": "https://www.tcgplayer.com/product/665915",
           "sellerCount": 37
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93142,13 +93142,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 5700,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224998-a-damaged?_pos=25&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224998-a-damaged?_pos=26&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 4700,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224998-b?_pos=60&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224998-b?_pos=60&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93170,7 +93170,7 @@
           "priceJPY": 5280,
           "url": "https://torecacamp-pokemon.com/products/rc_ithto7p0d0yo_ngeq",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
@@ -93180,7 +93180,7 @@
           "sellerCount": 26
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93195,7 +93195,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 8600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224997-a-damaged?_pos=46&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224997-a-damaged?_pos=45&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": false
         },
@@ -93223,12 +93223,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 70.28,
+          "marketPrice": 70.19,
           "url": "https://www.tcgplayer.com/product/665913",
           "sellerCount": 19
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93243,13 +93243,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224996-a-damaged?_pos=16&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224996-a-damaged?_pos=17&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 1300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224996-b?_pos=55&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224996-b?_pos=55&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93271,17 +93271,17 @@
           "priceJPY": 1280,
           "url": "https://torecacamp-pokemon.com/products/rc_it51yhgaed3u_vrap",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 17.09,
+          "marketPrice": 17.12,
           "url": "https://www.tcgplayer.com/product/665912",
           "sellerCount": 22
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93296,13 +93296,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 39000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224995-a-damaged?_pos=43&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224995-a-damaged?_pos=42&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 24000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224995-b?_pos=53&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224995-b?_pos=53&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93329,12 +93329,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 320.13,
+          "marketPrice": 321.34,
           "url": "https://www.tcgplayer.com/product/665911",
           "sellerCount": 15
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93349,13 +93349,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 2200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224994-a-damaged?_pos=17&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224994-a-damaged?_pos=18&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 1700,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224994-b?_pos=56&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224994-b?_pos=56&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93377,17 +93377,17 @@
           "priceJPY": 1480,
           "url": "https://torecacamp-pokemon.com/products/rc_it1g36digi7g_ntne",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 20.26,
+          "marketPrice": 20.25,
           "url": "https://www.tcgplayer.com/product/665910",
           "sellerCount": 31
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93402,13 +93402,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 2600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224993-a-damaged?_pos=21&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224993-a-damaged?_pos=22&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 1900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224993-b?_pos=59&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224993-b?_pos=59&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93424,7 +93424,7 @@
           "priceJPY": 2480,
           "url": "https://torecacamp-pokemon.com/products/rc_itpve24kj5ii_ofvh",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 2280,
@@ -93435,12 +93435,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 26.73,
+          "marketPrice": 26.81,
           "url": "https://www.tcgplayer.com/product/665909",
           "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93455,13 +93455,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 14000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224992-a-damaged?_pos=31&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224992-a-damaged?_pos=46&_sid=9f495ef19&_ss=r",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 9900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224992-b?_pos=63&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224992-b?_pos=63&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93493,7 +93493,7 @@
           "sellerCount": 13
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93508,13 +93508,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 6400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224991-a-damaged?_pos=32&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224991-a-damaged?_pos=32&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 5400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224991-b?_pos=64&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224991-b?_pos=64&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93546,7 +93546,7 @@
           "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93561,13 +93561,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224990-a-damaged?_pos=18&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224990-a-damaged?_pos=19&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 1000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224990-b?_pos=58&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224990-b?_pos=58&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93583,7 +93583,7 @@
           "priceJPY": 980,
           "url": "https://torecacamp-pokemon.com/products/rc_its8txocrvxc_xiwo",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 780,
@@ -93594,12 +93594,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 12.47,
+          "marketPrice": 12.62,
           "url": "https://www.tcgplayer.com/product/665906",
           "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93614,13 +93614,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 31000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224989-a-damaged?_pos=42&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224989-a-damaged?_pos=41&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 19000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224989-b?_pos=51&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224989-b?_pos=51&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93642,7 +93642,7 @@
           "priceJPY": 29800,
           "url": "https://torecacamp-pokemon.com/products/rc_itsmbk16jbkq_zv6j",
           "quality": "B",
-          "inStock": false
+          "inStock": true
         }
       },
       "usMarket": {
@@ -93652,7 +93652,7 @@
           "sellerCount": 16
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93667,13 +93667,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 3000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224988-a-damaged?_pos=19&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224988-a-damaged?_pos=20&_sid=9f495ef19&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 2300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224988-b?_pos=57&_sid=0362bf069&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224988-b?_pos=57&_sid=9f495ef19&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93695,17 +93695,17 @@
           "priceJPY": 2480,
           "url": "https://torecacamp-pokemon.com/products/rc_it6mtoqbz7cc_xofg",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 31.12,
+          "marketPrice": 31.42,
           "url": "https://www.tcgplayer.com/product/665904",
           "sellerCount": 25
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93720,13 +93720,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 150,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224977-a-damaged?_pos=7&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224977-a-damaged?_pos=7&_sid=6dbd2213c&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 80,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224977-b?_pos=53&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224977-b?_pos=53&_sid=6dbd2213c&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93758,7 +93758,7 @@
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93773,7 +93773,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224976-a-damaged?_pos=46&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224976-a-damaged?_pos=46&_sid=6dbd2213c&_ss=r",
           "quality": "A-",
           "inStock": false
         },
@@ -93790,7 +93790,7 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itkytvxgp32u_6cxl",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 180,
@@ -93801,12 +93801,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 3.47,
+          "marketPrice": 3.41,
           "url": "https://www.tcgplayer.com/product/665892",
           "sellerCount": 56
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93821,7 +93821,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224975-a-damaged?_pos=47&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224975-a-damaged?_pos=47&_sid=6dbd2213c&_ss=r",
           "quality": "A-",
           "inStock": false
         },
@@ -93838,7 +93838,7 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_it8qomaxponk_irwh",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 180,
@@ -93849,12 +93849,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.38,
+          "marketPrice": 1.37,
           "url": "https://www.tcgplayer.com/product/665891",
           "sellerCount": 34
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93869,13 +93869,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 2300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224974-a-damaged?_pos=2&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224974-a-damaged?_pos=2&_sid=6dbd2213c&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 1800,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224974-b?_pos=50&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224974-b?_pos=48&_sid=6dbd2213c&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93902,12 +93902,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 13.99,
+          "marketPrice": 13.78,
           "url": "https://www.tcgplayer.com/product/665890",
           "sellerCount": 48
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93922,13 +93922,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 150,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224973-a-damaged?_pos=44&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224973-a-damaged?_pos=44&_sid=6dbd2213c&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 80,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224973-b?_pos=52&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224973-b?_pos=52&_sid=6dbd2213c&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -93955,12 +93955,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.21,
+          "marketPrice": 0.19,
           "url": "https://www.tcgplayer.com/product/665889",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -93975,13 +93975,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 150,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224972-a-damaged?_pos=14&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224972-a-damaged?_pos=14&_sid=6dbd2213c&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 80,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224972-b?_pos=59&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224972-b?_pos=58&_sid=6dbd2213c&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94008,12 +94008,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.33,
+          "marketPrice": 0.34,
           "url": "https://www.tcgplayer.com/product/665888",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94028,13 +94028,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224971-a-damaged?_pos=4&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224971-a-damaged?_pos=4&_sid=6dbd2213c&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224971-b?_pos=51&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224971-b?_pos=51&_sid=6dbd2213c&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94061,12 +94061,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.45,
+          "marketPrice": 0.49,
           "url": "https://www.tcgplayer.com/product/665887",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94081,13 +94081,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 150,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224969-a-damaged?_pos=45&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224969-a-damaged?_pos=45&_sid=6dbd2213c&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 80,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224969-b?_pos=56&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224969-b?_pos=54&_sid=6dbd2213c&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94119,7 +94119,7 @@
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94134,13 +94134,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 150,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224970-a-damaged?_pos=12&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224970-a-damaged?_pos=12&_sid=6dbd2213c&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 80,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224970-b?_pos=58&_sid=b2f4e0dd6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224970-b?_pos=57&_sid=6dbd2213c&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94167,12 +94167,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.48,
+          "marketPrice": 0.44,
           "url": "https://www.tcgplayer.com/product/665885",
           "sellerCount": null
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94187,13 +94187,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224968-a-damaged?_pos=23&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224968-a-damaged?_pos=21&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224968-b?_pos=77&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224968-b?_pos=76&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94220,12 +94220,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.96,
+          "marketPrice": 0.92,
           "url": "https://www.tcgplayer.com/product/665884",
           "sellerCount": 135
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94239,14 +94239,14 @@
       },
       "japanToreca": {
         "aMinus": {
-          "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224967-a-damaged?_pos=6&_sid=9c864859d&_ss=r",
+          "priceJPY": 200,
+          "url": "https://shop.japan-toreca.com/products/pokemon-224967-a-damaged?_pos=32&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224967-b?_pos=67&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224967-b?_pos=66&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94268,17 +94268,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_it1yu86iryfm_k5au",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.25,
+          "marketPrice": 1.22,
           "url": "https://www.tcgplayer.com/product/665883",
           "sellerCount": 109
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94293,13 +94293,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224966-a-damaged?_pos=16&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224966-a-damaged?_pos=14&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224966-b?_pos=71&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224966-b?_pos=70&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94321,17 +94321,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_it8a1m1xjd00_luui",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.64,
+          "marketPrice": 1.27,
           "url": "https://www.tcgplayer.com/product/665882",
           "sellerCount": 116
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94346,13 +94346,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224965-a-damaged?_pos=64&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224965-a-damaged?_pos=63&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": false
         },
         "b": {
           "priceJPY": 600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224965-b?_pos=80&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224965-b?_pos=80&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94379,12 +94379,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 8.26,
+          "marketPrice": 8.29,
           "url": "https://www.tcgplayer.com/product/665881",
           "sellerCount": 57
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94399,13 +94399,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224964-a-damaged?_pos=25&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224964-a-damaged?_pos=23&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224964-b?_pos=78&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224964-b?_pos=77&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94432,12 +94432,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.12,
+          "marketPrice": 1.11,
           "url": "https://www.tcgplayer.com/product/665880",
           "sellerCount": 102
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94452,13 +94452,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224963-a-damaged?_pos=37&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224963-a-damaged?_pos=36&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224963-b?_pos=62&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224963-b?_pos=60&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -94480,17 +94480,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itk0gwo3nzok_ngdv",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.98,
+          "marketPrice": 2.82,
           "url": "https://www.tcgplayer.com/product/665879",
           "sellerCount": 67
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94505,13 +94505,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224962-a-damaged?_pos=17&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224962-a-damaged?_pos=15&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224962-b?_pos=72&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224962-b?_pos=71&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94533,17 +94533,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itiinkrzymia_zpeg",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.27,
+          "marketPrice": 1.26,
           "url": "https://www.tcgplayer.com/product/665878",
           "sellerCount": 91
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94558,13 +94558,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 550,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224961-a-damaged?_pos=35&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224961-a-damaged?_pos=34&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224961-b?_pos=83&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224961-b?_pos=83&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94586,17 +94586,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_ita9j078n9kg_w7ud",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.05,
+          "marketPrice": 2.08,
           "url": "https://www.tcgplayer.com/product/665877",
           "sellerCount": 67
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94611,13 +94611,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 650,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224960-a-damaged?_pos=36&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224960-a-damaged?_pos=35&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224960-b?_pos=84&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224960-b?_pos=84&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94644,12 +94644,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 5.14,
+          "marketPrice": 5,
           "url": "https://www.tcgplayer.com/product/665876",
           "sellerCount": 40
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94664,13 +94664,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224959-a-damaged?_pos=32&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224959-a-damaged?_pos=30&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224959-b?_pos=81&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224959-b?_pos=81&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94692,17 +94692,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itpldapv8o2o_jbop",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.17,
+          "marketPrice": 1.26,
           "url": "https://www.tcgplayer.com/product/665875",
           "sellerCount": 119
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94717,13 +94717,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224958-a-damaged?_pos=27&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224958-a-damaged?_pos=25&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224958-b?_pos=79&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224958-b?_pos=79&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94750,12 +94750,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.51,
+          "marketPrice": 1.36,
           "url": "https://www.tcgplayer.com/product/665874",
           "sellerCount": 105
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94770,13 +94770,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224957-a-damaged?_pos=63&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224957-a-damaged?_pos=1&_sid=1ade7b298&_ss=r",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224957-b?_pos=66&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224957-b?_pos=65&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94798,17 +94798,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_it8twn72mdqg_hmvm",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.17,
+          "marketPrice": 2.23,
           "url": "https://www.tcgplayer.com/product/665873",
           "sellerCount": 91
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94823,13 +94823,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224956-a-damaged?_pos=18&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224956-a-damaged?_pos=16&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224956-b?_pos=73&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224956-b?_pos=72&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94856,12 +94856,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.01,
+          "marketPrice": 0.94,
           "url": "https://www.tcgplayer.com/product/665872",
           "sellerCount": 101
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94876,13 +94876,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224955-a-damaged?_pos=19&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224955-a-damaged?_pos=17&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224955-b?_pos=74&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224955-b?_pos=73&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94904,17 +94904,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_ituqsxntb6w4_no0o",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.33,
+          "marketPrice": 1.44,
           "url": "https://www.tcgplayer.com/product/665871",
           "sellerCount": 100
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94929,13 +94929,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224954-a-damaged?_pos=7&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224954-a-damaged?_pos=6&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224954-b?_pos=68&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224954-b?_pos=67&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -94951,23 +94951,23 @@
           "priceJPY": 1280,
           "url": "https://torecacamp-pokemon.com/products/rc_it711i7e6zq4_hfgo",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 980,
           "url": "https://torecacamp-pokemon.com/products/rc_it711i7e6zq4_hfgo",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 12.91,
+          "marketPrice": 13.96,
           "url": "https://www.tcgplayer.com/product/665870",
           "sellerCount": 81
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -94982,13 +94982,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224953-a-damaged?_pos=8&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224953-a-damaged?_pos=7&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224953-b?_pos=69&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224953-b?_pos=68&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -95015,12 +95015,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.64,
+          "marketPrice": 1.58,
           "url": "https://www.tcgplayer.com/product/665869",
           "sellerCount": 41
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -95035,13 +95035,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224952-a-damaged?_pos=33&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224952-a-damaged?_pos=31&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224952-b?_pos=82&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224952-b?_pos=82&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -95068,12 +95068,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.36,
+          "marketPrice": 1.18,
           "url": "https://www.tcgplayer.com/product/665868",
           "sellerCount": 104
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -95088,13 +95088,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 280,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224951-a-damaged?_pos=9&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224951-a-damaged?_pos=8&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224951-b?_pos=70&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224951-b?_pos=69&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -95116,17 +95116,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_it5yszn9hleq_ackw",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.94,
+          "marketPrice": 2.85,
           "url": "https://www.tcgplayer.com/product/665867",
           "sellerCount": 80
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -95141,13 +95141,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224950-a-damaged?_pos=20&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224950-a-damaged?_pos=18&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224950-b?_pos=75&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224950-b?_pos=74&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -95174,12 +95174,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.38,
+          "marketPrice": 1.2,
           "url": "https://www.tcgplayer.com/product/665866",
           "sellerCount": 96
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M2A",
@@ -95194,13 +95194,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224949-a-damaged?_pos=21&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224949-a-damaged?_pos=19&_sid=1ade7b298&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 190,
-          "url": "https://shop.japan-toreca.com/products/pokemon-224949-b?_pos=76&_sid=9c864859d&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-224949-b?_pos=75&_sid=1ade7b298&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -95227,12 +95227,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.23,
+          "marketPrice": 2.22,
           "url": "https://www.tcgplayer.com/product/665865",
           "sellerCount": 89
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.227Z"
+      "updatedAt": "2026-02-26T17:22:16.654Z"
     },
     {
       "set": "M3",
@@ -95247,7 +95247,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1800,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227731-a-damaged?_pos=1&_sid=889cbbf10&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227731-a-damaged?_pos=2&_sid=fae6453ef&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -95270,17 +95270,17 @@
           "priceJPY": 1280,
           "url": "https://torecacamp-pokemon.com/products/rc_ith51mpa53f4_lumu",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 22.63,
+          "marketPrice": 22.33,
           "url": "https://www.tcgplayer.com/product/674435",
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.253Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95318,12 +95318,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 158,
+          "marketPrice": 157.86,
           "url": "https://www.tcgplayer.com/product/674434",
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.253Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95338,7 +95338,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 10000,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227729-a-damaged?_pos=9&_sid=889cbbf10&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227729-a-damaged?_pos=11&_sid=fae6453ef&_ss=r",
           "quality": "A-",
           "inStock": false
         },
@@ -95366,12 +95366,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 93.64,
+          "marketPrice": 93.31,
           "url": "https://www.tcgplayer.com/product/674433",
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95386,7 +95386,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 3600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227728-a-damaged?_pos=5&_sid=889cbbf10&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227728-a-damaged?_pos=7&_sid=fae6453ef&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -95414,12 +95414,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 38.03,
+          "marketPrice": 37.33,
           "url": "https://www.tcgplayer.com/product/674432",
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95433,10 +95433,10 @@
       },
       "japanToreca": {
         "aMinus": {
-          "priceJPY": 3200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227727-a-damaged?_pos=10&_sid=889cbbf10&_ss=r",
+          "priceJPY": 2700,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227727-a-damaged?_pos=6&_sid=fae6453ef&_ss=r",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": null
       },
@@ -95451,7 +95451,7 @@
           "priceJPY": 2480,
           "url": "https://torecacamp-pokemon.com/products/rc_itvemtcdp4rs_99he",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 2280,
@@ -95462,12 +95462,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 37.55,
+          "marketPrice": 37.48,
           "url": "https://www.tcgplayer.com/product/674431",
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95481,10 +95481,10 @@
       },
       "japanToreca": {
         "aMinus": {
-          "priceJPY": 4800,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227726-a-damaged?_pos=11&_sid=889cbbf10&_ss=r",
+          "priceJPY": 3900,
+          "url": "https://shop.japan-toreca.com/products/pokemon-227726-a-damaged?_pos=9&_sid=fae6453ef&_ss=r",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": null
       },
@@ -95510,12 +95510,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 43.54,
+          "marketPrice": 43.48,
           "url": "https://www.tcgplayer.com/product/674430",
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95553,12 +95553,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.09,
+          "marketPrice": 1.04,
           "url": "https://www.tcgplayer.com/product/674429",
           "sellerCount": 19
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95573,7 +95573,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227760-a-damaged?_pos=21&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227760-a-damaged?_pos=23&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -95601,12 +95601,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.57,
+          "marketPrice": 1.53,
           "url": "https://www.tcgplayer.com/product/674428",
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95621,7 +95621,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227759-a-damaged?_pos=26&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227759-a-damaged?_pos=28&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": false
         },
@@ -95649,12 +95649,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 15.66,
+          "marketPrice": 15.11,
           "url": "https://www.tcgplayer.com/product/674427",
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95669,13 +95669,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 2600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227758-a-damaged?_pos=24&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227758-a-damaged?_pos=26&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 1900,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227758-b?_pos=35&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227758-b?_pos=35&_sid=3730fef49&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -95702,12 +95702,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 27.52,
+          "marketPrice": 27,
           "url": "https://www.tcgplayer.com/product/674426",
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95722,7 +95722,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227757-a-damaged?_pos=5&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227757-a-damaged?_pos=5&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -95745,17 +95745,17 @@
           "priceJPY": 380,
           "url": "https://torecacamp-pokemon.com/products/rc_it1qa9bej48h_ysfm",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 12.45,
+          "marketPrice": 12.26,
           "url": "https://www.tcgplayer.com/product/674425",
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95782,7 +95782,7 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itqdy8lhffkg_wipb",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 180,
@@ -95793,12 +95793,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 3.67,
+          "marketPrice": 3.65,
           "url": "https://www.tcgplayer.com/product/674424",
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95813,7 +95813,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227755-a-damaged?_pos=27&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227755-a-damaged?_pos=29&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": false
         },
@@ -95830,7 +95830,7 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itwuo9656fs2_st1q",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 180,
@@ -95841,12 +95841,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 3.03,
+          "marketPrice": 2.81,
           "url": "https://www.tcgplayer.com/product/674423",
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95861,7 +95861,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227754-a-damaged?_pos=8&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227754-a-damaged?_pos=8&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -95889,12 +95889,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 4.08,
+          "marketPrice": 4.57,
           "url": "https://www.tcgplayer.com/product/674422",
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95909,7 +95909,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227753-a-damaged?_pos=20&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227753-a-damaged?_pos=22&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -95937,12 +95937,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 0.62,
+          "marketPrice": 0.61,
           "url": "https://www.tcgplayer.com/product/674421",
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -95957,7 +95957,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227752-a-damaged?_pos=10&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227752-a-damaged?_pos=10&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -95985,12 +95985,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.33,
+          "marketPrice": 1.3,
           "url": "https://www.tcgplayer.com/product/674420",
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96005,7 +96005,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 1800,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227751-a-damaged?_pos=28&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227751-a-damaged?_pos=30&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": false
         },
@@ -96022,7 +96022,7 @@
           "priceJPY": 1780,
           "url": "https://torecacamp-pokemon.com/products/rc_it60krrsagk2_n9er",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 1480,
@@ -96033,12 +96033,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 14.23,
+          "marketPrice": 13.87,
           "url": "https://www.tcgplayer.com/product/674419",
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96053,7 +96053,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227750-a-damaged?_pos=29&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227750-a-damaged?_pos=31&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": false
         },
@@ -96070,7 +96070,7 @@
           "priceJPY": 380,
           "url": "https://torecacamp-pokemon.com/products/rc_it5u0srh09ku_ovbo",
           "quality": "A-",
-          "inStock": false
+          "inStock": true
         },
         "b": {
           "priceJPY": 280,
@@ -96081,12 +96081,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 7.14,
+          "marketPrice": 7.08,
           "url": "https://www.tcgplayer.com/product/674418",
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96101,7 +96101,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a-damaged?_pos=11&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227749-a-damaged?_pos=11&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -96129,12 +96129,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 9.24,
+          "marketPrice": 8.92,
           "url": "https://www.tcgplayer.com/product/674417",
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96149,7 +96149,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 600,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227748-a-damaged?_pos=12&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227748-a-damaged?_pos=12&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -96177,12 +96177,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 6.78,
+          "marketPrice": 6.7,
           "url": "https://www.tcgplayer.com/product/674416",
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96197,7 +96197,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227747-a-damaged?_pos=13&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227747-a-damaged?_pos=13&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -96220,17 +96220,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itb3mc05y4xy_bcgb",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 10.01,
+          "marketPrice": 9.98,
           "url": "https://www.tcgplayer.com/product/674415",
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96245,7 +96245,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 950,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227746-a-damaged?_pos=31&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227746-a-damaged?_pos=33&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": false
         },
@@ -96268,7 +96268,7 @@
           "priceJPY": 680,
           "url": "https://torecacamp-pokemon.com/products/rc_itwmtlzewxoo_txda",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
@@ -96278,7 +96278,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96293,7 +96293,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227745-a-damaged?_pos=9&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227745-a-damaged?_pos=9&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": true
         },
@@ -96326,7 +96326,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96341,7 +96341,7 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227744-a-damaged?_pos=30&_sid=98f717fab&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227744-a-damaged?_pos=32&_sid=3730fef49&_ss=r",
           "quality": "A-",
           "inStock": false
         },
@@ -96374,7 +96374,7 @@
           "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96389,13 +96389,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227743-a-damaged?_pos=1&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227743-a-damaged?_pos=1&_sid=4b197d035&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227743-b?_pos=2&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227743-b?_pos=2&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -96422,12 +96422,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.87,
+          "marketPrice": 1.92,
           "url": "https://www.tcgplayer.com/product/674411",
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96442,13 +96442,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227742-a-damaged?_pos=10&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227742-a-damaged?_pos=35&_sid=4b197d035&_ss=r",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227742-b?_pos=3&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227742-b?_pos=3&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -96475,12 +96475,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.69,
+          "marketPrice": 2.56,
           "url": "https://www.tcgplayer.com/product/674410",
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96495,13 +96495,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227741-a-damaged?_pos=16&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227741-a-damaged?_pos=14&_sid=4b197d035&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227741-b?_pos=4&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227741-b?_pos=4&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -96528,12 +96528,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.76,
+          "marketPrice": 1.66,
           "url": "https://www.tcgplayer.com/product/674409",
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96548,13 +96548,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227740-a-damaged?_pos=11&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227740-a-damaged?_pos=36&_sid=4b197d035&_ss=r",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227740-b?_pos=5&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227740-b?_pos=5&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -96576,17 +96576,17 @@
           "priceJPY": 280,
           "url": "https://torecacamp-pokemon.com/products/rc_itlo2k7knqnk_ysla",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 4.27,
+          "marketPrice": 4,
           "url": "https://www.tcgplayer.com/product/674408",
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96601,13 +96601,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227739-a-damaged?_pos=17&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227739-a-damaged?_pos=15&_sid=4b197d035&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227739-b?_pos=6&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227739-b?_pos=6&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -96634,12 +96634,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 1.34,
+          "marketPrice": 1.25,
           "url": "https://www.tcgplayer.com/product/674407",
           "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96654,13 +96654,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227738-a-damaged?_pos=18&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227738-a-damaged?_pos=16&_sid=4b197d035&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227738-b?_pos=7&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227738-b?_pos=7&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -96687,12 +96687,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 4.84,
+          "marketPrice": 4.82,
           "url": "https://www.tcgplayer.com/product/674406",
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96707,13 +96707,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 950,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227737-a-damaged?_pos=12&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227737-a-damaged?_pos=10&_sid=4b197d035&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 850,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227737-b?_pos=8&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227737-b?_pos=8&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -96729,23 +96729,23 @@
           "priceJPY": 780,
           "url": "https://torecacamp-pokemon.com/products/rc_it0ohjmgz50o_ie32",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 680,
           "url": "https://torecacamp-pokemon.com/products/rc_it0ohjmgz50o_ie32",
           "quality": "B",
-          "inStock": true
+          "inStock": false
         }
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 11.04,
+          "marketPrice": 11.65,
           "url": "https://www.tcgplayer.com/product/674405",
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96760,13 +96760,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227736-a-damaged?_pos=13&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227736-a-damaged?_pos=11&_sid=4b197d035&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227736-b?_pos=34&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227736-b?_pos=32&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -96782,7 +96782,7 @@
           "priceJPY": 480,
           "url": "https://torecacamp-pokemon.com/products/rc_it74qk12kqx5_zb4f",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 380,
@@ -96793,12 +96793,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 4.87,
+          "marketPrice": 4.98,
           "url": "https://www.tcgplayer.com/product/674404",
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96813,13 +96813,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227735-a-damaged?_pos=14&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227735-a-damaged?_pos=12&_sid=4b197d035&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227735-b?_pos=35&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227735-b?_pos=33&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -96835,7 +96835,7 @@
           "priceJPY": 380,
           "url": "https://torecacamp-pokemon.com/products/rc_itvmtbczgrs8_eb3k",
           "quality": "A-",
-          "inStock": true
+          "inStock": false
         },
         "b": {
           "priceJPY": 280,
@@ -96846,12 +96846,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.85,
+          "marketPrice": 2.68,
           "url": "https://www.tcgplayer.com/product/674403",
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96866,13 +96866,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227734-a-damaged?_pos=32&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227734-a-damaged?_pos=30&_sid=4b197d035&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227734-b?_pos=31&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227734-b?_pos=29&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -96899,12 +96899,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.02,
+          "marketPrice": 1.91,
           "url": "https://www.tcgplayer.com/product/674402",
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96919,13 +96919,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227733-a-damaged?_pos=15&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227733-a-damaged?_pos=13&_sid=4b197d035&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227733-b?_pos=36&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227733-b?_pos=34&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -96952,12 +96952,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 4.7,
+          "marketPrice": 4.66,
           "url": "https://www.tcgplayer.com/product/674401",
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     },
     {
       "set": "M3",
@@ -96972,13 +96972,13 @@
       "japanToreca": {
         "aMinus": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227732-a-damaged?_pos=19&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227732-a-damaged?_pos=17&_sid=4b197d035&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-227732-b?_pos=9&_sid=568408e69&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-227732-b?_pos=9&_sid=4b197d035&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -97005,12 +97005,12 @@
       },
       "usMarket": {
         "tcgplayer": {
-          "marketPrice": 2.04,
+          "marketPrice": 1.95,
           "url": "https://www.tcgplayer.com/product/674400",
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-26T02:50:08.254Z"
+      "updatedAt": "2026-02-26T17:26:15.725Z"
     }
   ]
 }
