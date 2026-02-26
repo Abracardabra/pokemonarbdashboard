@@ -1070,7 +1070,16 @@ async function main() {
       ? await scrapeToretokuListings(apiSetId, displaySetCode, { maxPages: isSv ? 35 : 50, cacheOnly: toretokuMode === 'cache' })
       : [];
 
-    const setCards = buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings, torecacampListings });
+    const shouldScrapeHareruya2 = hareruya2Mode === 'all' || (hareruya2Mode === 'sv' && (isSv || apiSetIdLc === 's12a')) || (hareruya2Mode === 's12a' && apiSetIdLc === 's12a');
+    const hareruya2Listings = shouldScrapeHareruya2 ? await scrapeHareruya2Listings(displaySetCode) : [];
+
+    const shouldScrapeHobibinet = hobibinetMode === 'all' || (hobibinetMode === 'sv' && (isSv || apiSetIdLc === 's12a')) || (hobibinetMode === 's12a' && apiSetIdLc === 's12a');
+    const hobibinetListings = shouldScrapeHobibinet ? await scrapeHobibinetListings(displaySetCode) : [];
+
+    const shouldScrapeDorasuta = dorasutaMode === 'all';
+    const dorasutaListings = shouldScrapeDorasuta ? await scrapeDorasutaListings(displaySetCode) : [];
+
+    const setCards = buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings, torecacampListings, hareruya2Listings, hobibinetListings, dorasutaListings });
 
     console.log(`🎯 ${displaySetCode}: kept ${setCards.length} cards (special rarities)`);
     allCards.push(...setCards);
