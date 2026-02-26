@@ -115,6 +115,56 @@ function offersForCard(card: BuilderOpportunity): Offer[] {
       inStock: card.torecacamp.b.inStock !== false,
       url: card.torecacamp.b.url,
     });
+  // New shops - Hareruya2 (only A-)
+  if (card.hareruya2?.aMinus) {
+    out.push({
+      shop: 'hareruya2',
+      condition: 'A-',
+      priceJPY: card.hareruya2.aMinus.priceJPY,
+      inStock: card.hareruya2.aMinus.inStock !== false,
+      url: card.hareruya2.aMinus.url,
+    });
+  }
+
+  // Hobibinet (A- and B)
+  if (card.hobibinet?.aMinus) {
+    out.push({
+      shop: 'hobibinet',
+      condition: 'A-',
+      priceJPY: card.hobibinet.aMinus.priceJPY,
+      inStock: card.hobibinet.aMinus.inStock !== false,
+      url: card.hobibinet.aMinus.url,
+    });
+  }
+  if (card.hobibinet?.b) {
+    out.push({
+      shop: 'hobibinet',
+      condition: 'B',
+      priceJPY: card.hobibinet.b.priceJPY,
+      inStock: card.hobibinet.b.inStock !== false,
+      url: card.hobibinet.b.url,
+    });
+  }
+
+  // Dorasuta (A- and B)
+  if (card.dorasuta?.aMinus) {
+    out.push({
+      shop: 'dorasuta',
+      condition: 'A-',
+      priceJPY: card.dorasuta.aMinus.priceJPY,
+      inStock: card.dorasuta.aMinus.inStock !== false,
+      url: card.dorasuta.aMinus.url,
+    });
+  }
+  if (card.dorasuta?.b) {
+    out.push({
+      shop: 'dorasuta',
+      condition: 'B',
+      priceJPY: card.dorasuta.b.priceJPY,
+      inStock: card.dorasuta.b.inStock !== false,
+      url: card.dorasuta.b.url,
+    });
+  }
   }
 
   return out;

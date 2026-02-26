@@ -21,6 +21,11 @@ const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
 
+// New scraper modules
+const { scrapeHareruya2Listings } = require('./scrape-hareruya2.js');
+const { scrapeHobibinetListings } = require('./scrape-hobibinet.js');
+const { scrapeDorasutaListings } = require('./scrape-dorasuta.js');
+
 const ALLOWED_RARITIES = new Set(['AR', 'SAR', 'SR', 'CHR', 'UR', 'SSR', 'RRR']);
 const ALLOWED_QUALITIES = new Set(['A-', 'B']);
 
@@ -81,6 +86,25 @@ if (!['none', 's12a', 'sv', 'all', 'cache'].includes(toretokuMode)) {
 const torecacampMode = (getArgValue('--torecacamp') || 'all').toLowerCase();
 if (!['none', 's12a', 'all'].includes(torecacampMode)) {
   console.error('Invalid --torecacamp mode. Use: none | s12a | all');
+  process.exit(1);
+}
+
+// New shop scraper modes
+const hareruya2Mode = (getArgValue('--hareruya2') || 's12a').toLowerCase();
+if (!['none', 's12a', 'sv', 'all', 'cache'].includes(hareruya2Mode)) {
+  console.error('Invalid --hareruya2 mode. Use: none | s12a | sv | all | cache');
+  process.exit(1);
+}
+
+const hobibinetMode = (getArgValue('--hobibinet') || 's12a').toLowerCase();
+if (!['none', 's12a', 'sv', 'all', 'cache'].includes(hobibinetMode)) {
+  console.error('Invalid --hobibinet mode. Use: none | s12a | sv | all | cache');
+  process.exit(1);
+}
+
+const dorasutaMode = (getArgValue('--dorasuta') || 's12a').toLowerCase();
+if (!['none', 's12a', 'sv', 'all', 'cache'].includes(dorasutaMode)) {
+  console.error('Invalid --dorasuta mode. Use: none | s12a | sv | all | cache');
   process.exit(1);
 }
 
@@ -834,7 +858,7 @@ function pickCanonicalSetPrefix(apiCards, apiSetId) {
   return best ? `${best}:` : null;
 }
 
-function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings, torecacampListings }) {
+function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, toretokuListings, torecacampListings, hareruya2Listings = [], hobibinetListings = [], dorasutaListings = [] }) {
   const jtByCard = bestJTByCard(jtListings);
 
   const ttByCard = bestJTByCard(

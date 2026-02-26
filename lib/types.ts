@@ -1,4 +1,4 @@
-export type PriceSource = 'japan-toreca' | 'toretoku' | 'torecacamp';
+export type PriceSource = 'japan-toreca' | 'toretoku' | 'torecacamp' | 'hareruya2' | 'hobibinet' | 'dorasuta';
 
 export type RarityCode = 'AR' | 'SAR' | 'SR' | 'CHR' | 'UR' | 'SSR' | 'RRR';
 
@@ -60,6 +60,18 @@ export interface BuilderOpportunity {
     stockB?: number | null;
   };
   torecacamp?: {
+    aMinus: BuilderJapanTorecaPrice | null;
+    b: BuilderJapanTorecaPrice | null;
+  };
+  // New shop sources
+  hareruya2?: {
+    aMinus: BuilderJapanTorecaPrice | null;
+  };
+  hobibinet?: {
+    aMinus: BuilderJapanTorecaPrice | null;
+    b: BuilderJapanTorecaPrice | null;
+  };
+  dorasuta?: {
     aMinus: BuilderJapanTorecaPrice | null;
     b: BuilderJapanTorecaPrice | null;
   };
