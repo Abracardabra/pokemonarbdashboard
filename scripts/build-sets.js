@@ -882,6 +882,36 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, tor
     }))
   );
 
+  const h2ByCard = bestJTByCard(
+    (hareruya2Listings || []).map((r) => ({
+      cardNumber: r.cardNumber,
+      quality: r.quality,
+      priceJPY: r.priceJPY,
+      url: r.url,
+      inStock: r.inStock !== false,
+    }))
+  );
+
+  const hbByCard = bestJTByCard(
+    (hobibinetListings || []).map((r) => ({
+      cardNumber: r.cardNumber,
+      quality: r.quality,
+      priceJPY: r.priceJPY,
+      url: r.url,
+      inStock: r.inStock !== false,
+    }))
+  );
+
+  const dsByCard = bestJTByCard(
+    (dorasutaListings || []).map((r) => ({
+      cardNumber: r.cardNumber,
+      quality: r.quality,
+      priceJPY: r.priceJPY,
+      url: r.url,
+      inStock: r.inStock !== false,
+    }))
+  );
+
   const outCards = [];
 
   const apiCards = Array.isArray(apiDump.data) ? apiDump.data : [];
@@ -913,6 +943,9 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, tor
     const jt = jtByCard.get(cardNumberSlash || cardNumber) || jtByCard.get(cardNumber) || { 'A-': null, B: null };
     const tt = ttByCard.get(cardNumberSlash || cardNumber) || ttByCard.get(cardNumber) || { 'A-': null, B: null };
     const tc = tcByCard.get(cardNumberSlash || cardNumber) || tcByCard.get(cardNumber) || { 'A-': null, B: null };
+    const h2 = h2ByCard.get(cardNumberSlash || cardNumber) || h2ByCard.get(cardNumber) || { 'A-': null, B: null };
+    const hb = hbByCard.get(cardNumberSlash || cardNumber) || hbByCard.get(cardNumber) || { 'A-': null, B: null };
+    const ds = dsByCard.get(cardNumberSlash || cardNumber) || dsByCard.get(cardNumber) || { 'A-': null, B: null };
 
     const jpAminus = jt['A-']
       ? {
