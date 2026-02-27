@@ -984,6 +984,16 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, tor
         }
       : null;
 
+
+    const h2Aminus = h2['A-'] ? { priceJPY: h2['A-'].priceJPY, url: h2['A-'].url, quality: 'A-', inStock: h2['A-'].inStock !== false } : null;
+    const h2B = h2.B ? { priceJPY: h2.B.priceJPY, url: h2.B.url, quality: 'B', inStock: h2.B.inStock !== false } : null;
+
+    const hbAminus = hb['A-'] ? { priceJPY: hb['A-'].priceJPY, url: hb['A-'].url, quality: 'A-', inStock: hb['A-'].inStock !== false } : null;
+    const hbB = hb.B ? { priceJPY: hb.B.priceJPY, url: hb.B.url, quality: 'B', inStock: hb.B.inStock !== false } : null;
+
+    const dsAminus = ds['A-'] ? { priceJPY: ds['A-'].priceJPY, url: ds['A-'].url, quality: 'A-', inStock: ds['A-'].inStock !== false } : null;
+    const dsB = ds.B ? { priceJPY: ds.B.priceJPY, url: ds.B.url, quality: 'B', inStock: ds.B.inStock !== false } : null;
+
     outCards.push({
       set: displaySetCode.toUpperCase(),
       setId: apiSetId,
@@ -1006,6 +1016,19 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, tor
       },
       torecacamp: {
         aMinus: tcAminus,
+          b: tcB,
+        },
+        hareruya2: {
+          aMinus: h2Aminus,
+          b: h2B,
+        },
+        hobibinet: {
+          aMinus: hbAminus,
+          b: hbB,
+        },
+        dorasuta: {
+          aMinus: dsAminus,
+          b: dsB,
         b: tcB,
       },
       usMarket: {
