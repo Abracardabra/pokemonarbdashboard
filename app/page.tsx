@@ -81,17 +81,63 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
       });
     }
 
-    if (c.torecacamp?.b) {
-      jp.push({
-        source: 'torecacamp',
-        priceJPY: c.torecacamp.b.priceJPY,
-        priceUSD: c.torecacamp.b.priceJPY * JPY_TO_USD,
-        quality: 'B',
-        inStock: c.torecacamp.b.inStock !== false,
-        url: c.torecacamp.b.url,
-        isLowest: false,
-      });
-    }
+    
+        // New shops: Hareruya2, Hobibinet, Dorasuta
+        if (c.hareruya2?.aMinus) {
+          jp.push({
+            source: 'hareruya2',
+            priceJPY: c.hareruya2.aMinus.priceJPY,
+            priceUSD: c.hareruya2.aMinus.priceJPY * JPY_TO_USD,
+            quality: 'A-',
+            inStock: c.hareruya2.aMinus.inStock !== false,
+            url: c.hareruya2.aMinus.url,
+            isLowest: false,
+          });
+        }
+        if (c.hobibinet?.aMinus) {
+          jp.push({
+            source: 'hobibinet',
+            priceJPY: c.hobibinet.aMinus.priceJPY,
+            priceUSD: c.hobibinet.aMinus.priceJPY * JPY_TO_USD,
+            quality: 'A-',
+            inStock: c.hobibinet.aMinus.inStock !== false,
+            url: c.hobibinet.aMinus.url,
+            isLowest: false,
+          });
+        }
+        if (c.hobibinet?.b) {
+          jp.push({
+            source: 'hobibinet',
+            priceJPY: c.hobibinet.b.priceJPY,
+            priceUSD: c.hobibinet.b.priceJPY * JPY_TO_USD,
+            quality: 'B',
+            inStock: c.hobibinet.b.inStock !== false,
+            url: c.hobibinet.b.url,
+            isLowest: false,
+          });
+        }
+        if (c.dorasuta?.aMinus) {
+          jp.push({
+            source: 'dorasuta',
+            priceJPY: c.dorasuta.aMinus.priceJPY,
+            priceUSD: c.dorasuta.aMinus.priceJPY * JPY_TO_USD,
+            quality: 'A-',
+            inStock: c.dorasuta.aMinus.inStock !== false,
+            url: c.dorasuta.aMinus.url,
+            isLowest: false,
+          });
+        }
+        if (c.dorasuta?.b) {
+          jp.push({
+            source: 'dorasuta',
+            priceJPY: c.dorasuta.b.priceJPY,
+            priceUSD: c.dorasuta.b.priceJPY * JPY_TO_USD,
+            quality: 'B',
+            inStock: c.dorasuta.b.inStock !== false,
+            url: c.dorasuta.b.url,
+            isLowest: false,
+          });
+        }
 
     // Prefer A- as the baseline; fall back to B.
     const aMinus = jp.filter((p) => String(p.quality).toUpperCase().replace('－', '-') === 'A-');
