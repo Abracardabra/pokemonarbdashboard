@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
 import { Loader2, RefreshCw } from 'lucide-react';
 import { ArbitrageOpportunity, JapaneseCondition, RarityCode } from '@/lib/types';
+import { SCRAPE_POLICY, isPrioritySet as isPrioritySetByPolicy } from '@/lib/scrape-policy';
 import {
   applyFilters,
   DEFAULT_FILTERS,
@@ -65,6 +66,14 @@ type BulkReloadProgress = {
   startedAtMs: number;
 };
 
+// Reload strategy controls from global policy.
+const DAILY_RELOAD_CAP = SCRAPE_POLICY.capacity.dailyCardCap;
+const TIER1_SHARE = SCRAPE_POLICY.tiers.favoritesShare;
+const TIER2_SHARE = SCRAPE_POLICY.tiers.inRangeShare;
+const TIER3_SHARE = SCRAPE_POLICY.tiers.outOfRangeShare;
+const MIN_TRACK_USD = SCRAPE_POLICY.budget.minUsd;
+const MAX_TRACK_USD = SCRAPE_POLICY.budget.maxUsd;
+
 function toggleInList(list: string[], value: string): string[] {
   return list.includes(value) ? list.filter((x) => x !== value) : [...list, value];
 }
@@ -76,11 +85,66 @@ function formatDuration(ms: number): string {
   return `${m}m ${String(s).padStart(2, '0')}s`;
 }
 
+function getMarketUsd(card: ArbitrageOpportunity): number | null {
+  const n = card.usPrice?.marketPrice ?? null;
+  if (n == null || !Number.isFinite(n)) return null;
+  return Number(n);
+}
+
+function lastUpdatedMs(card: ArbitrageOpportunity): number {
+  const ms = Date.parse(String(card.lastUpdated || ''));
+  if (!Number.isFinite(ms)) return 0;
+  return ms;
+}
+
+function oldestFirst(cards: ArbitrageOpportunity[]): ArbitrageOpportunity[] {
+  return [...cards].sort((a, b) => lastUpdatedMs(a) - lastUpdatedMs(b));
+}
+
+function buildReloadPlan(cards: ArbitrageOpportunity[]): ArbitrageOpportunity[] {
+
+  const favorites = cards.filter((c) => c.favorite === true);
+  const nonFavorites = cards.filter((c) => c.favorite !== true);
+
+  const inRangePriority = nonFavorites.filter((c) => {
+    const usd = getMarketUsd(c);
+    const inRange = usd == null || (usd >= MIN_TRACK_USD && usd <= MAX_TRACK_USD);
+    return inRange && isPrioritySetByPolicy(c.set);
+  });
+  const inRangeOther = nonFavorites.filter((c) => {
+    const usd = getMarketUsd(c);
+    const inRange = usd == null || (usd >= MIN_TRACK_USD && usd <= MAX_TRACK_USD);
+    return inRange && !isPrioritySetByPolicy(c.set);
+  });
+  const outOfRange = nonFavorites.filter((c) => {
+    const usd = getMarketUsd(c);
+    if (usd == null) return false;
+    return usd < MIN_TRACK_USD || usd > MAX_TRACK_USD;
+  });
+
+  const cap = Math.min(cards.length, DAILY_RELOAD_CAP);
+  const tier1Limit = Math.floor(cap * TIER1_SHARE);
+  const tier2Limit = Math.floor(cap * TIER2_SHARE);
+  const tier3Limit = Math.max(0, cap - tier1Limit - tier2Limit);
+
+  const pickedTier1 = oldestFirst(favorites).slice(0, tier1Limit);
+  const pickedTier2 = oldestFirst([...inRangePriority, ...inRangeOther]).slice(0, tier2Limit);
+  const pickedTier3 = oldestFirst(outOfRange).slice(0, tier3Limit);
+
+  const selected = [...pickedTier1, ...pickedTier2, ...pickedTier3];
+  if (selected.length >= cap) return selected.slice(0, cap);
+
+  // Backfill any remaining budget from cards not yet selected.
+  const selectedIds = new Set(selected.map((c) => c.id));
+  const remaining = oldestFirst(cards.filter((c) => !selectedIds.has(c.id)));
+  return [...selected, ...remaining].slice(0, cap);
+}
+
 export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFiltersProps) {
   const [draftFilters, setDraftFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [appliedFilters, setAppliedFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [sortBy, setSortBy] = useState<string>('profit-desc');
-  const [jpShop, setJpShop] = useState<'japan-toreca' | 'toretoku' | 'torecacamp' | 'hareruya2' | 'hobibinet' | 'dorasuta' | 'best'>('japan-toreca');
+  const [jpShop, setJpShop] = useState<'japan-toreca' | 'toretoku' | 'torecacamp' | 'hobibinet' | 'dorasuta' | 'best'>('japan-toreca');
   const [reloadingCardId, setReloadingCardId] = useState<string | null>(null);
   const [favoritePendingCardId, setFavoritePendingCardId] = useState<string | null>(null);
   const [bulkReloading, setBulkReloading] = useState(false);
@@ -91,11 +155,12 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
   const [cardOverrides, setCardOverrides] = useState<Record<string, ArbitrageOpportunity>>({});
 
   const jpSources = useMemo(() => {
-    if (jpShop === 'best') return new Set<string>(['japan-toreca', 'toretoku', 'torecacamp', 'hareruya2', 'hobibinet', 'dorasuta']);
+    // "best" intentionally excludes non-required shops.
+    if (jpShop === 'best') return new Set<string>(['japan-toreca', 'toretoku', 'torecacamp', 'hobibinet', 'dorasuta']);
     return new Set<string>([jpShop]);
   }, [jpShop]);
 
-  async function reloadCardJPAndUS(card: ArbitrageOpportunity) {
+  async function reloadCardJPAndUS(card: ArbitrageOpportunity): Promise<boolean> {
     // Generic reload for *any* card:
     // - derive Japan-Toreca A-/B product URLs from the card's existing Japan-Toreca URL
     // - reload both A and B (when we can construct the URLs)
@@ -199,14 +264,17 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
         if (extractedInStock) return true;
         return oldInStock;
       };
+      const jpAPrice = jpAOk ? (jpA!.priceJPY as number) : null;
+      const jpBPrice = jpBOk ? (jpB!.priceJPY as number) : null;
 
       const aPrice = jpAOk
         ? ({
             source: 'japan-toreca',
-            priceJPY: jpA.priceJPY,
-            priceUSD: Math.round(jpA.priceJPY * JPY_TO_USD * 100) / 100,
+            // Safe because jpAOk guarantees parsed price availability.
+            priceJPY: jpAPrice as number,
+            priceUSD: Math.round((jpAPrice as number) * JPY_TO_USD * 100) / 100,
             quality: 'A-',
-            inStock: mergeInStock(jpA.inStock, oldA?.inStock ?? false),
+            inStock: mergeInStock(jpA!.inStock, oldA?.inStock ?? false),
             url: jpUrlA ?? oldA?.url ?? '',
             isLowest: false,
           } as typeof card.japanesePrices[number])
@@ -215,10 +283,11 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
       const bPrice = jpBOk
         ? ({
             source: 'japan-toreca',
-            priceJPY: jpB.priceJPY,
-            priceUSD: Math.round(jpB.priceJPY * JPY_TO_USD * 100) / 100,
+            // Safe because jpBOk guarantees parsed price availability.
+            priceJPY: jpBPrice as number,
+            priceUSD: Math.round((jpBPrice as number) * JPY_TO_USD * 100) / 100,
             quality: 'B',
-            inStock: mergeInStock(jpB.inStock, oldB?.inStock ?? false),
+            inStock: mergeInStock(jpB!.inStock, oldB?.inStock ?? false),
             url: jpUrlB ?? oldB?.url ?? '',
             isLowest: false,
           } as typeof card.japanesePrices[number])
@@ -326,9 +395,11 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
         const text = await persistResponse.text().catch(() => '');
         console.warn('[Reload JP+US] Persist failed:', persistResponse.status, text.slice(0, 500));
       }
+      return jpUpdated || (us?.market != null);
     } catch (err) {
       console.error('[Reload JP+US] Network/parse error:', err);
       setReloadMessage('Reload failed (see console)');
+      return false;
     } finally {
       setReloadingCardId(null);
     }
@@ -426,9 +497,10 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
         return;
       }
 
-      if (filteredCards.length > 150) {
+      const plannedCards = buildReloadPlan(filteredCards);
+      if (plannedCards.length > 150) {
         const ok = window.confirm(
-          `This will reload ${filteredCards.length} cards and can take a long time. Continue?`
+          `This will reload ${plannedCards.length} cards (priority strategy) and can take a long time. Continue?`
         );
         if (!ok) return;
       }
@@ -436,16 +508,21 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
       setBulkReloading(true);
       const startedAtMs = Date.now();
       setBulkProgress({
-        total: filteredCards.length,
+        total: plannedCards.length,
         completed: 0,
         startedAtMs,
       });
-      console.log('[Reload All] Starting reload for cards:', filteredCards.length);
+      console.log('[Reload All] Starting reload with priority plan:', {
+        sourceCards: filteredCards.length,
+        plannedCards: plannedCards.length,
+        cap: DAILY_RELOAD_CAP,
+        usdRange: [MIN_TRACK_USD, MAX_TRACK_USD],
+      });
 
       try {
-        for (let i = 0; i < filteredCards.length; i++) {
-          const card = filteredCards[i];
-          setReloadMessage(`Reloading ${i + 1}/${filteredCards.length}: ${card.name}`);
+        for (let i = 0; i < plannedCards.length; i++) {
+          const card = plannedCards[i];
+          setReloadMessage(`Reloading ${i + 1}/${plannedCards.length}: ${card.name}`);
           await reloadCardJPAndUS(card);
           setBulkProgress((prev) =>
             prev
@@ -458,7 +535,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
           // Small pacing delay to avoid request bursts.
           await new Promise((resolve) => setTimeout(resolve, 75));
         }
-        setReloadMessage(`Reload complete: ${filteredCards.length} cards`);
+        setReloadMessage(`Reload complete: ${plannedCards.length} cards`);
       } catch (error) {
         console.error('[Reload All] Failed:', error);
         setReloadMessage('Bulk reload failed (see console)');
@@ -619,7 +696,6 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
               <option value="japan-toreca" className="bg-gray-900">Japan-Toreca</option>
               <option value="toretoku" className="bg-gray-900">Toretoku</option>
               <option value="torecacamp" className="bg-gray-900">Torecacamp</option>
-            <option value="hareruya2" className="bg-gray-900">Hareruya2</option>
             <option value="hobibinet" className="bg-gray-900">Hobibinet</option>
             <option value="dorasuta" className="bg-gray-900">Dorasuta</option>
               <option value="best" className="bg-gray-900">Best (all)</option>

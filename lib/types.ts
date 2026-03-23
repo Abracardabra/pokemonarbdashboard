@@ -1,4 +1,4 @@
-export type PriceSource = 'japan-toreca' | 'toretoku' | 'torecacamp' | 'hareruya2' | 'hobibinet' | 'dorasuta';
+export type PriceSource = 'japan-toreca' | 'toretoku' | 'torecacamp' | 'hobibinet' | 'dorasuta';
 
 export type RarityCode = 'AR' | 'SAR' | 'SR' | 'CHR' | 'UR' | 'SSR' | 'RRR';
 
@@ -66,10 +66,9 @@ export interface BuilderOpportunity {
     aMinus: BuilderJapanTorecaPrice | null;
     b: BuilderJapanTorecaPrice | null;
   };
-  // New shop sources
-  hareruya2?: {
-    aMinus: BuilderJapanTorecaPrice | null;
-  };
+  // Legacy field note:
+  // `hareruya2` was intentionally removed from active sources.
+  // Keep runtime tolerant via JSON parsing, but do not model/use it as an active shop.
   hobibinet?: {
     aMinus: BuilderJapanTorecaPrice | null;
     b: BuilderJapanTorecaPrice | null;

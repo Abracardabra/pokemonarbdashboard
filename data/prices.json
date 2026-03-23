@@ -782,7 +782,7 @@
           "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-20T20:07:59.767Z"
+      "updatedAt": "2026-03-23T14:27:32.779Z"
     },
     {
       "set": "S12A",
@@ -2313,7 +2313,7 @@
           "sellerCount": 28
         }
       },
-      "updatedAt": "2026-02-20T20:07:59.767Z"
+      "updatedAt": "2026-03-23T14:33:20.628Z"
     },
     {
       "set": "S12A",
@@ -2800,7 +2800,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T20:07:59.767Z"
+      "updatedAt": "2026-03-23T14:21:19.393Z"
     },
     {
       "set": "S12A",
@@ -2853,7 +2853,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T20:07:59.767Z"
+      "updatedAt": "2026-03-23T14:22:04.951Z"
     },
     {
       "set": "S12A",
@@ -3012,7 +3012,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T20:07:59.767Z"
+      "updatedAt": "2026-03-23T14:28:49.386Z"
     },
     {
       "set": "S12A",
@@ -3069,7 +3069,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-20T20:07:59.767Z"
+      "updatedAt": "2026-03-23T14:28:20.932Z"
     },
     {
       "set": "S12A",
@@ -4282,7 +4282,7 @@
           "sellerCount": 33
         }
       },
-      "updatedAt": "2026-02-20T20:07:59.770Z"
+      "updatedAt": "2026-03-23T14:29:12.912Z"
     },
     {
       "set": "S12A",
@@ -4391,7 +4391,7 @@
           "sellerCount": 38
         }
       },
-      "updatedAt": "2026-02-20T20:07:59.770Z"
+      "updatedAt": "2026-03-23T14:28:39.913Z"
     },
     {
       "set": "S12A",
@@ -5630,7 +5630,7 @@
           "sellerCount": 31
         }
       },
-      "updatedAt": "2026-02-20T20:26:19.195Z"
+      "updatedAt": "2026-03-23T14:30:12.416Z"
     },
     {
       "set": "SV6A",
@@ -5901,7 +5901,7 @@
           "sellerCount": 30
         }
       },
-      "updatedAt": "2026-02-20T20:26:19.195Z"
+      "updatedAt": "2026-03-23T14:30:52.599Z"
     },
     {
       "set": "SV6A",
@@ -6712,9 +6712,14 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/566323_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 250,
+          "url": "https://shop.japan-toreca.com/products/pokemon-210257-a?_pos=23&_sid=72e3c422e&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
-          "priceJPY": 350,
+          "priceJPY": 450,
           "url": "https://shop.japan-toreca.com/products/pokemon-210257-b?_pos=23&_sid=72e3c422e&_ss=r",
           "quality": "B",
           "inStock": true
@@ -6751,7 +6756,7 @@
           "sellerCount": 83
         }
       },
-      "updatedAt": "2026-02-20T20:26:19.195Z"
+      "updatedAt": "2026-03-23T14:29:16.247Z"
     },
     {
       "set": "SV6A",
@@ -6808,7 +6813,7 @@
           "sellerCount": 90
         }
       },
-      "updatedAt": "2026-02-20T20:26:19.195Z"
+      "updatedAt": "2026-03-23T14:27:23.217Z"
     },
     {
       "set": "SV6A",
@@ -7304,7 +7309,7 @@
           "sellerCount": 41
         }
       },
-      "updatedAt": "2026-02-20T20:28:36.481Z"
+      "updatedAt": "2026-03-23T14:31:30.288Z"
     },
     {
       "set": "SV7",
@@ -8082,7 +8087,7 @@
           "sellerCount": 24
         }
       },
-      "updatedAt": "2026-02-20T20:28:36.481Z"
+      "updatedAt": "2026-03-23T14:26:26.779Z"
     },
     {
       "set": "SV7",
@@ -8477,7 +8482,7 @@
           "sellerCount": 63
         }
       },
-      "updatedAt": "2026-02-20T20:28:36.481Z"
+      "updatedAt": "2026-03-23T14:29:44.262Z"
     },
     {
       "set": "SV7",
@@ -8648,7 +8653,7 @@
           "sellerCount": 63
         }
       },
-      "updatedAt": "2026-02-20T20:28:36.481Z"
+      "updatedAt": "2026-03-23T14:22:46.819Z"
     },
     {
       "set": "SV7",
@@ -9147,7 +9152,7 @@
           "sellerCount": 33
         }
       },
-      "updatedAt": "2026-02-20T20:28:54.469Z"
+      "updatedAt": "2026-03-23T14:28:51.237Z"
     },
     {
       "set": "SV7A",
@@ -10550,7 +10555,7 @@
           "sellerCount": 60
         }
       },
-      "updatedAt": "2026-02-20T20:28:54.469Z"
+      "updatedAt": "2026-03-23T14:31:09.118Z"
     },
     {
       "set": "SV7A",
@@ -12019,7 +12024,7 @@
           "sellerCount": 79
         }
       },
-      "updatedAt": "2026-02-20T20:32:16.241Z"
+      "updatedAt": "2026-03-23T14:28:13.679Z"
     },
     {
       "set": "SV8",
@@ -12612,7 +12617,7 @@
           "sellerCount": 42
         }
       },
-      "updatedAt": "2026-02-20T20:32:36.839Z"
+      "updatedAt": "2026-03-23T14:22:12.016Z"
     },
     {
       "set": "SV8A",
@@ -13117,7 +13122,7 @@
           "sellerCount": 70
         }
       },
-      "updatedAt": "2026-02-20T20:32:36.839Z"
+      "updatedAt": "2026-03-23T14:30:28.608Z"
     },
     {
       "set": "SV8A",
@@ -13801,7 +13806,7 @@
           "sellerCount": 80
         }
       },
-      "updatedAt": "2026-02-20T20:32:36.839Z"
+      "updatedAt": "2026-03-23T14:28:47.533Z"
     },
     {
       "set": "SV8A",
@@ -14367,7 +14372,7 @@
           "sellerCount": 53
         }
       },
-      "updatedAt": "2026-02-20T20:32:36.839Z"
+      "updatedAt": "2026-03-23T14:30:31.999Z"
     },
     {
       "set": "SV8A",
@@ -18863,7 +18868,7 @@
           "sellerCount": 24
         }
       },
-      "updatedAt": "2026-02-20T20:38:27.589Z"
+      "updatedAt": "2026-03-23T14:27:34.824Z"
     },
     {
       "set": "SV10",
@@ -19410,7 +19415,7 @@
           "sellerCount": 61
         }
       },
-      "updatedAt": "2026-02-20T20:38:27.589Z"
+      "updatedAt": "2026-03-23T14:31:32.220Z"
     },
     {
       "set": "SV10",
@@ -19516,7 +19521,7 @@
           "sellerCount": 38
         }
       },
-      "updatedAt": "2026-02-20T20:38:27.589Z"
+      "updatedAt": "2026-03-23T14:31:46.806Z"
     },
     {
       "set": "SV10",
@@ -19573,7 +19578,7 @@
           "sellerCount": 24
         }
       },
-      "updatedAt": "2026-02-20T20:38:27.589Z"
+      "updatedAt": "2026-03-23T14:26:39.300Z"
     },
     {
       "set": "SV10",
@@ -19730,7 +19735,7 @@
           "sellerCount": 37
         }
       },
-      "updatedAt": "2026-02-20T20:38:27.589Z"
+      "updatedAt": "2026-03-23T14:29:00.378Z"
     },
     {
       "set": "SV10",
@@ -20532,7 +20537,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/636526_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 2500,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215359-a?_pos=9&_sid=0df94ccaa&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 1600,
           "url": "https://shop.japan-toreca.com/products/pokemon-215359-b?_pos=9&_sid=0df94ccaa&_ss=r",
@@ -20567,7 +20577,7 @@
           "sellerCount": 31
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.023Z"
+      "updatedAt": "2026-03-23T14:27:10.787Z"
     },
     {
       "set": "SV11B",
@@ -20624,7 +20634,7 @@
           "sellerCount": 38
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.023Z"
+      "updatedAt": "2026-03-23T14:25:04.684Z"
     },
     {
       "set": "SV11B",
@@ -21596,7 +21606,7 @@
           "sellerCount": 34
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.023Z"
+      "updatedAt": "2026-03-23T14:26:42.487Z"
     },
     {
       "set": "SV11B",
@@ -21653,7 +21663,7 @@
           "sellerCount": 44
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.023Z"
+      "updatedAt": "2026-03-23T14:26:11.157Z"
     },
     {
       "set": "SV11B",
@@ -22039,7 +22049,7 @@
           "sellerCount": 25
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.023Z"
+      "updatedAt": "2026-03-23T14:25:30.309Z"
     },
     {
       "set": "SV11B",
@@ -22200,7 +22210,7 @@
           "sellerCount": 39
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.023Z"
+      "updatedAt": "2026-03-23T14:23:46.862Z"
     },
     {
       "set": "SV11B",
@@ -22252,7 +22262,7 @@
           "sellerCount": 34
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.023Z"
+      "updatedAt": "2026-03-23T14:32:24.616Z"
     },
     {
       "set": "SV11B",
@@ -22304,7 +22314,7 @@
           "sellerCount": 36
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.023Z"
+      "updatedAt": "2026-03-23T14:26:45.606Z"
     },
     {
       "set": "SV11B",
@@ -22584,7 +22594,7 @@
           "sellerCount": 25
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.023Z"
+      "updatedAt": "2026-03-23T14:23:59.695Z"
     },
     {
       "set": "SV11B",
@@ -23348,7 +23358,7 @@
           "sellerCount": 36
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.023Z"
+      "updatedAt": "2026-03-23T14:28:22.922Z"
     },
     {
       "set": "SV11B",
@@ -23619,7 +23629,7 @@
           "sellerCount": 35
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.023Z"
+      "updatedAt": "2026-03-23T14:32:56.989Z"
     },
     {
       "set": "SV11B",
@@ -23942,7 +23952,7 @@
           "sellerCount": 34
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.024Z"
+      "updatedAt": "2026-03-23T14:27:36.648Z"
     },
     {
       "set": "SV11B",
@@ -24380,7 +24390,7 @@
           "sellerCount": 28
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.024Z"
+      "updatedAt": "2026-03-23T14:24:34.195Z"
     },
     {
       "set": "SV11B",
@@ -24437,7 +24447,7 @@
           "sellerCount": 28
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.024Z"
+      "updatedAt": "2026-03-23T14:24:57.217Z"
     },
     {
       "set": "SV11B",
@@ -24485,7 +24495,7 @@
           "sellerCount": 42
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.024Z"
+      "updatedAt": "2026-03-23T14:28:30.772Z"
     },
     {
       "set": "SV11B",
@@ -24594,7 +24604,7 @@
           "sellerCount": 29
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.024Z"
+      "updatedAt": "2026-03-23T14:28:32.543Z"
     },
     {
       "set": "SV11B",
@@ -24721,7 +24731,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/636449_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 750,
+          "url": "https://shop.japan-toreca.com/products/pokemon-215282-a?_pos=173&_sid=2930fd8da&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 400,
           "url": "https://shop.japan-toreca.com/products/pokemon-215282-b?_pos=173&_sid=2930fd8da&_ss=r",
@@ -24756,7 +24771,7 @@
           "sellerCount": 21
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.024Z"
+      "updatedAt": "2026-03-23T14:21:37.018Z"
     },
     {
       "set": "SV11B",
@@ -24984,7 +24999,7 @@
           "sellerCount": 33
         }
       },
-      "updatedAt": "2026-02-20T20:40:38.024Z"
+      "updatedAt": "2026-03-23T14:31:15.675Z"
     },
     {
       "set": "SV11B",
@@ -25309,7 +25324,7 @@
           "sellerCount": 26
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:33:22.394Z"
     },
     {
       "set": "SV11W",
@@ -25466,7 +25481,7 @@
           "sellerCount": 19
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:33:24.379Z"
     },
     {
       "set": "SV11W",
@@ -25570,7 +25585,7 @@
           "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:27:59.094Z"
     },
     {
       "set": "SV11W",
@@ -26287,7 +26302,7 @@
           "sellerCount": 35
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:25:06.419Z"
     },
     {
       "set": "SV11W",
@@ -26344,7 +26359,7 @@
           "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:28:34.400Z"
     },
     {
       "set": "SV11W",
@@ -26501,7 +26516,7 @@
           "sellerCount": 36
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:19:56.348Z"
     },
     {
       "set": "SV11W",
@@ -26942,7 +26957,7 @@
           "sellerCount": 29
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:30:54.336Z"
     },
     {
       "set": "SV11W",
@@ -27331,7 +27346,7 @@
           "sellerCount": 38
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:31:58.796Z"
     },
     {
       "set": "SV11W",
@@ -28095,7 +28110,7 @@
           "sellerCount": 47
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:24:14.776Z"
     },
     {
       "set": "SV11W",
@@ -28313,7 +28328,7 @@
           "sellerCount": 36
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:33:26.209Z"
     },
     {
       "set": "SV11W",
@@ -28537,7 +28552,7 @@
           "sellerCount": 33
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:32:44.032Z"
     },
     {
       "set": "SV11W",
@@ -28703,7 +28718,7 @@
           "sellerCount": 18
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:24:02.934Z"
     },
     {
       "set": "SV11W",
@@ -28917,7 +28932,7 @@
           "sellerCount": 34
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:30:34.011Z"
     },
     {
       "set": "SV11W",
@@ -29084,7 +29099,7 @@
           "sellerCount": 22
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:30:35.831Z"
     },
     {
       "set": "SV11W",
@@ -29141,7 +29156,7 @@
           "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:26:48.728Z"
     },
     {
       "set": "SV11W",
@@ -29245,7 +29260,7 @@
           "sellerCount": 37
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.401Z"
+      "updatedAt": "2026-03-23T14:30:48.957Z"
     },
     {
       "set": "SV11W",
@@ -29302,7 +29317,7 @@
           "sellerCount": 28
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.402Z"
+      "updatedAt": "2026-03-23T14:20:02.170Z"
     },
     {
       "set": "SV11W",
@@ -29416,7 +29431,7 @@
           "sellerCount": 38
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.402Z"
+      "updatedAt": "2026-03-23T14:33:43.219Z"
     },
     {
       "set": "SV11W",
@@ -29736,7 +29751,7 @@
           "sellerCount": 18
         }
       },
-      "updatedAt": "2026-02-20T20:42:52.402Z"
+      "updatedAt": "2026-03-23T14:26:08.015Z"
     },
     {
       "set": "SV11W",
@@ -30007,7 +30022,7 @@
           "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-20T20:44:39.760Z"
+      "updatedAt": "2026-03-23T14:20:55.389Z"
     },
     {
       "set": "S12",
@@ -30060,7 +30075,7 @@
           "sellerCount": 15
         }
       },
-      "updatedAt": "2026-02-20T20:44:39.760Z"
+      "updatedAt": "2026-03-23T14:28:06.371Z"
     },
     {
       "set": "S12",
@@ -30609,7 +30624,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T20:44:39.760Z"
+      "updatedAt": "2026-03-23T14:31:24.050Z"
     },
     {
       "set": "S12",
@@ -31608,7 +31623,7 @@
           "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-20T20:49:07.326Z"
+      "updatedAt": "2026-03-23T14:30:56.306Z"
     },
     {
       "set": "S8",
@@ -31888,7 +31903,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T20:49:07.326Z"
+      "updatedAt": "2026-03-23T14:26:51.834Z"
     },
     {
       "set": "S8",
@@ -32173,7 +32188,7 @@
           "sellerCount": 13
         }
       },
-      "updatedAt": "2026-02-20T20:49:07.326Z"
+      "updatedAt": "2026-03-23T14:30:03.019Z"
     },
     {
       "set": "S8",
@@ -32283,7 +32298,7 @@
           "sellerCount": 15
         }
       },
-      "updatedAt": "2026-02-20T20:49:07.326Z"
+      "updatedAt": "2026-03-23T14:33:00.264Z"
     },
     {
       "set": "S8",
@@ -32558,7 +32573,7 @@
           "sellerCount": 19
         }
       },
-      "updatedAt": "2026-02-20T20:49:07.327Z"
+      "updatedAt": "2026-03-23T14:22:49.940Z"
     },
     {
       "set": "S8A",
@@ -32962,7 +32977,7 @@
           "sellerCount": 11
         }
       },
-      "updatedAt": "2026-02-20T20:52:37.081Z"
+      "updatedAt": "2026-03-23T14:19:20.546Z"
     },
     {
       "set": "S9",
@@ -33409,7 +33424,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T20:52:37.081Z"
+      "updatedAt": "2026-03-23T14:31:34.042Z"
     },
     {
       "set": "S9",
@@ -33523,7 +33538,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T20:52:37.081Z"
+      "updatedAt": "2026-03-23T14:23:18.723Z"
     },
     {
       "set": "S9",
@@ -33637,7 +33652,7 @@
           "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-20T20:52:37.081Z"
+      "updatedAt": "2026-03-23T14:25:57.809Z"
     },
     {
       "set": "S9",
@@ -33751,7 +33766,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T20:52:37.081Z"
+      "updatedAt": "2026-03-23T14:20:51.952Z"
     },
     {
       "set": "S9",
@@ -34260,7 +34275,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T20:53:02.798Z"
+      "updatedAt": "2026-03-23T14:25:19.220Z"
     },
     {
       "set": "S9A",
@@ -34313,7 +34328,7 @@
           "sellerCount": 13
         }
       },
-      "updatedAt": "2026-02-20T20:53:02.798Z"
+      "updatedAt": "2026-03-23T14:25:08.227Z"
     },
     {
       "set": "S9A",
@@ -34370,7 +34385,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T20:53:02.798Z"
+      "updatedAt": "2026-03-23T14:33:45.072Z"
     },
     {
       "set": "S9A",
@@ -34598,7 +34613,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T20:53:02.798Z"
+      "updatedAt": "2026-03-23T14:33:28.134Z"
     },
     {
       "set": "S9A",
@@ -34712,7 +34727,7 @@
           "sellerCount": 49
         }
       },
-      "updatedAt": "2026-02-20T20:53:02.798Z"
+      "updatedAt": "2026-03-23T14:29:34.909Z"
     },
     {
       "set": "S9A",
@@ -34826,7 +34841,7 @@
           "sellerCount": 15
         }
       },
-      "updatedAt": "2026-02-20T20:53:02.798Z"
+      "updatedAt": "2026-03-23T14:27:38.485Z"
     },
     {
       "set": "S9A",
@@ -35610,7 +35625,7 @@
           "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-20T20:53:59.879Z"
+      "updatedAt": "2026-03-23T14:19:16.608Z"
     },
     {
       "set": "S10D",
@@ -35939,7 +35954,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T20:53:59.879Z"
+      "updatedAt": "2026-03-23T14:32:27.817Z"
     },
     {
       "set": "S10D",
@@ -35996,7 +36011,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T20:53:59.879Z"
+      "updatedAt": "2026-03-23T14:32:47.257Z"
     },
     {
       "set": "S10D",
@@ -36048,7 +36063,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T20:53:59.879Z"
+      "updatedAt": "2026-03-23T14:33:29.892Z"
     },
     {
       "set": "S10D",
@@ -36105,7 +36120,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T20:53:59.879Z"
+      "updatedAt": "2026-03-23T14:19:24.329Z"
     },
     {
       "set": "S10D",
@@ -36328,7 +36343,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T20:54:47.632Z"
+      "updatedAt": "2026-03-23T14:32:31.056Z"
     },
     {
       "set": "S10P",
@@ -36608,7 +36623,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T20:54:47.632Z"
+      "updatedAt": "2026-03-23T14:25:20.996Z"
     },
     {
       "set": "S10P",
@@ -36665,7 +36680,7 @@
           "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-20T20:54:47.632Z"
+      "updatedAt": "2026-03-23T14:30:58.106Z"
     },
     {
       "set": "S10P",
@@ -36893,7 +36908,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T20:54:47.632Z"
+      "updatedAt": "2026-03-23T14:23:37.723Z"
     },
     {
       "set": "S10P",
@@ -37216,7 +37231,7 @@
           "sellerCount": 13
         }
       },
-      "updatedAt": "2026-02-20T20:54:47.647Z"
+      "updatedAt": "2026-03-23T14:24:37.777Z"
     },
     {
       "set": "S11",
@@ -37663,7 +37678,7 @@
           "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-20T20:54:47.647Z"
+      "updatedAt": "2026-03-23T14:21:15.959Z"
     },
     {
       "set": "S11",
@@ -37890,7 +37905,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T20:54:47.647Z"
+      "updatedAt": "2026-03-23T14:32:01.983Z"
     },
     {
       "set": "S11",
@@ -37984,7 +37999,7 @@
           "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-20T20:54:47.647Z"
+      "updatedAt": "2026-03-23T14:33:47.217Z"
     },
     {
       "set": "S11",
@@ -38296,7 +38311,7 @@
           "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-20T20:55:09.085Z"
+      "updatedAt": "2026-03-23T14:22:26.167Z"
     },
     {
       "set": "S11A",
@@ -38458,7 +38473,7 @@
           "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-20T20:55:09.085Z"
+      "updatedAt": "2026-03-23T14:32:34.281Z"
     },
     {
       "set": "S11A",
@@ -38800,7 +38815,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T20:55:09.085Z"
+      "updatedAt": "2026-03-23T14:31:48.607Z"
     },
     {
       "set": "S11A",
@@ -39619,7 +39634,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T20:55:48.471Z"
+      "updatedAt": "2026-03-23T14:31:50.530Z"
     },
     {
       "set": "S7D",
@@ -39689,7 +39704,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/569399_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 6200,
+          "url": "https://shop.japan-toreca.com/products/pokemon-12738-a?_pos=31&_sid=ac384e72a&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 3900,
           "url": "https://shop.japan-toreca.com/products/pokemon-12738-b?_pos=31&_sid=ac384e72a&_ss=r",
@@ -39724,7 +39744,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T20:55:48.471Z"
+      "updatedAt": "2026-03-23T14:27:40.673Z"
     },
     {
       "set": "S7D",
@@ -39891,7 +39911,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T20:55:48.471Z"
+      "updatedAt": "2026-03-23T14:20:07.227Z"
     },
     {
       "set": "S7D",
@@ -39948,7 +39968,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T20:55:48.471Z"
+      "updatedAt": "2026-03-23T14:25:11.874Z"
     },
     {
       "set": "S7D",
@@ -40114,7 +40134,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T20:55:48.471Z"
+      "updatedAt": "2026-03-23T14:22:43.701Z"
     },
     {
       "set": "S7D",
@@ -40171,7 +40191,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T20:55:48.471Z"
+      "updatedAt": "2026-03-23T14:21:26.407Z"
     },
     {
       "set": "S7D",
@@ -40281,7 +40301,7 @@
           "sellerCount": 25
         }
       },
-      "updatedAt": "2026-02-20T20:55:48.471Z"
+      "updatedAt": "2026-03-23T14:28:24.690Z"
     },
     {
       "set": "S7D",
@@ -40386,7 +40406,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T20:56:36.539Z"
+      "updatedAt": "2026-03-23T14:31:37.012Z"
     },
     {
       "set": "S7R",
@@ -40486,7 +40506,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T20:56:36.539Z"
+      "updatedAt": "2026-03-23T14:25:13.624Z"
     },
     {
       "set": "S7R",
@@ -40644,7 +40664,7 @@
           "sellerCount": 11
         }
       },
-      "updatedAt": "2026-02-20T20:56:36.539Z"
+      "updatedAt": "2026-03-23T14:26:54.942Z"
     },
     {
       "set": "S7R",
@@ -41002,7 +41022,7 @@
           "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-20T20:56:36.539Z"
+      "updatedAt": "2026-03-23T14:30:59.967Z"
     },
     {
       "set": "S7R",
@@ -41304,7 +41324,7 @@
         },
         "b": {
           "priceJPY": 50,
-          "url": "https://shop.japan-toreca.com/products/pokemon-12761-b?_pos=8&_sid=c2233fc63&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-12761-b?_pos=9&_sid=c2233fc63&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -41340,7 +41360,7 @@
           "sellerCount": 41
         }
       },
-      "updatedAt": "2026-02-20T20:56:36.539Z"
+      "updatedAt": "2026-03-23T14:24:53.501Z"
     },
     {
       "set": "S1W",
@@ -41588,7 +41608,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T20:57:15.193Z"
+      "updatedAt": "2026-03-23T14:23:40.850Z"
     },
     {
       "set": "S1W",
@@ -41698,7 +41718,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T20:57:15.193Z"
+      "updatedAt": "2026-03-23T14:24:55.368Z"
     },
     {
       "set": "S1W",
@@ -41755,7 +41775,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T20:57:15.193Z"
+      "updatedAt": "2026-03-23T14:26:20.526Z"
     },
     {
       "set": "S1W",
@@ -41812,7 +41832,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T20:57:15.193Z"
+      "updatedAt": "2026-03-23T14:31:01.733Z"
     },
     {
       "set": "S1W",
@@ -41825,9 +41845,14 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/568548_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 250,
+          "url": "https://shop.japan-toreca.com/products/pokemon-10640-a?_pos=5&_sid=039b4f69b&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
-          "priceJPY": 80,
+          "priceJPY": 150,
           "url": "https://shop.japan-toreca.com/products/pokemon-10640-b?_pos=5&_sid=039b4f69b&_ss=r",
           "quality": "B",
           "inStock": false
@@ -41860,7 +41885,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T20:57:15.193Z"
+      "updatedAt": "2026-03-23T14:20:41.759Z"
     },
     {
       "set": "S1W",
@@ -41913,7 +41938,7 @@
           "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-20T20:57:15.193Z"
+      "updatedAt": "2026-03-23T14:20:11.120Z"
     },
     {
       "set": "S1H",
@@ -42231,7 +42256,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T20:57:47.323Z"
+      "updatedAt": "2026-03-23T14:22:59.432Z"
     },
     {
       "set": "S1H",
@@ -42394,7 +42419,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T20:57:47.323Z"
+      "updatedAt": "2026-03-23T14:19:40.738Z"
     },
     {
       "set": "S1H",
@@ -42500,7 +42525,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T20:57:47.323Z"
+      "updatedAt": "2026-03-23T14:19:12.760Z"
     },
     {
       "set": "S2",
@@ -42643,7 +42668,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T20:59:17.733Z"
+      "updatedAt": "2026-03-23T14:28:15.641Z"
     },
     {
       "set": "S2",
@@ -42700,7 +42725,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T20:59:17.733Z"
+      "updatedAt": "2026-03-23T14:25:33.102Z"
     },
     {
       "set": "S2",
@@ -42757,7 +42782,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T20:59:17.733Z"
+      "updatedAt": "2026-03-23T14:23:02.556Z"
     },
     {
       "set": "S2",
@@ -42814,7 +42839,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T20:59:17.733Z"
+      "updatedAt": "2026-03-23T14:19:46.588Z"
     },
     {
       "set": "S2",
@@ -42937,7 +42962,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/568687_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 950,
+          "url": "https://shop.japan-toreca.com/products/pokemon-10940-a?_pos=33&_sid=228c7d4ab&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 350,
           "url": "https://shop.japan-toreca.com/products/pokemon-10940-b?_pos=33&_sid=228c7d4ab&_ss=r",
@@ -42976,7 +43006,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T20:59:17.733Z"
+      "updatedAt": "2026-03-23T14:28:08.422Z"
     },
     {
       "set": "S2",
@@ -43029,7 +43059,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T20:59:17.733Z"
+      "updatedAt": "2026-03-23T14:33:02.297Z"
     },
     {
       "set": "S2",
@@ -43081,7 +43111,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T20:59:17.733Z"
+      "updatedAt": "2026-03-23T14:25:42.441Z"
     },
     {
       "set": "S2",
@@ -43134,7 +43164,7 @@
           "sellerCount": 16
         }
       },
-      "updatedAt": "2026-02-20T20:59:17.733Z"
+      "updatedAt": "2026-03-23T14:21:22.817Z"
     },
     {
       "set": "S2",
@@ -43147,7 +43177,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/568659_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 150,
+          "url": "https://shop.japan-toreca.com/products/pokemon-10923-a?_pos=6&_sid=c20112d84&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 50,
           "url": "https://shop.japan-toreca.com/products/pokemon-10923-b?_pos=6&_sid=c20112d84&_ss=r",
@@ -43182,7 +43217,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T20:59:17.733Z"
+      "updatedAt": "2026-03-23T14:19:34.887Z"
     },
     {
       "set": "S2",
@@ -43230,7 +43265,7 @@
           "sellerCount": 16
         }
       },
-      "updatedAt": "2026-02-20T20:59:17.733Z"
+      "updatedAt": "2026-03-23T14:18:58.750Z"
     },
     {
       "set": "S2",
@@ -43283,7 +43318,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T20:59:17.733Z"
+      "updatedAt": "2026-03-23T14:19:28.713Z"
     },
     {
       "set": "S3",
@@ -43445,7 +43480,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:00:38.427Z"
+      "updatedAt": "2026-03-23T14:28:26.502Z"
     },
     {
       "set": "S3",
@@ -43458,7 +43493,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/568816_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 450,
+          "url": "https://shop.japan-toreca.com/products/pokemon-11192-a?_pos=31&_sid=ca8fe6e1a&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 250,
           "url": "https://shop.japan-toreca.com/products/pokemon-11192-b?_pos=31&_sid=ca8fe6e1a&_ss=r",
@@ -43497,7 +43537,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:00:38.427Z"
+      "updatedAt": "2026-03-23T14:23:50.085Z"
     },
     {
       "set": "S3",
@@ -43554,7 +43594,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:00:38.427Z"
+      "updatedAt": "2026-03-23T14:18:56.701Z"
     },
     {
       "set": "S3",
@@ -43575,7 +43615,7 @@
         },
         "b": {
           "priceJPY": 200,
-          "url": "https://shop.japan-toreca.com/products/pokemon-11180-b?_pos=37&_sid=ca8fe6e1a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-11180-b?_pos=39&_sid=ca8fe6e1a&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -43611,7 +43651,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:00:38.427Z"
+      "updatedAt": "2026-03-23T14:24:28.401Z"
     },
     {
       "set": "S3",
@@ -43680,7 +43720,7 @@
         },
         "b": {
           "priceJPY": 550,
-          "url": "https://shop.japan-toreca.com/products/pokemon-11178-b?_pos=35&_sid=ca8fe6e1a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-11178-b?_pos=14&_sid=ca8fe6e1a&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -43716,7 +43756,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:00:38.427Z"
+      "updatedAt": "2026-03-23T14:29:19.352Z"
     },
     {
       "set": "S3",
@@ -43794,7 +43834,7 @@
         },
         "b": {
           "priceJPY": 100,
-          "url": "https://shop.japan-toreca.com/products/pokemon-11175-b?_pos=43&_sid=ca8fe6e1a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-11175-b?_pos=12&_sid=ca8fe6e1a&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -43830,7 +43870,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:00:38.427Z"
+      "updatedAt": "2026-03-23T14:31:18.102Z"
     },
     {
       "set": "S3",
@@ -43939,7 +43979,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:00:38.427Z"
+      "updatedAt": "2026-03-23T14:27:46.614Z"
     },
     {
       "set": "S3",
@@ -43996,7 +44036,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T21:00:38.427Z"
+      "updatedAt": "2026-03-23T14:25:24.752Z"
     },
     {
       "set": "S3",
@@ -44053,7 +44093,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:00:38.427Z"
+      "updatedAt": "2026-03-23T14:19:06.852Z"
     },
     {
       "set": "S3",
@@ -44110,7 +44150,7 @@
           "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-20T21:00:38.427Z"
+      "updatedAt": "2026-03-23T14:20:34.903Z"
     },
     {
       "set": "S3",
@@ -44167,7 +44207,7 @@
           "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-20T21:00:38.427Z"
+      "updatedAt": "2026-03-23T14:25:45.490Z"
     },
     {
       "set": "S3A",
@@ -44276,7 +44316,7 @@
           "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-20T21:00:57.346Z"
+      "updatedAt": "2026-03-23T14:24:16.588Z"
     },
     {
       "set": "S3A",
@@ -44390,7 +44430,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-20T21:00:57.346Z"
+      "updatedAt": "2026-03-23T14:32:37.544Z"
     },
     {
       "set": "S3A",
@@ -44665,7 +44705,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:00:57.346Z"
+      "updatedAt": "2026-03-23T14:23:53.276Z"
     },
     {
       "set": "S3A",
@@ -44779,7 +44819,7 @@
           "sellerCount": 17
         }
       },
-      "updatedAt": "2026-02-20T21:00:57.346Z"
+      "updatedAt": "2026-03-23T14:23:24.973Z"
     },
     {
       "set": "S3A",
@@ -44893,7 +44933,7 @@
           "sellerCount": 43
         }
       },
-      "updatedAt": "2026-02-20T21:00:57.346Z"
+      "updatedAt": "2026-03-23T14:27:07.452Z"
     },
     {
       "set": "S3A",
@@ -44950,7 +44990,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:00:57.346Z"
+      "updatedAt": "2026-03-23T14:23:28.102Z"
     },
     {
       "set": "S4",
@@ -45094,7 +45134,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T21:03:43.101Z"
+      "updatedAt": "2026-03-23T14:24:45.150Z"
     },
     {
       "set": "S4",
@@ -45208,7 +45248,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T21:03:43.101Z"
+      "updatedAt": "2026-03-23T14:30:50.772Z"
     },
     {
       "set": "S4",
@@ -45318,7 +45358,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:03:43.101Z"
+      "updatedAt": "2026-03-23T14:25:36.257Z"
     },
     {
       "set": "S4",
@@ -45484,7 +45524,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:03:43.101Z"
+      "updatedAt": "2026-03-23T14:30:06.133Z"
     },
     {
       "set": "S4",
@@ -45742,7 +45782,7 @@
           "sellerCount": 32
         }
       },
-      "updatedAt": "2026-02-20T21:03:43.101Z"
+      "updatedAt": "2026-03-23T14:33:04.162Z"
     },
     {
       "set": "S4",
@@ -45905,7 +45945,7 @@
           "sellerCount": 44
         }
       },
-      "updatedAt": "2026-02-20T21:03:43.101Z"
+      "updatedAt": "2026-03-23T14:20:21.299Z"
     },
     {
       "set": "S4A",
@@ -46119,7 +46159,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T21:04:03.793Z"
+      "updatedAt": "2026-03-23T14:29:22.449Z"
     },
     {
       "set": "S4A",
@@ -46644,7 +46684,7 @@
         },
         "b": {
           "priceJPY": 70,
-          "url": "https://shop.japan-toreca.com/products/pokemon-11749-b?_pos=30&_sid=9de1f632a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-11749-b?_pos=20&_sid=9de1f632a&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -46680,7 +46720,7 @@
           "sellerCount": 47
         }
       },
-      "updatedAt": "2026-02-20T21:04:03.793Z"
+      "updatedAt": "2026-03-23T14:27:01.167Z"
     },
     {
       "set": "S4A",
@@ -46860,7 +46900,7 @@
         },
         "b": {
           "priceJPY": 70,
-          "url": "https://shop.japan-toreca.com/products/pokemon-11668-b?_pos=29&_sid=9de1f632a&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-11668-b?_pos=18&_sid=9de1f632a&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -46892,7 +46932,7 @@
           "sellerCount": 68
         }
       },
-      "updatedAt": "2026-02-20T21:04:03.793Z"
+      "updatedAt": "2026-03-23T14:26:04.910Z"
     },
     {
       "set": "S4A",
@@ -47155,7 +47195,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:04:46.503Z"
+      "updatedAt": "2026-03-23T14:33:06.048Z"
     },
     {
       "set": "S5I",
@@ -47212,7 +47252,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T21:04:46.503Z"
+      "updatedAt": "2026-03-23T14:24:32.274Z"
     },
     {
       "set": "S5I",
@@ -47269,7 +47309,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T21:04:46.503Z"
+      "updatedAt": "2026-03-23T14:31:20.154Z"
     },
     {
       "set": "S5I",
@@ -47326,7 +47366,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T21:04:46.503Z"
+      "updatedAt": "2026-03-23T14:25:22.875Z"
     },
     {
       "set": "S5I",
@@ -47598,7 +47638,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T21:04:46.503Z"
+      "updatedAt": "2026-03-23T14:31:39.014Z"
     },
     {
       "set": "S5I",
@@ -47655,7 +47695,7 @@
           "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-20T21:04:46.503Z"
+      "updatedAt": "2026-03-23T14:23:21.875Z"
     },
     {
       "set": "S5I",
@@ -47712,7 +47752,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T21:04:46.503Z"
+      "updatedAt": "2026-03-23T14:19:36.974Z"
     },
     {
       "set": "S5I",
@@ -47769,7 +47809,7 @@
           "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-20T21:04:46.503Z"
+      "updatedAt": "2026-03-23T14:23:08.797Z"
     },
     {
       "set": "S5I",
@@ -47883,7 +47923,7 @@
           "sellerCount": 26
         }
       },
-      "updatedAt": "2026-02-20T21:04:46.503Z"
+      "updatedAt": "2026-03-23T14:21:57.916Z"
     },
     {
       "set": "S5R",
@@ -48088,7 +48128,7 @@
           "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-20T21:05:32.204Z"
+      "updatedAt": "2026-03-23T14:23:05.644Z"
     },
     {
       "set": "S5R",
@@ -48166,7 +48206,7 @@
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-12147-b?_pos=28&_sid=23254caa3&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-12147-b?_pos=29&_sid=23254caa3&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -48202,7 +48242,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T21:05:32.204Z"
+      "updatedAt": "2026-03-23T14:22:01.452Z"
     },
     {
       "set": "S5R",
@@ -48216,14 +48256,14 @@
       },
       "japanToreca": {
         "aMinus": {
-          "priceJPY": 450,
+          "priceJPY": 400,
           "url": "https://shop.japan-toreca.com/products/pokemon-12146-a?_pos=10&_sid=23254caa3&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-12146-b?_pos=20&_sid=23254caa3&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-12146-b?_pos=10&_sid=23254caa3&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -48259,7 +48299,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:05:32.204Z"
+      "updatedAt": "2026-03-23T14:30:15.862Z"
     },
     {
       "set": "S5R",
@@ -48364,7 +48404,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:05:32.204Z"
+      "updatedAt": "2026-03-23T14:26:33.037Z"
     },
     {
       "set": "S5R",
@@ -48478,7 +48518,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:05:32.204Z"
+      "updatedAt": "2026-03-23T14:29:47.387Z"
     },
     {
       "set": "S5R",
@@ -48499,7 +48539,7 @@
         },
         "b": {
           "priceJPY": 50,
-          "url": "https://shop.japan-toreca.com/products/pokemon-12137-b?_pos=5&_sid=886c917e0&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-12137-b?_pos=6&_sid=886c917e0&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -48535,7 +48575,7 @@
           "sellerCount": 17
         }
       },
-      "updatedAt": "2026-02-20T21:05:32.204Z"
+      "updatedAt": "2026-03-23T14:33:49.529Z"
     },
     {
       "set": "S5R",
@@ -48592,7 +48632,7 @@
           "sellerCount": 23
         }
       },
-      "updatedAt": "2026-02-20T21:05:32.204Z"
+      "updatedAt": "2026-03-23T14:21:12.533Z"
     },
     {
       "set": "S5R",
@@ -48753,7 +48793,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-20T21:06:22.621Z"
+      "updatedAt": "2026-03-23T14:19:30.501Z"
     },
     {
       "set": "S6H",
@@ -48801,7 +48841,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:06:22.621Z"
+      "updatedAt": "2026-03-23T14:24:24.240Z"
     },
     {
       "set": "S6H",
@@ -48972,7 +49012,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T21:06:22.621Z"
+      "updatedAt": "2026-03-23T14:27:13.718Z"
     },
     {
       "set": "S6H",
@@ -49355,7 +49395,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T21:06:22.621Z"
+      "updatedAt": "2026-03-23T14:20:24.650Z"
     },
     {
       "set": "S6H",
@@ -49460,7 +49500,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T21:06:22.621Z"
+      "updatedAt": "2026-03-23T14:28:53.109Z"
     },
     {
       "set": "S6H",
@@ -49517,7 +49557,7 @@
           "sellerCount": 24
         }
       },
-      "updatedAt": "2026-02-20T21:06:22.621Z"
+      "updatedAt": "2026-03-23T14:28:17.365Z"
     },
     {
       "set": "S6H",
@@ -49595,7 +49635,7 @@
         },
         "b": {
           "priceJPY": 70,
-          "url": "https://shop.japan-toreca.com/products/pokemon-12330-b?_pos=6&_sid=0f6bb894e&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-12330-b?_pos=7&_sid=0f6bb894e&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -49628,10 +49668,10 @@
         "tcgplayer": {
           "marketPrice": 0.77,
           "url": "https://www.tcgplayer.com/product/569176",
-          "sellerCount": null
+          "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:06:22.621Z"
+      "updatedAt": "2026-03-23T14:32:05.317Z"
     },
     {
       "set": "S6H",
@@ -49784,7 +49824,7 @@
           "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-20T21:07:31.445Z"
+      "updatedAt": "2026-03-23T14:31:40.845Z"
     },
     {
       "set": "S6K",
@@ -49945,7 +49985,7 @@
           "sellerCount": 20
         }
       },
-      "updatedAt": "2026-02-20T21:07:31.445Z"
+      "updatedAt": "2026-03-23T14:25:54.750Z"
     },
     {
       "set": "S6K",
@@ -50221,7 +50261,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T21:07:31.445Z"
+      "updatedAt": "2026-03-23T14:21:54.531Z"
     },
     {
       "set": "S6K",
@@ -50383,7 +50423,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T21:07:31.445Z"
+      "updatedAt": "2026-03-23T14:27:29.464Z"
     },
     {
       "set": "S6K",
@@ -50488,7 +50528,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:07:31.445Z"
+      "updatedAt": "2026-03-23T14:31:52.550Z"
     },
     {
       "set": "S6K",
@@ -50602,7 +50642,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T21:07:31.445Z"
+      "updatedAt": "2026-03-23T14:30:39.500Z"
     },
     {
       "set": "S6K",
@@ -50659,7 +50699,7 @@
           "sellerCount": 49
         }
       },
-      "updatedAt": "2026-02-20T21:07:31.445Z"
+      "updatedAt": "2026-03-23T14:21:51.041Z"
     },
     {
       "set": "S6K",
@@ -50873,7 +50913,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T21:20:10.585Z"
+      "updatedAt": "2026-03-23T14:25:15.465Z"
     },
     {
       "set": "SM10",
@@ -50987,7 +51027,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-20T21:20:10.585Z"
+      "updatedAt": "2026-03-23T14:30:37.707Z"
     },
     {
       "set": "SM10",
@@ -51040,7 +51080,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T21:20:10.585Z"
+      "updatedAt": "2026-03-23T14:25:17.283Z"
     },
     {
       "set": "SM10",
@@ -51171,7 +51211,7 @@
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-8315-b?_pos=7&_sid=9dfc10d08&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-8315-b?_pos=45&_sid=9dfc10d08&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -51207,7 +51247,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T21:20:10.585Z"
+      "updatedAt": "2026-03-23T14:23:34.595Z"
     },
     {
       "set": "SM10",
@@ -51264,7 +51304,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-20T21:20:10.585Z"
+      "updatedAt": "2026-03-23T14:24:18.495Z"
     },
     {
       "set": "SM10",
@@ -51374,7 +51414,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:20:10.585Z"
+      "updatedAt": "2026-03-23T14:29:25.541Z"
     },
     {
       "set": "SM10",
@@ -51484,7 +51524,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T21:20:10.585Z"
+      "updatedAt": "2026-03-23T14:24:06.114Z"
     },
     {
       "set": "SM10",
@@ -51688,7 +51728,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-20T21:20:31.107Z"
+      "updatedAt": "2026-03-23T14:30:41.497Z"
     },
     {
       "set": "SM10A",
@@ -51798,7 +51838,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:20:31.107Z"
+      "updatedAt": "2026-03-23T14:20:00.348Z"
     },
     {
       "set": "SM10A",
@@ -51920,7 +51960,7 @@
         },
         "b": {
           "priceJPY": 350,
-          "url": "https://shop.japan-toreca.com/products/pokemon-8881-b?_pos=41&_sid=86fb51531&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-8881-b?_pos=6&_sid=86fb51531&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -51956,7 +51996,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-20T21:20:31.107Z"
+      "updatedAt": "2026-03-23T14:22:15.612Z"
     },
     {
       "set": "SM10A",
@@ -52219,7 +52259,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:20:50.860Z"
+      "updatedAt": "2026-03-23T14:23:11.925Z"
     },
     {
       "set": "SM10B",
@@ -52377,7 +52417,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:20:50.860Z"
+      "updatedAt": "2026-03-23T14:19:18.479Z"
     },
     {
       "set": "SM10B",
@@ -53642,7 +53682,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/575010_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 2100,
+          "url": "https://shop.japan-toreca.com/products/pokemon-9253-a?_pos=38&_sid=21e591036&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 1200,
           "url": "https://shop.japan-toreca.com/products/pokemon-9253-b?_pos=38&_sid=21e591036&_ss=r",
@@ -53677,7 +53722,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T21:22:53.143Z"
+      "updatedAt": "2026-03-23T14:20:58.795Z"
     },
     {
       "set": "SM11A",
@@ -54088,7 +54133,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T21:24:49.391Z"
+      "updatedAt": "2026-03-23T14:32:14.912Z"
     },
     {
       "set": "SM12",
@@ -54350,7 +54395,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T21:24:49.391Z"
+      "updatedAt": "2026-03-23T14:24:12.718Z"
     },
     {
       "set": "SM12",
@@ -54455,7 +54500,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:24:49.391Z"
+      "updatedAt": "2026-03-23T14:24:26.175Z"
     },
     {
       "set": "SM12",
@@ -54521,7 +54566,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/572235_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 650,
+          "url": "https://shop.japan-toreca.com/products/pokemon-9409-a?_pos=13&_sid=8a0dd7019&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 350,
           "url": "https://shop.japan-toreca.com/products/pokemon-9409-b?_pos=13&_sid=8a0dd7019&_ss=r",
@@ -54556,7 +54606,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:24:49.391Z"
+      "updatedAt": "2026-03-23T14:20:31.478Z"
     },
     {
       "set": "SM12",
@@ -54609,7 +54659,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T21:24:49.391Z"
+      "updatedAt": "2026-03-23T14:20:12.925Z"
     },
     {
       "set": "SM12",
@@ -54622,7 +54672,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/572233_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 450,
+          "url": "https://shop.japan-toreca.com/products/pokemon-9407-a?_pos=66&_sid=8a0dd7019&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 250,
           "url": "https://shop.japan-toreca.com/products/pokemon-9407-b?_pos=66&_sid=8a0dd7019&_ss=r",
@@ -54661,7 +54716,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:24:49.391Z"
+      "updatedAt": "2026-03-23T14:20:19.191Z"
     },
     {
       "set": "SM12A",
@@ -55023,7 +55078,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/572863_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 350,
+          "url": "https://shop.japan-toreca.com/products/pokemon-9642-a?_pos=54&_sid=13792d71a&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 200,
           "url": "https://shop.japan-toreca.com/products/pokemon-9642-b?_pos=54&_sid=13792d71a&_ss=r",
@@ -55058,7 +55118,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:19:00.984Z"
     },
     {
       "set": "SM12A",
@@ -55371,7 +55431,7 @@
           "sellerCount": 13
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:26:14.276Z"
     },
     {
       "set": "SM12A",
@@ -55563,7 +55623,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:19:08.865Z"
     },
     {
       "set": "SM12A",
@@ -55658,7 +55718,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:25:26.682Z"
     },
     {
       "set": "SM12A",
@@ -55715,7 +55775,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:20:09.047Z"
     },
     {
       "set": "SM12A",
@@ -55825,7 +55885,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:19:50.463Z"
     },
     {
       "set": "SM12A",
@@ -55882,7 +55942,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:24:35.926Z"
     },
     {
       "set": "SM12A",
@@ -56040,7 +56100,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:33:31.867Z"
     },
     {
       "set": "SM12A",
@@ -56097,7 +56157,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:19:02.924Z"
     },
     {
       "set": "SM12A",
@@ -56571,7 +56631,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:23:15.512Z"
     },
     {
       "set": "SM12A",
@@ -56624,7 +56684,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:27:42.650Z"
     },
     {
       "set": "SM12A",
@@ -56681,7 +56741,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:33:33.694Z"
     },
     {
       "set": "SM12A",
@@ -56746,7 +56806,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/572830_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 6900,
+          "url": "https://shop.japan-toreca.com/products/pokemon-9552-a?_pos=106&_sid=13792d71a&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 5400,
           "url": "https://shop.japan-toreca.com/products/pokemon-9552-b?_pos=106&_sid=13792d71a&_ss=r",
@@ -56785,7 +56850,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:28:28.749Z"
     },
     {
       "set": "SM12A",
@@ -56895,7 +56960,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-20T21:25:11.316Z"
+      "updatedAt": "2026-03-23T14:27:04.332Z"
     },
     {
       "set": "SM11B",
@@ -57193,7 +57258,7 @@
           "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-20T21:25:28.737Z"
+      "updatedAt": "2026-03-23T14:32:18.172Z"
     },
     {
       "set": "SM11B",
@@ -57246,7 +57311,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T21:25:28.737Z"
+      "updatedAt": "2026-03-23T14:29:50.499Z"
     },
     {
       "set": "SM11B",
@@ -57458,7 +57523,7 @@
           "sellerCount": 10
         }
       },
-      "updatedAt": "2026-02-20T21:25:28.737Z"
+      "updatedAt": "2026-03-23T14:24:30.427Z"
     },
     {
       "set": "SM11B",
@@ -57511,7 +57576,7 @@
           "sellerCount": 23
         }
       },
-      "updatedAt": "2026-02-20T21:25:28.737Z"
+      "updatedAt": "2026-03-23T14:29:28.666Z"
     },
     {
       "set": "SM11B",
@@ -57617,7 +57682,7 @@
           "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-20T21:25:28.737Z"
+      "updatedAt": "2026-03-23T14:30:19.202Z"
     },
     {
       "set": "SM11B",
@@ -57776,7 +57841,7 @@
           "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-20T21:25:28.737Z"
+      "updatedAt": "2026-03-23T14:24:58.950Z"
     },
     {
       "set": "SM11B",
@@ -57882,7 +57947,7 @@
           "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-20T21:25:28.737Z"
+      "updatedAt": "2026-03-23T14:32:08.513Z"
     },
     {
       "set": "SM11B",
@@ -57988,7 +58053,7 @@
           "sellerCount": 14
         }
       },
-      "updatedAt": "2026-02-20T21:25:28.737Z"
+      "updatedAt": "2026-03-23T14:26:57.980Z"
     },
     {
       "set": "SM11B",
@@ -58443,7 +58508,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:26:26.121Z"
+      "updatedAt": "2026-03-23T14:26:36.188Z"
     },
     {
       "set": "SM1+",
@@ -59032,7 +59097,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:28:37.323Z"
+      "updatedAt": "2026-03-23T14:22:08.311Z"
     },
     {
       "set": "SM3H",
@@ -59267,7 +59332,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:29:03.857Z"
+      "updatedAt": "2026-03-23T14:22:29.672Z"
     },
     {
       "set": "SM3N",
@@ -59315,7 +59380,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:29:03.857Z"
+      "updatedAt": "2026-03-23T14:19:26.646Z"
     },
     {
       "set": "SM3N",
@@ -59636,7 +59701,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:30:03.014Z"
+      "updatedAt": "2026-03-23T14:22:33.151Z"
     },
     {
       "set": "SM4A",
@@ -59732,7 +59797,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:30:03.014Z"
+      "updatedAt": "2026-03-23T14:21:05.570Z"
     },
     {
       "set": "SM4A",
@@ -59785,7 +59850,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:30:03.014Z"
+      "updatedAt": "2026-03-23T14:31:42.772Z"
     },
     {
       "set": "SM4+",
@@ -59939,7 +60004,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:30:32.179Z"
+      "updatedAt": "2026-03-23T14:20:38.362Z"
     },
     {
       "set": "SM4+",
@@ -59952,7 +60017,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/574361_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 750,
+          "url": "https://shop.japan-toreca.com/products/pokemon-1419-a?_pos=5&_sid=210ef3ccb&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 450,
           "url": "https://shop.japan-toreca.com/products/pokemon-1419-b?_pos=5&_sid=210ef3ccb&_ss=r",
@@ -59987,7 +60057,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:30:32.179Z"
+      "updatedAt": "2026-03-23T14:20:04.997Z"
     },
     {
       "set": "SM4+",
@@ -60333,7 +60403,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:30:55.896Z"
+      "updatedAt": "2026-03-23T14:21:29.895Z"
     },
     {
       "set": "SM5S",
@@ -60482,7 +60552,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:31:21.203Z"
+      "updatedAt": "2026-03-23T14:19:10.700Z"
     },
     {
       "set": "SM5M",
@@ -60530,7 +60600,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:31:21.203Z"
+      "updatedAt": "2026-03-23T14:25:48.549Z"
     },
     {
       "set": "SM5M",
@@ -60583,7 +60653,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:31:21.203Z"
+      "updatedAt": "2026-03-23T14:30:22.351Z"
     },
     {
       "set": "SM5M",
@@ -60692,7 +60762,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/572389_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 1400,
+          "url": "https://shop.japan-toreca.com/products/pokemon-1688-a?_pos=2&_sid=b732241bd&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 650,
           "url": "https://shop.japan-toreca.com/products/pokemon-1688-b?_pos=2&_sid=b732241bd&_ss=r",
@@ -60727,7 +60802,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T21:31:53.931Z"
+      "updatedAt": "2026-03-23T14:20:48.554Z"
     },
     {
       "set": "SM5+",
@@ -60876,7 +60951,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:31:53.931Z"
+      "updatedAt": "2026-03-23T14:24:39.623Z"
     },
     {
       "set": "SM5+",
@@ -60924,7 +60999,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:31:53.931Z"
+      "updatedAt": "2026-03-23T14:19:42.630Z"
     },
     {
       "set": "SM5+",
@@ -61025,7 +61100,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:32:58.190Z"
+      "updatedAt": "2026-03-23T14:19:38.758Z"
     },
     {
       "set": "SM6",
@@ -61126,7 +61201,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:32:58.190Z"
+      "updatedAt": "2026-03-23T14:21:02.201Z"
     },
     {
       "set": "SM6",
@@ -61174,7 +61249,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:32:58.190Z"
+      "updatedAt": "2026-03-23T14:19:44.804Z"
     },
     {
       "set": "SM6",
@@ -61505,7 +61580,7 @@
       "japanToreca": {
         "aMinus": null,
         "b": {
-          "priceJPY": 750,
+          "priceJPY": 850,
           "url": "https://shop.japan-toreca.com/products/pokemon-1911-b?_pos=3&_sid=30f93c5ed&_ss=r",
           "quality": "B",
           "inStock": true
@@ -61538,7 +61613,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:33:13.297Z"
+      "updatedAt": "2026-03-23T14:27:49.507Z"
     },
     {
       "set": "SM6B",
@@ -61700,7 +61775,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/573130_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 3700,
+          "url": "https://shop.japan-toreca.com/products/pokemon-2000-a?_pos=2&_sid=270f3169a&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 2500,
           "url": "https://shop.japan-toreca.com/products/pokemon-2000-b?_pos=2&_sid=270f3169a&_ss=r",
@@ -61735,7 +61815,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:33:30.456Z"
+      "updatedAt": "2026-03-23T14:31:26.430Z"
     },
     {
       "set": "SM6B",
@@ -62018,7 +62098,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:34:28.274Z"
+      "updatedAt": "2026-03-23T14:31:12.692Z"
     },
     {
       "set": "SM7",
@@ -62215,7 +62295,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-20T21:34:28.274Z"
+      "updatedAt": "2026-03-23T14:22:22.672Z"
     },
     {
       "set": "SM7A",
@@ -62321,7 +62401,7 @@
           "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-20T21:34:43.598Z"
+      "updatedAt": "2026-03-23T14:20:27.970Z"
     },
     {
       "set": "SM7A",
@@ -62387,7 +62467,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/572990_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 550,
+          "url": "https://shop.japan-toreca.com/products/pokemon-223014-a?_pos=9&_sid=5fd5dbaa9&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 300,
           "url": "https://shop.japan-toreca.com/products/pokemon-223014-b?_pos=9&_sid=5fd5dbaa9&_ss=r",
@@ -62422,7 +62507,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:36:51.293Z"
+      "updatedAt": "2026-03-23T14:22:36.622Z"
     },
     {
       "set": "SM8",
@@ -62723,7 +62808,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/572976_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 650,
+          "url": "https://shop.japan-toreca.com/products/pokemon-6124-a?_pos=11&_sid=5ff26b354&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 350,
           "url": "https://shop.japan-toreca.com/products/pokemon-6124-b?_pos=11&_sid=5ff26b354&_ss=r",
@@ -62758,7 +62848,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:36:51.293Z"
+      "updatedAt": "2026-03-23T14:19:48.600Z"
     },
     {
       "set": "SM8",
@@ -62897,7 +62987,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-20T21:37:07.792Z"
+      "updatedAt": "2026-03-23T14:20:15.104Z"
     },
     {
       "set": "SM8A",
@@ -63016,9 +63106,14 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/573453_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 1800,
+          "url": "https://shop.japan-toreca.com/products/pokemon-6401-a?_pos=8&_sid=ad7605921&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
-          "priceJPY": 800,
+          "priceJPY": 850,
           "url": "https://shop.japan-toreca.com/products/pokemon-6401-b?_pos=8&_sid=ad7605921&_ss=r",
           "quality": "B",
           "inStock": true
@@ -63051,7 +63146,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:37:07.792Z"
+      "updatedAt": "2026-03-23T14:23:43.980Z"
     },
     {
       "set": "SM9",
@@ -63195,7 +63290,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T21:38:37.360Z"
+      "updatedAt": "2026-03-23T14:27:52.649Z"
     },
     {
       "set": "SM9",
@@ -63248,7 +63343,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T21:38:37.360Z"
+      "updatedAt": "2026-03-23T14:33:07.845Z"
     },
     {
       "set": "SM9",
@@ -63354,7 +63449,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-20T21:38:37.360Z"
+      "updatedAt": "2026-03-23T14:25:51.666Z"
     },
     {
       "set": "SM9",
@@ -63455,7 +63550,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:38:37.360Z"
+      "updatedAt": "2026-03-23T14:32:50.506Z"
     },
     {
       "set": "SM9",
@@ -63960,7 +64055,7 @@
           "sellerCount": 0
         }
       },
-      "updatedAt": "2026-02-20T21:38:53.383Z"
+      "updatedAt": "2026-03-23T14:19:14.600Z"
     },
     {
       "set": "SM9A",
@@ -64013,7 +64108,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-20T21:38:53.383Z"
+      "updatedAt": "2026-03-23T14:19:52.532Z"
     },
     {
       "set": "SM9A",
@@ -64180,7 +64275,12 @@
         "large": "https://tcgplayer-cdn.tcgplayer.com/product/574428_in_800x800.jpg"
       },
       "japanToreca": {
-        "aMinus": null,
+        "aMinus": {
+          "priceJPY": 1800,
+          "url": "https://shop.japan-toreca.com/products/pokemon-7818-a?_pos=35&_sid=9fe944566&_ss=r",
+          "quality": "A-",
+          "inStock": false
+        },
         "b": {
           "priceJPY": 1100,
           "url": "https://shop.japan-toreca.com/products/pokemon-7818-b?_pos=35&_sid=9fe944566&_ss=r",
@@ -64215,7 +64315,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-20T21:38:53.383Z"
+      "updatedAt": "2026-03-23T14:22:19.143Z"
     },
     {
       "set": "SM9A",
@@ -64268,7 +64368,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-20T21:38:53.383Z"
+      "updatedAt": "2026-03-23T14:28:10.171Z"
     },
     {
       "set": "SV1A",
@@ -64321,7 +64421,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-24T22:18:53.096Z"
+      "updatedAt": "2026-03-23T14:33:51.446Z"
     },
     {
       "set": "SV1A",
@@ -64369,7 +64469,7 @@
           "sellerCount": 13
         }
       },
-      "updatedAt": "2026-02-24T22:18:53.096Z"
+      "updatedAt": "2026-03-23T14:24:41.557Z"
     },
     {
       "set": "SV1A",
@@ -65058,7 +65158,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-24T22:18:53.097Z"
+      "updatedAt": "2026-03-23T14:22:53.046Z"
     },
     {
       "set": "SV1A",
@@ -65323,7 +65423,7 @@
           "sellerCount": 56
         }
       },
-      "updatedAt": "2026-02-24T22:18:53.097Z"
+      "updatedAt": "2026-03-23T14:28:36.237Z"
     },
     {
       "set": "SV1A",
@@ -65344,7 +65444,7 @@
         },
         "b": {
           "priceJPY": 850,
-          "url": "https://shop.japan-toreca.com/products/pokemon-19036-b?_pos=25&_sid=c7b812936&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-19036-b?_pos=16&_sid=c7b812936&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -65376,7 +65476,7 @@
           "sellerCount": 18
         }
       },
-      "updatedAt": "2026-02-24T22:18:53.097Z"
+      "updatedAt": "2026-03-23T14:33:53.618Z"
     },
     {
       "set": "SV1A",
@@ -65602,14 +65702,14 @@
       },
       "japanToreca": {
         "aMinus": {
-          "priceJPY": 800,
+          "priceJPY": 750,
           "url": "https://shop.japan-toreca.com/products/pokemon-19079-a?_pos=6&_sid=c7b812936&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 650,
-          "url": "https://shop.japan-toreca.com/products/pokemon-19079-b?_pos=72&_sid=c7b812936&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-19079-b?_pos=6&_sid=c7b812936&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -65641,7 +65741,7 @@
           "sellerCount": 30
         }
       },
-      "updatedAt": "2026-02-24T22:18:53.097Z"
+      "updatedAt": "2026-03-23T14:28:55.672Z"
     },
     {
       "set": "SV1A",
@@ -66007,7 +66107,7 @@
           "sellerCount": 8
         }
       },
-      "updatedAt": "2026-02-24T22:22:34.900Z"
+      "updatedAt": "2026-03-23T14:33:35.601Z"
     },
     {
       "set": "SV1S",
@@ -66113,7 +66213,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-24T22:22:34.900Z"
+      "updatedAt": "2026-03-23T14:29:31.784Z"
     },
     {
       "set": "SV1S",
@@ -66219,7 +66319,7 @@
           "sellerCount": 11
         }
       },
-      "updatedAt": "2026-02-24T22:22:34.900Z"
+      "updatedAt": "2026-03-23T14:31:03.728Z"
     },
     {
       "set": "SV1S",
@@ -66845,7 +66945,7 @@
           "sellerCount": 25
         }
       },
-      "updatedAt": "2026-02-24T22:22:34.900Z"
+      "updatedAt": "2026-03-23T14:21:09.122Z"
     },
     {
       "set": "SV1S",
@@ -67057,7 +67157,7 @@
           "sellerCount": 30
         }
       },
-      "updatedAt": "2026-02-24T22:22:34.900Z"
+      "updatedAt": "2026-03-23T14:29:03.587Z"
     },
     {
       "set": "SV1S",
@@ -67071,14 +67171,14 @@
       },
       "japanToreca": {
         "aMinus": {
-          "priceJPY": 450,
+          "priceJPY": 400,
           "url": "https://shop.japan-toreca.com/products/pokemon-15600-a?_pos=18&_sid=54bcaeecf&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
           "priceJPY": 300,
-          "url": "https://shop.japan-toreca.com/products/pokemon-15600-b?_pos=34&_sid=54bcaeecf&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-15600-b?_pos=18&_sid=54bcaeecf&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -67110,7 +67210,7 @@
           "sellerCount": 24
         }
       },
-      "updatedAt": "2026-02-24T22:22:34.900Z"
+      "updatedAt": "2026-03-23T14:22:40.119Z"
     },
     {
       "set": "SV1S",
@@ -67131,7 +67231,7 @@
         },
         "b": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-15599-b?_pos=30&_sid=54bcaeecf&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-15599-b?_pos=36&_sid=54bcaeecf&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -67163,7 +67263,7 @@
           "sellerCount": 25
         }
       },
-      "updatedAt": "2026-02-24T22:22:34.900Z"
+      "updatedAt": "2026-03-23T14:24:09.223Z"
     },
     {
       "set": "SV1S",
@@ -67184,7 +67284,7 @@
         },
         "b": {
           "priceJPY": 450,
-          "url": "https://shop.japan-toreca.com/products/pokemon-15598-b?_pos=31&_sid=54bcaeecf&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-15598-b?_pos=35&_sid=54bcaeecf&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -67216,7 +67316,7 @@
           "sellerCount": 31
         }
       },
-      "updatedAt": "2026-02-24T22:22:34.900Z"
+      "updatedAt": "2026-03-23T14:21:40.644Z"
     },
     {
       "set": "SV1S",
@@ -67237,7 +67337,7 @@
         },
         "b": {
           "priceJPY": 250,
-          "url": "https://shop.japan-toreca.com/products/pokemon-15597-b?_pos=16&_sid=54bcaeecf&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-15597-b?_pos=21&_sid=54bcaeecf&_ss=r",
           "quality": "B",
           "inStock": true
         }
@@ -67269,7 +67369,7 @@
           "sellerCount": 49
         }
       },
-      "updatedAt": "2026-02-24T22:22:34.900Z"
+      "updatedAt": "2026-03-23T14:24:47.972Z"
     },
     {
       "set": "SV1S",
@@ -67375,7 +67475,7 @@
           "sellerCount": 39
         }
       },
-      "updatedAt": "2026-02-24T22:22:34.900Z"
+      "updatedAt": "2026-03-23T14:31:28.447Z"
     },
     {
       "set": "SV1S",
@@ -67476,7 +67576,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-24T22:26:10.412Z"
+      "updatedAt": "2026-03-23T14:29:53.625Z"
     },
     {
       "set": "SV1V",
@@ -67582,7 +67682,7 @@
           "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-24T22:26:10.412Z"
+      "updatedAt": "2026-03-23T14:28:41.860Z"
     },
     {
       "set": "SV1V",
@@ -67683,7 +67783,7 @@
           "sellerCount": 12
         }
       },
-      "updatedAt": "2026-02-24T22:26:10.412Z"
+      "updatedAt": "2026-03-23T14:27:55.911Z"
     },
     {
       "set": "SV1V",
@@ -68584,7 +68684,7 @@
           "sellerCount": 56
         }
       },
-      "updatedAt": "2026-02-24T22:26:10.412Z"
+      "updatedAt": "2026-03-23T14:22:56.258Z"
     },
     {
       "set": "SV1V",
@@ -68733,7 +68833,7 @@
           "sellerCount": 36
         }
       },
-      "updatedAt": "2026-02-24T22:26:10.412Z"
+      "updatedAt": "2026-03-23T14:24:20.336Z"
     },
     {
       "set": "SV1V",
@@ -68839,7 +68939,7 @@
           "sellerCount": 25
         }
       },
-      "updatedAt": "2026-02-24T22:26:10.412Z"
+      "updatedAt": "2026-03-23T14:29:59.887Z"
     },
     {
       "set": "SV1V",
@@ -70795,7 +70895,7 @@
           "sellerCount": 103
         }
       },
-      "updatedAt": "2026-02-24T22:30:53.034Z"
+      "updatedAt": "2026-03-23T14:27:44.466Z"
     },
     {
       "set": "SV2A",
@@ -72630,7 +72730,7 @@
           "sellerCount": 55
         }
       },
-      "updatedAt": "2026-02-24T22:34:25.414Z"
+      "updatedAt": "2026-03-23T14:24:43.309Z"
     },
     {
       "set": "SV2D",
@@ -73001,7 +73101,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-24T22:37:50.226Z"
+      "updatedAt": "2026-03-23T14:19:58.262Z"
     },
     {
       "set": "SV2P",
@@ -73160,7 +73260,7 @@
           "sellerCount": 15
         }
       },
-      "updatedAt": "2026-02-24T22:37:50.226Z"
+      "updatedAt": "2026-03-23T14:31:22.070Z"
     },
     {
       "set": "SV2P",
@@ -73863,14 +73963,14 @@
       },
       "japanToreca": {
         "aMinus": {
-          "priceJPY": 500,
+          "priceJPY": 600,
           "url": "https://shop.japan-toreca.com/products/pokemon-19090-a?_pos=24&_sid=95645c5c0&_ss=r",
           "quality": "A-",
           "inStock": true
         },
         "b": {
-          "priceJPY": 400,
-          "url": "https://shop.japan-toreca.com/products/pokemon-19090-b?_pos=35&_sid=95645c5c0&_ss=r",
+          "priceJPY": 450,
+          "url": "https://shop.japan-toreca.com/products/pokemon-19090-b?_pos=24&_sid=95645c5c0&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -73902,7 +74002,7 @@
           "sellerCount": 42
         }
       },
-      "updatedAt": "2026-02-24T22:37:50.226Z"
+      "updatedAt": "2026-03-23T14:33:10.948Z"
     },
     {
       "set": "SV2P",
@@ -74167,7 +74267,7 @@
           "sellerCount": 29
         }
       },
-      "updatedAt": "2026-02-24T22:37:50.226Z"
+      "updatedAt": "2026-03-23T14:33:37.374Z"
     },
     {
       "set": "SV2P",
@@ -74273,7 +74373,7 @@
           "sellerCount": 36
         }
       },
-      "updatedAt": "2026-02-24T22:37:50.226Z"
+      "updatedAt": "2026-03-23T14:25:00.841Z"
     },
     {
       "set": "SV2P",
@@ -74533,7 +74633,7 @@
           "sellerCount": 39
         }
       },
-      "updatedAt": "2026-02-24T22:42:48.115Z"
+      "updatedAt": "2026-03-23T14:26:17.401Z"
     },
     {
       "set": "SV3",
@@ -75323,7 +75423,7 @@
           "sellerCount": 45
         }
       },
-      "updatedAt": "2026-02-24T22:42:48.115Z"
+      "updatedAt": "2026-03-23T14:28:43.760Z"
     },
     {
       "set": "SV3",
@@ -75376,7 +75476,7 @@
           "sellerCount": 22
         }
       },
-      "updatedAt": "2026-02-24T22:42:48.115Z"
+      "updatedAt": "2026-03-23T14:20:45.169Z"
     },
     {
       "set": "SV3",
@@ -75821,7 +75921,7 @@
         },
         "b": {
           "priceJPY": 500,
-          "url": "https://shop.japan-toreca.com/products/pokemon-19226-b?_pos=61&_sid=ff46940e6&_ss=r",
+          "url": "https://shop.japan-toreca.com/products/pokemon-19226-b?_pos=62&_sid=ff46940e6&_ss=r",
           "quality": "B",
           "inStock": false
         }
@@ -75853,7 +75953,7 @@
           "sellerCount": 58
         }
       },
-      "updatedAt": "2026-02-24T22:42:48.116Z"
+      "updatedAt": "2026-03-23T14:29:38.012Z"
     },
     {
       "set": "SV3",
@@ -76065,7 +76165,7 @@
           "sellerCount": 46
         }
       },
-      "updatedAt": "2026-02-24T22:42:48.116Z"
+      "updatedAt": "2026-03-23T14:19:54.336Z"
     },
     {
       "set": "SV3A",
@@ -77390,7 +77490,7 @@
           "sellerCount": 33
         }
       },
-      "updatedAt": "2026-02-24T22:45:16.983Z"
+      "updatedAt": "2026-03-23T14:27:26.336Z"
     },
     {
       "set": "SV3A",
@@ -77443,7 +77543,7 @@
           "sellerCount": 32
         }
       },
-      "updatedAt": "2026-02-24T22:45:16.983Z"
+      "updatedAt": "2026-03-23T14:23:31.133Z"
     },
     {
       "set": "SV3A",
@@ -77496,7 +77596,7 @@
           "sellerCount": 17
         }
       },
-      "updatedAt": "2026-02-24T22:45:16.983Z"
+      "updatedAt": "2026-03-23T14:29:56.738Z"
     },
     {
       "set": "SV3A",
@@ -77549,7 +77649,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-24T22:45:16.983Z"
+      "updatedAt": "2026-03-23T14:28:57.669Z"
     },
     {
       "set": "SV3A",
@@ -77602,7 +77702,7 @@
           "sellerCount": 36
         }
       },
-      "updatedAt": "2026-02-24T22:45:16.983Z"
+      "updatedAt": "2026-03-23T14:28:01.074Z"
     },
     {
       "set": "SV3A",
@@ -78811,7 +78911,7 @@
           "sellerCount": 11
         }
       },
-      "updatedAt": "2026-02-24T22:53:10.372Z"
+      "updatedAt": "2026-03-23T14:21:33.350Z"
     },
     {
       "set": "SV4K",
@@ -78917,7 +79017,7 @@
           "sellerCount": 22
         }
       },
-      "updatedAt": "2026-02-24T22:53:10.372Z"
+      "updatedAt": "2026-03-23T14:32:11.723Z"
     },
     {
       "set": "SV4K",
@@ -78970,7 +79070,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-24T22:53:10.372Z"
+      "updatedAt": "2026-03-23T14:28:11.964Z"
     },
     {
       "set": "SV4K",
@@ -79119,7 +79219,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-24T22:53:10.372Z"
+      "updatedAt": "2026-03-23T14:28:02.848Z"
     },
     {
       "set": "SV4K",
@@ -79278,7 +79378,7 @@
           "sellerCount": 24
         }
       },
-      "updatedAt": "2026-02-24T22:53:10.372Z"
+      "updatedAt": "2026-03-23T14:25:10.004Z"
     },
     {
       "set": "SV4K",
@@ -79331,7 +79431,7 @@
           "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-24T22:53:10.372Z"
+      "updatedAt": "2026-03-23T14:26:29.920Z"
     },
     {
       "set": "SV4K",
@@ -79649,7 +79749,7 @@
           "sellerCount": 49
         }
       },
-      "updatedAt": "2026-02-24T22:53:10.372Z"
+      "updatedAt": "2026-03-23T14:30:25.476Z"
     },
     {
       "set": "SV4K",
@@ -79755,7 +79855,7 @@
           "sellerCount": 15
         }
       },
-      "updatedAt": "2026-02-24T22:53:10.372Z"
+      "updatedAt": "2026-03-23T14:23:56.401Z"
     },
     {
       "set": "SV4K",
@@ -80020,7 +80120,7 @@
           "sellerCount": 30
         }
       },
-      "updatedAt": "2026-02-24T22:53:10.372Z"
+      "updatedAt": "2026-03-23T14:24:49.864Z"
     },
     {
       "set": "SV4K",
@@ -80391,7 +80491,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-24T22:56:22.207Z"
+      "updatedAt": "2026-03-23T14:30:43.311Z"
     },
     {
       "set": "SV4M",
@@ -80709,7 +80809,7 @@
           "sellerCount": 35
         }
       },
-      "updatedAt": "2026-02-24T22:56:22.207Z"
+      "updatedAt": "2026-03-23T14:28:38.136Z"
     },
     {
       "set": "SV4M",
@@ -80868,7 +80968,7 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-24T22:56:22.207Z",
+      "updatedAt": "2026-03-23T14:18:54.654Z",
       "favorite": true
     },
     {
@@ -81293,7 +81393,7 @@
           "sellerCount": 41
         }
       },
-      "updatedAt": "2026-02-24T22:56:22.207Z"
+      "updatedAt": "2026-03-23T14:32:40.769Z"
     },
     {
       "set": "SV4M",
@@ -81611,7 +81711,7 @@
           "sellerCount": 51
         }
       },
-      "updatedAt": "2026-02-24T22:56:22.207Z"
+      "updatedAt": "2026-03-23T14:24:22.435Z"
     },
     {
       "set": "SV4M",
@@ -82189,7 +82289,7 @@
           "sellerCount": 15
         }
       },
-      "updatedAt": "2026-02-24T22:59:59.895Z"
+      "updatedAt": "2026-03-23T14:30:45.184Z"
     },
     {
       "set": "SV5A",
@@ -83350,7 +83450,7 @@
           "sellerCount": 67
         }
       },
-      "updatedAt": "2026-02-24T22:59:59.895Z"
+      "updatedAt": "2026-03-23T14:29:06.763Z"
     },
     {
       "set": "SV5K",
@@ -84294,7 +84394,7 @@
           "sellerCount": 29
         }
       },
-      "updatedAt": "2026-02-24T23:03:29.351Z"
+      "updatedAt": "2026-03-23T14:28:04.661Z"
     },
     {
       "set": "SV5K",
@@ -84824,7 +84924,7 @@
           "sellerCount": 56
         }
       },
-      "updatedAt": "2026-02-24T23:03:29.351Z"
+      "updatedAt": "2026-03-23T14:27:16.934Z"
     },
     {
       "set": "SV5K",
@@ -84877,7 +84977,7 @@
           "sellerCount": 56
         }
       },
-      "updatedAt": "2026-02-24T23:03:29.351Z"
+      "updatedAt": "2026-03-23T14:26:00.926Z"
     },
     {
       "set": "SV5M",
@@ -84983,7 +85083,7 @@
           "sellerCount": 18
         }
       },
-      "updatedAt": "2026-02-24T23:06:42.546Z"
+      "updatedAt": "2026-03-23T14:28:45.728Z"
     },
     {
       "set": "SV5M",
@@ -85137,7 +85237,7 @@
           "sellerCount": 6
         }
       },
-      "updatedAt": "2026-02-24T23:06:42.546Z"
+      "updatedAt": "2026-03-23T14:33:55.635Z"
     },
     {
       "set": "SV5M",
@@ -85190,7 +85290,7 @@
           "sellerCount": 24
         }
       },
-      "updatedAt": "2026-02-24T23:06:42.546Z"
+      "updatedAt": "2026-03-23T14:28:19.198Z"
     },
     {
       "set": "SV5M",
@@ -85826,7 +85926,7 @@
           "sellerCount": 45
         }
       },
-      "updatedAt": "2026-02-24T23:06:42.546Z"
+      "updatedAt": "2026-03-23T14:21:44.138Z"
     },
     {
       "set": "SV5M",
@@ -85985,7 +86085,7 @@
           "sellerCount": 42
         }
       },
-      "updatedAt": "2026-02-24T23:06:42.546Z"
+      "updatedAt": "2026-03-23T14:26:23.669Z"
     },
     {
       "set": "SV5M",
@@ -86303,7 +86403,7 @@
           "sellerCount": 41
         }
       },
-      "updatedAt": "2026-02-24T23:06:42.546Z"
+      "updatedAt": "2026-03-23T14:30:46.958Z"
     },
     {
       "set": "SV5M",
@@ -86515,7 +86615,7 @@
           "sellerCount": 21
         }
       },
-      "updatedAt": "2026-02-24T23:11:21.258Z"
+      "updatedAt": "2026-03-23T14:33:13.095Z"
     },
     {
       "set": "SV6",
@@ -86568,7 +86668,7 @@
           "sellerCount": 33
         }
       },
-      "updatedAt": "2026-02-24T23:11:21.258Z"
+      "updatedAt": "2026-03-23T14:33:39.404Z"
     },
     {
       "set": "SV6",
@@ -86722,7 +86822,7 @@
           "sellerCount": 21
         }
       },
-      "updatedAt": "2026-02-24T23:11:21.258Z"
+      "updatedAt": "2026-03-23T14:31:05.524Z"
     },
     {
       "set": "SV6",
@@ -87305,7 +87405,7 @@
           "sellerCount": 48
         }
       },
-      "updatedAt": "2026-02-24T23:11:21.259Z"
+      "updatedAt": "2026-03-23T14:19:22.326Z"
     },
     {
       "set": "SV6",
@@ -87570,7 +87670,7 @@
           "sellerCount": 45
         }
       },
-      "updatedAt": "2026-02-24T23:11:21.259Z"
+      "updatedAt": "2026-03-23T14:31:44.743Z"
     },
     {
       "set": "SV6",
@@ -88268,7 +88368,7 @@
           "sellerCount": 43
         }
       },
-      "updatedAt": "2026-02-27T18:18:47.047Z"
+      "updatedAt": "2026-03-23T14:25:28.447Z"
     },
     {
       "set": "M1L",
@@ -90199,7 +90299,7 @@
           "sellerCount": 90
         }
       },
-      "updatedAt": "2026-02-27T18:18:47.047Z"
+      "updatedAt": "2026-03-23T14:33:14.857Z"
     },
     {
       "set": "M1L",
@@ -95088,7 +95188,7 @@
           "sellerCount": 30
         }
       },
-      "updatedAt": "2026-02-27T18:27:29.753Z"
+      "updatedAt": "2026-03-23T14:31:54.560Z"
     },
     {
       "set": "M2A",
@@ -95880,7 +95980,7 @@
           "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-27T18:27:29.753Z"
+      "updatedAt": "2026-03-23T14:33:41.250Z"
     },
     {
       "set": "M2A",
@@ -96102,7 +96202,7 @@
           "sellerCount": 27
         }
       },
-      "updatedAt": "2026-02-27T18:27:29.753Z"
+      "updatedAt": "2026-03-23T14:33:16.752Z"
     },
     {
       "set": "M2A",
@@ -96250,7 +96350,7 @@
           "sellerCount": 25
         }
       },
-      "updatedAt": "2026-02-27T18:27:29.753Z"
+      "updatedAt": "2026-03-23T14:33:18.668Z"
     },
     {
       "set": "M2A",
@@ -98004,7 +98104,7 @@
           "sellerCount": 81
         }
       },
-      "updatedAt": "2026-02-27T18:27:29.753Z"
+      "updatedAt": "2026-03-23T14:32:53.730Z"
     },
     {
       "set": "M2A",
@@ -98226,7 +98326,7 @@
           "sellerCount": 80
         }
       },
-      "updatedAt": "2026-02-27T18:27:29.753Z"
+      "updatedAt": "2026-03-23T14:31:07.387Z"
     },
     {
       "set": "M2A",
@@ -98439,7 +98539,7 @@
           "sellerCount": 5
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.808Z"
+      "updatedAt": "2026-03-23T14:29:41.152Z"
     },
     {
       "set": "M3",
@@ -98694,7 +98794,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:30:09.276Z"
     },
     {
       "set": "M3",
@@ -98949,7 +99049,7 @@
           "sellerCount": 2
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:19:05.023Z"
     },
     {
       "set": "M3",
@@ -99084,7 +99184,7 @@
           "sellerCount": 1
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:19:32.514Z"
     },
     {
       "set": "M3",
@@ -99534,7 +99634,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:25:39.290Z"
     },
     {
       "set": "M3",
@@ -99599,7 +99699,7 @@
           "sellerCount": 4
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:25:02.786Z"
     },
     {
       "set": "M3",
@@ -99664,7 +99764,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:32:21.398Z"
     },
     {
       "set": "M3",
@@ -99729,7 +99829,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:20:16.942Z"
     },
     {
       "set": "M3",
@@ -99794,7 +99894,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:21:47.601Z"
     },
     {
       "set": "M3",
@@ -100204,7 +100304,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:24:51.562Z"
     },
     {
       "set": "M3",
@@ -100344,7 +100444,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:29:09.835Z"
     },
     {
       "set": "M3",
@@ -100414,7 +100514,7 @@
           "sellerCount": 7
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:27:20.085Z"
     },
     {
       "set": "M3",
@@ -100554,7 +100654,7 @@
           "sellerCount": 3
         }
       },
-      "updatedAt": "2026-02-27T19:10:28.809Z"
+      "updatedAt": "2026-03-23T14:31:56.373Z"
     },
     {
       "set": "M3",

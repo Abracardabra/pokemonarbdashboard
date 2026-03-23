@@ -8,7 +8,7 @@ const JPY_TO_USD = 0.0065;
 
 type Mode = 'set' | 'card';
 
-type ShopKey = 'japan-toreca' | 'toretoku' | 'torecacamp' | 'hareruya2' | 'hobibinet' | 'dorasuta';
+type ShopKey = 'japan-toreca' | 'toretoku' | 'torecacamp' | 'hobibinet' | 'dorasuta';
 
 type Offer = {
   shop: ShopKey;
@@ -115,17 +115,6 @@ function offersForCard(card: BuilderOpportunity): Offer[] {
       inStock: card.torecacamp.b.inStock !== false,
       url: card.torecacamp.b.url,
     });
-  // New shops - Hareruya2 (only A-)
-  if (card.hareruya2?.aMinus) {
-    out.push({
-      shop: 'hareruya2',
-      condition: 'A-',
-      priceJPY: card.hareruya2.aMinus.priceJPY,
-      inStock: card.hareruya2.aMinus.inStock !== false,
-      url: card.hareruya2.aMinus.url,
-    });
-  }
-
   // Hobibinet (A- and B)
   if (card.hobibinet?.aMinus) {
     out.push({
@@ -236,7 +225,8 @@ export function CompareClient({ builder }: { builder: BuilderDashboardData | nul
     return visibleCards.find((c) => `${c.setId}:${c.number}` === selectedCardId) || null;
   }, [visibleCards, selectedCardId]);
 
-  const activeShops = useMemo(() => new Set<ShopKey>(['japan-toreca', 'toretoku', 'torecacamp', 'hareruya2', 'hobibinet', 'dorasuta']), []);
+  // Keep this list aligned with required active sources only.
+  const activeShops = useMemo(() => new Set<ShopKey>(['japan-toreca', 'toretoku', 'torecacamp', 'hobibinet', 'dorasuta']), []);
 
   if (!builder) {
     return <p className="text-white/70">No builder dataset loaded.</p>;
@@ -447,7 +437,7 @@ function CompareCardRow({ card, shops, compact }: { card: BuilderOpportunity; sh
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-3">
-              {(['japan-toreca', 'toretoku', 'torecacamp', 'hareruya2', 'hobibinet', 'dorasuta'] as ShopKey[]).map((shop) => {
+              {(['japan-toreca', 'toretoku', 'torecacamp', 'hobibinet', 'dorasuta'] as ShopKey[]).map((shop) => {
                 const shopBest = pickBaseline(offers, new Set<ShopKey>([shop]));
                 const shopBestProfit = shopBest ? profitPercent(usMarket, shopBest.priceJPY) : null;
 

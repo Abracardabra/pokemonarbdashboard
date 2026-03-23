@@ -20,6 +20,7 @@
 const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
+const { SCRAPE_POLICY } = require('../lib/scrape-policy.js');
 
 // New scraper modules
 const { scrapeHareruya2Listings } = require('./scrape-hareruya2.js');
@@ -36,6 +37,11 @@ const TORECACAMP_MAX_PAGES_PER_RARITY = Number(process.env.TORECACAMP_MAX_PAGES_
 const TORECACAMP_MAX_HANDLES_PER_SET = Number(process.env.TORECACAMP_MAX_HANDLES_PER_SET || 1200);
 const TORECACAMP_HANDLES_TTL_HOURS = Number(process.env.TORECACAMP_HANDLES_TTL_HOURS || 12);
 const TORECACAMP_PRODUCT_TTL_HOURS = Number(process.env.TORECACAMP_PRODUCT_TTL_HOURS || 24);
+
+// US market tracking range from global policy.
+// Cards outside this USD range are skipped when a market price exists.
+const TRACK_MIN_USD = SCRAPE_POLICY.budget.minUsd;
+const TRACK_MAX_USD = SCRAPE_POLICY.budget.maxUsd;
 
 // Optional strict check (anti-contamination): if we know the set's total numbering, enforce it.
 // Add more as needed.
@@ -939,6 +945,11 @@ function buildDatasetForSet({ apiSetId, displaySetCode, apiDump, jtListings, tor
     const cardNumberSlash = null;
 
     const us = pickUsMarket(apiCard);
+    // Limit tracked cards by US market range to reduce dataset size.
+    // Keep cards with unknown US market (null) for compatibility.
+    if (us.marketPrice != null && (us.marketPrice < TRACK_MIN_USD || us.marketPrice > TRACK_MAX_USD)) {
+      continue;
+    }
 
     const jt = jtByCard.get(cardNumberSlash || cardNumber) || jtByCard.get(cardNumber) || { 'A-': null, B: null };
     const tt = ttByCard.get(cardNumberSlash || cardNumber) || ttByCard.get(cardNumber) || { 'A-': null, B: null };

@@ -10,12 +10,31 @@ type JapanTorecaProductResponse = {
 };
 
 function parsePriceJPY(html: string): number | null {
-  // Japan-Toreca product pages usually include "¥" directly near the main price.
-  const m = html.match(/¥\s*([\d,]+)/);
-  if (!m) return null;
-  const n = parseInt(m[1].replace(/,/g, ''), 10);
-  if (!Number.isFinite(n) || n <= 0) return null;
-  return n;
+  // Try strict patterns first, then broader fallbacks.
+  const symbolMatch = html.match(/¥\s*([\d,]+)/);
+  if (symbolMatch) {
+    const n = parseInt(symbolMatch[1].replace(/,/g, ''), 10);
+    if (Number.isFinite(n) && n > 0) return n;
+  }
+
+  const yenTextMatch = html.match(/([\d,]+)\s*円/);
+  if (yenTextMatch) {
+    const n = parseInt(yenTextMatch[1].replace(/,/g, ''), 10);
+    if (Number.isFinite(n) && n > 0) return n;
+  }
+
+  // Shopify-like JSON blobs can expose numeric price fields.
+  // Some themes store integer yen; some store subunits - prefer plausible yen ranges.
+  const jsonPriceMatch = html.match(/"price"\s*:\s*(\d{2,8})/);
+  if (jsonPriceMatch) {
+    const raw = parseInt(jsonPriceMatch[1], 10);
+    if (Number.isFinite(raw) && raw > 0) {
+      // Heuristic: values above 1,000,000 are likely subunits (e.g. 35000 => 350.00)
+      return raw > 1_000_000 ? Math.round(raw / 100) : raw;
+    }
+  }
+
+  return null;
 }
 
 function parseQuality(html: string): 'A-' | 'B' | null {
@@ -76,6 +95,15 @@ export async function GET(request: NextRequest) {
         'Accept': 'text/html,application/xhtml+xml',
       },
     });
+
+    // Surface upstream non-OKs directly so caller can distinguish
+    // "page missing/forbidden" from parsing issues.
+    if (!res.ok) {
+      return NextResponse.json(
+        { error: `Upstream returned ${res.status} ${res.statusText}` },
+        { status: res.status, headers: { 'X-Debug-External-Url': productUrl } }
+      );
+    }
 
     const html = await res.text();
     const payload: JapanTorecaProductResponse = {

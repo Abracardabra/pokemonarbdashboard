@@ -82,19 +82,7 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
       });
     }
 
-    
-        // New shops: Hareruya2, Hobibinet, Dorasuta
-        if (c.hareruya2?.aMinus) {
-          jp.push({
-            source: 'hareruya2',
-            priceJPY: c.hareruya2.aMinus.priceJPY,
-            priceUSD: c.hareruya2.aMinus.priceJPY * JPY_TO_USD,
-            quality: 'A-',
-            inStock: c.hareruya2.aMinus.inStock !== false,
-            url: c.hareruya2.aMinus.url,
-            isLowest: false,
-          });
-        }
+    // Additional active shops: Hobibinet and Dorasuta
         if (c.hobibinet?.aMinus) {
           jp.push({
             source: 'hobibinet',

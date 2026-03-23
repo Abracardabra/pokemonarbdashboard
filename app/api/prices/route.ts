@@ -16,6 +16,16 @@ interface CacheEntry {
 const cache = new Map<string, CacheEntry>();
 const CACHE_DURATION = 3 * 24 * 60 * 60 * 1000; // 3 days in milliseconds
 
+class ExternalApiError extends Error {
+  status: number;
+
+  constructor(message: string, status: number) {
+    super(message);
+    this.name = 'ExternalApiError';
+    this.status = status;
+  }
+}
+
 /**
  * Rate limiter - ensures we don't exceed API limits
  */
@@ -108,11 +118,13 @@ async function fetchCardPrice(setCode: string, cardNumber: string, opts?: { forc
         console.log(`[API Route] No data found for ${setCode} ${cardNumber}`);
         return null;
       }
-      if (response.status === 429) {
-        console.error(`[API Route] Rate limited by external API`);
-        throw new Error('Rate limited');
+      if (response.status === 403) {
+        throw new ExternalApiError('Provider access denied (403)', 403);
       }
-      throw new Error(`API error: ${response.status} ${response.statusText}`);
+      if (response.status === 429) {
+        throw new ExternalApiError('Rate limited', 429);
+      }
+      throw new ExternalApiError(`API error: ${response.status} ${response.statusText}`, response.status);
     }
     
     const data = await response.json();
@@ -122,7 +134,11 @@ async function fetchCardPrice(setCode: string, cardNumber: string, opts?: { forc
     
     return data;
   } catch (error) {
-    console.error(`[API Route] Error fetching ${setCode} ${cardNumber}:`, error);
+    if (error instanceof ExternalApiError) {
+      console.warn(`[API Route] Provider issue for ${setCode} ${cardNumber}: ${error.message}`);
+    } else {
+      console.error(`[API Route] Error fetching ${setCode} ${cardNumber}:`, error);
+    }
     throw error;
   }
 }
@@ -172,9 +188,29 @@ export async function GET(request: NextRequest) {
       },
     });
   } catch (error) {
+    // Graceful handling for provider auth blocks:
+    // return 200 with a clear warning payload so client refresh flows keep working
+    // and preserve previously persisted US values.
+    if (error instanceof ExternalApiError && error.status === 403) {
+      return NextResponse.json(
+        {
+          warning: 'US provider denied access (403). Keeping existing US value.',
+          provider: 'pokemonpricetracker',
+          blocked: true,
+          data: [],
+        },
+        {
+          status: 200,
+          headers: {
+            'Cache-Control': 'no-store',
+          },
+        }
+      );
+    }
+
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     
-    if (errorMessage.includes('Rate limited')) {
+    if ((error instanceof ExternalApiError && error.status === 429) || errorMessage.includes('Rate limited')) {
       return NextResponse.json(
         { error: 'Rate limit exceeded. Please try again later.' },
         { status: 429 }
