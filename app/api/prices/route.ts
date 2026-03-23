@@ -67,14 +67,16 @@ function generateCacheKey(setCode: string, cardNumber: string): string {
 /**
  * Fetch card price from PokemonPriceTracker API
  */
-async function fetchCardPrice(setCode: string, cardNumber: string) {
+async function fetchCardPrice(setCode: string, cardNumber: string, opts?: { force?: boolean }) {
   const cacheKey = generateCacheKey(setCode, cardNumber);
   
   // Check cache first
-  const cached = getCachedData(cacheKey);
-  if (cached) {
-    console.log(`[API Route] Cache hit for ${setCode} ${cardNumber}`);
-    return cached;
+  if (!opts?.force) {
+    const cached = getCachedData(cacheKey);
+    if (cached) {
+      console.log(`[API Route] Cache hit for ${setCode} ${cardNumber}`);
+      return cached;
+    }
   }
   
   // Apply rate limiting
@@ -133,6 +135,7 @@ export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const setCode = searchParams.get('set');
   const cardNumber = searchParams.get('number');
+  const force = searchParams.get('force') === '1';
   
   if (!setCode || !cardNumber) {
     return NextResponse.json(
@@ -142,7 +145,17 @@ export async function GET(request: NextRequest) {
   }
   
   try {
-    const data = await fetchCardPrice(setCode, cardNumber);
+    // Build the external URL up front so the browser can see what was called.
+    // (Even if the in-memory cache hits, the external URL is deterministic.)
+    const apiSetId = getApiSetId(setCode);
+    const params = new URLSearchParams({
+      set: apiSetId,
+      number: cardNumber,
+      language: 'japanese',
+    });
+    const externalUrl = `${API_BASE_URL}/cards?${params.toString()}`;
+
+    const data = await fetchCardPrice(setCode, cardNumber, { force });
     
     if (!data) {
       return NextResponse.json(
@@ -155,6 +168,7 @@ export async function GET(request: NextRequest) {
       headers: {
         // Cache on client side for 1 hour
         'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+        'X-Debug-External-Url': externalUrl,
       },
     });
   } catch (error) {

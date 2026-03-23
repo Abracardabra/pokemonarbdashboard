@@ -1,7 +1,8 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
+import { Loader2, RefreshCw } from 'lucide-react';
 import { ArbitrageOpportunity, JapaneseCondition, RarityCode } from '@/lib/types';
 import {
   applyFilters,
@@ -58,8 +59,21 @@ type ComputedCard = ArbitrageOpportunity & {
   usProfitMargin: number;
 };
 
+type BulkReloadProgress = {
+  total: number;
+  completed: number;
+  startedAtMs: number;
+};
+
 function toggleInList(list: string[], value: string): string[] {
   return list.includes(value) ? list.filter((x) => x !== value) : [...list, value];
+}
+
+function formatDuration(ms: number): string {
+  const sec = Math.max(0, Math.round(ms / 1000));
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return `${m}m ${String(s).padStart(2, '0')}s`;
 }
 
 export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFiltersProps) {
@@ -67,18 +81,307 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
   const [appliedFilters, setAppliedFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [sortBy, setSortBy] = useState<string>('profit-desc');
   const [jpShop, setJpShop] = useState<'japan-toreca' | 'toretoku' | 'torecacamp' | 'hareruya2' | 'hobibinet' | 'dorasuta' | 'best'>('japan-toreca');
+  const [reloadingCardId, setReloadingCardId] = useState<string | null>(null);
+  const [favoritePendingCardId, setFavoritePendingCardId] = useState<string | null>(null);
+  const [bulkReloading, setBulkReloading] = useState(false);
+  const [bulkProgress, setBulkProgress] = useState<BulkReloadProgress | null>(null);
+  const [reloadMessage, setReloadMessage] = useState<string | null>(null);
+  const [lastReloadedCardId, setLastReloadedCardId] = useState<string | null>(null);
+  const [lastUpdatedOverride, setLastUpdatedOverride] = useState<string | null>(null);
+  const [cardOverrides, setCardOverrides] = useState<Record<string, ArbitrageOpportunity>>({});
 
   const jpSources = useMemo(() => {
     if (jpShop === 'best') return new Set<string>(['japan-toreca', 'toretoku', 'torecacamp', 'hareruya2', 'hobibinet', 'dorasuta']);
     return new Set<string>([jpShop]);
   }, [jpShop]);
 
+  async function reloadCardJPAndUS(card: ArbitrageOpportunity) {
+    // Generic reload for *any* card:
+    // - derive Japan-Toreca A-/B product URLs from the card's existing Japan-Toreca URL
+    // - reload both A and B (when we can construct the URLs)
+    // - reload US price via /api/prices
+
+    const jpAny = card.japanesePrices.find((p) => p.source === 'japan-toreca')?.url ?? null;
+
+    function withJpSuffix(externalUrl: string, suffix: 'a' | 'b'): string | null {
+      try {
+        const u = new URL(externalUrl);
+        if (!u.pathname.match(/-(a|b)$/)) return null;
+        const newPath = u.pathname.replace(/-(a|b)$/, `-${suffix}`);
+        return `${u.origin}${newPath}${u.search}`;
+      } catch {
+        return null;
+      }
+    }
+
+    const jpUrlA = jpAny ? withJpSuffix(jpAny, 'a') : null;
+    const jpUrlB = jpAny ? withJpSuffix(jpAny, 'b') : null;
+
+    const JPY_TO_USD = 0.0065;
+
+    const setCode = card.set;
+    const numberNoSlash = String(card.cardNumber || '').split('/')[0];
+    const internalUsUrl = `/api/prices?set=${encodeURIComponent(setCode)}&number=${encodeURIComponent(numberNoSlash)}&force=1`;
+
+    console.log('[Reload JP+US] Selected card:', { name: card.name, setCode, cardNumber: card.cardNumber, numberNoSlash, id: card.id });
+    console.log('[Reload JP+US] Calling internal US endpoint:', internalUsUrl);
+    console.log('[Reload JP+US] Japan-Toreca external URLs:', { jpAny, jpUrlA, jpUrlB });
+
+    setReloadingCardId(card.id);
+    setReloadMessage('Reloading JP + US...');
+    setLastReloadedCardId(card.id);
+
+    try {
+      async function fetchJapanTorecaProduct(externalUrl: string, label: string) {
+        const internalUrl = `/api/japan-toreca-product?url=${encodeURIComponent(externalUrl)}`;
+        console.log(`[Reload JP+US] Calling JP endpoint (${label}):`, internalUrl);
+
+        const res = await fetch(internalUrl);
+        const debugExternalUrl = res.headers.get('x-debug-external-url');
+        console.log(`[Reload JP+US] JP (${label}) response:`, { status: res.status, debugExternalUrl });
+
+        if (!res.ok) {
+          const body = await res.text().catch(() => '');
+          console.warn(`[Reload JP+US] JP (${label}) failed:`, { status: res.status, debugExternalUrl, body: body.slice(0, 500) });
+          return null;
+        }
+
+        const payload = (await res.json()) as {
+          priceJPY: number | null;
+          inStock: boolean;
+          quality: 'A-' | 'B' | null;
+          extractedAt: string;
+        };
+        console.log(`[Reload JP+US] JP (${label}) parsed:`, payload);
+        if (payload.priceJPY == null) return null;
+        return payload;
+      }
+
+      async function fetchUSMarket() {
+        const res = await fetch(internalUsUrl);
+        const debugExternalUrl = res.headers.get('x-debug-external-url');
+        console.log('[Reload JP+US] US response:', { status: res.status, debugExternalUrl });
+
+        if (!res.ok) {
+          const body = await res.text().catch(() => '');
+          console.warn('[Reload JP+US] US failed:', { status: res.status, debugExternalUrl, body: body.slice(0, 500) });
+          return null;
+        }
+
+        const data = await res.json();
+        const first = data?.data?.[0] || null;
+        const market = first?.prices?.market ?? null;
+        const sellers = first?.prices?.sellers ?? null;
+        const url = first?.tcgPlayerUrl ?? null;
+
+        console.log('[Reload JP+US] US parsed:', { market, sellers, url });
+        return { market, sellers, url };
+      }
+
+      const [jpA, jpB, us] = await Promise.all([
+        jpUrlA ? fetchJapanTorecaProduct(jpUrlA, 'A') : Promise.resolve(null),
+        jpUrlB ? fetchJapanTorecaProduct(jpUrlB, 'B') : Promise.resolve(null),
+        fetchUSMarket(),
+      ]);
+
+      // Start from current card values and replace only japan-toreca + US fields.
+      const preservedJP = card.japanesePrices.filter((p) => p.source !== 'japan-toreca');
+      const normalizeQ = (q: unknown) => String(q || '').toUpperCase().replace('－', '-');
+      const oldA = card.japanesePrices.find((p) => p.source === 'japan-toreca' && normalizeQ(p.quality) === 'A-') || null;
+      const oldB = card.japanesePrices.find((p) => p.source === 'japan-toreca' && normalizeQ(p.quality) === 'B') || null;
+
+      const jpAOk = jpA?.priceJPY != null;
+      const jpBOk = jpB?.priceJPY != null;
+
+      const mergeInStock = (extractedInStock: boolean, oldInStock: boolean) => {
+        // Safety: if our extraction says OOS but the dataset currently says IN,
+        // keep the IN to avoid the card disappearing due to parsing mistakes.
+        if (extractedInStock) return true;
+        return oldInStock;
+      };
+
+      const aPrice = jpAOk
+        ? ({
+            source: 'japan-toreca',
+            priceJPY: jpA.priceJPY,
+            priceUSD: Math.round(jpA.priceJPY * JPY_TO_USD * 100) / 100,
+            quality: 'A-',
+            inStock: mergeInStock(jpA.inStock, oldA?.inStock ?? false),
+            url: jpUrlA ?? oldA?.url ?? '',
+            isLowest: false,
+          } as typeof card.japanesePrices[number])
+        : oldA;
+
+      const bPrice = jpBOk
+        ? ({
+            source: 'japan-toreca',
+            priceJPY: jpB.priceJPY,
+            priceUSD: Math.round(jpB.priceJPY * JPY_TO_USD * 100) / 100,
+            quality: 'B',
+            inStock: mergeInStock(jpB.inStock, oldB?.inStock ?? false),
+            url: jpUrlB ?? oldB?.url ?? '',
+            isLowest: false,
+          } as typeof card.japanesePrices[number])
+        : oldB;
+
+      const updatedJpPrices = [...preservedJP, ...(aPrice ? [aPrice] : []), ...(bPrice ? [bPrice] : [])];
+
+      // Only override japan-toreca prices if at least one quality fetch succeeded.
+      const jpUpdated = jpAOk || jpBOk;
+
+      const updatedUsPrice =
+        us && us.market != null
+          ? {
+              ...(card.usPrice || {
+                listingCount: 0,
+                currency: 'USD',
+                imageUrl: undefined,
+                imageCdnUrl: undefined,
+                tcgPlayerUrl: undefined,
+                sellerCount: 0,
+                marketPrice: 0,
+              }),
+              marketPrice: Number(us.market),
+              sellerCount: us.sellers != null ? Number(us.sellers) : 0,
+              listingCount: card.usPrice?.listingCount ?? 0,
+              currency: card.usPrice?.currency ?? 'USD',
+              tcgPlayerUrl: us.url ?? card.usPrice?.tcgPlayerUrl,
+            }
+          : card.usPrice;
+
+      const updatedTcgplayer =
+        us && us.market != null
+          ? { marketPrice: Number(us.market), sellerCount: us.sellers != null ? Number(us.sellers) : 0 }
+          : card.tcgplayer;
+
+      const baseline = jpUpdated ? getBaselinePrice(updatedJpPrices, jpSources) : getBaselinePrice(card.japanesePrices, jpSources);
+      const baselineUSD = baseline.lowestPriceUSD || 0;
+      const usMarket = updatedUsPrice?.marketPrice ?? null;
+      const usProfitMargin = usMarket != null && baselineUSD > 0 ? Math.round(((usMarket - baselineUSD) / baselineUSD) * 100) : 0;
+      const isViable = usProfitMargin > 0;
+
+      setCardOverrides((prev) => ({
+        ...prev,
+        [card.id]: {
+          ...card,
+          japanesePrices: jpUpdated ? updatedJpPrices : card.japanesePrices,
+          usPrice: updatedUsPrice,
+          tcgplayer: updatedTcgplayer,
+          lastUpdated: new Date().toISOString(),
+          isViable,
+        },
+      }));
+
+      const jpMsg = jpUpdated
+        ? [
+            aPrice ? `A- ¥${aPrice.priceJPY} ${aPrice.inStock ? 'IN' : 'OOS'}` : 'A- missing',
+            bPrice ? `B ¥${bPrice.priceJPY} ${bPrice.inStock ? 'IN' : 'OOS'}` : 'B missing',
+          ].join(', ')
+        : 'JP (unchanged)';
+
+      const usMsg = us?.market != null ? `US $${Number(us.market).toFixed(2)} (${us.sellers ?? 0} sellers)` : 'US (unchanged)';
+      setReloadMessage(`${jpMsg} | ${usMsg}`);
+      setLastUpdatedOverride(new Date().toISOString());
+
+      // Persist refreshed card fields to data/prices.json so updates survive refresh/restart.
+      const persistResponse = await fetch('/api/cards/persist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          cardId: card.id,
+          set: card.set,
+          cardNumber: card.cardNumber,
+          japanToreca: {
+            aMinus: aPrice
+              ? {
+                  priceJPY: aPrice.priceJPY,
+                  url: aPrice.url,
+                  quality: 'A-' as const,
+                  inStock: aPrice.inStock,
+                }
+              : null,
+            b: bPrice
+              ? {
+                  priceJPY: bPrice.priceJPY,
+                  url: bPrice.url,
+                  quality: 'B' as const,
+                  inStock: bPrice.inStock,
+                }
+              : null,
+          },
+          usMarket: {
+            tcgplayer: {
+              marketPrice: updatedUsPrice?.marketPrice ?? null,
+              url: updatedUsPrice?.tcgPlayerUrl ?? null,
+              sellerCount: updatedUsPrice?.sellerCount ?? null,
+            },
+          },
+          updatedAt: new Date().toISOString(),
+        }),
+      });
+
+      if (!persistResponse.ok) {
+        const text = await persistResponse.text().catch(() => '');
+        console.warn('[Reload JP+US] Persist failed:', persistResponse.status, text.slice(0, 500));
+      }
+    } catch (err) {
+      console.error('[Reload JP+US] Network/parse error:', err);
+      setReloadMessage('Reload failed (see console)');
+    } finally {
+      setReloadingCardId(null);
+    }
+  }
+
+  async function toggleFavorite(card: ArbitrageOpportunity) {
+    const nextFavorite = card.favorite !== true;
+    setFavoritePendingCardId(card.id);
+
+    try {
+      const response = await fetch('/api/cards/persist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          cardId: card.id,
+          set: card.set,
+          cardNumber: card.cardNumber,
+          favorite: nextFavorite,
+        }),
+      });
+
+      if (!response.ok) {
+        const text = await response.text().catch(() => '');
+        console.error('[Favorites] Failed to persist favorite:', response.status, text.slice(0, 500));
+        return;
+      }
+
+      setCardOverrides((prev) => ({
+        ...prev,
+        [card.id]: {
+          ...card,
+          favorite: nextFavorite ? true : undefined,
+        },
+      }));
+    } catch (error) {
+      console.error('[Favorites] Request failed:', error);
+    } finally {
+      setFavoritePendingCardId(null);
+    }
+  }
+
   const allSets = useMemo<string[]>(() => {
     return Array.from(new Set(initialCards.map((c) => normalizeSetCode(c.set)))).sort();
   }, [initialCards]);
 
+  const cardsForDisplay = useMemo(() => {
+    return initialCards.map((card) => cardOverrides[card.id] ?? card);
+  }, [initialCards, cardOverrides]);
+
   const cardsWithData = useMemo<ComputedCard[]>(() => {
-    return initialCards.map((card) => {
+    return cardsForDisplay.map((card) => {
       const lowestData = getBaselinePrice(card.japanesePrices, jpSources);
 
       const usMarket = card.usPrice?.marketPrice ?? null;
@@ -92,7 +395,7 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
         usProfitMargin,
       };
     });
-  }, [initialCards, jpSources]);
+  }, [cardsForDisplay, jpSources]);
 
   const filteredCards = useMemo<ComputedCard[]>(() => {
     // 1) Filter
@@ -100,6 +403,10 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
 
     // 2) Sort
     cards = [...cards].sort((a, b) => {
+      // Always keep favorites pinned near the top first.
+      const favDelta = (b.favorite === true ? 1 : 0) - (a.favorite === true ? 1 : 0);
+      if (favDelta !== 0) return favDelta;
+
       if (sortBy === 'profit-desc') return b.usProfitMargin - a.usProfitMargin;
       if (sortBy === 'profit-asc') return a.usProfitMargin - b.usProfitMargin;
       if (sortBy === 'price-asc') return a.lowestData.lowestPriceJPY - b.lowestData.lowestPriceJPY;
@@ -110,6 +417,86 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
 
     return cards;
   }, [cardsWithData, appliedFilters, sortBy]);
+
+  useEffect(() => {
+    async function onReloadAllCards() {
+      if (bulkReloading) return;
+      if (filteredCards.length === 0) {
+        setReloadMessage('No cards to reload');
+        return;
+      }
+
+      if (filteredCards.length > 150) {
+        const ok = window.confirm(
+          `This will reload ${filteredCards.length} cards and can take a long time. Continue?`
+        );
+        if (!ok) return;
+      }
+
+      setBulkReloading(true);
+      const startedAtMs = Date.now();
+      setBulkProgress({
+        total: filteredCards.length,
+        completed: 0,
+        startedAtMs,
+      });
+      console.log('[Reload All] Starting reload for cards:', filteredCards.length);
+
+      try {
+        for (let i = 0; i < filteredCards.length; i++) {
+          const card = filteredCards[i];
+          setReloadMessage(`Reloading ${i + 1}/${filteredCards.length}: ${card.name}`);
+          await reloadCardJPAndUS(card);
+          setBulkProgress((prev) =>
+            prev
+              ? {
+                  ...prev,
+                  completed: i + 1,
+                }
+              : prev
+          );
+          // Small pacing delay to avoid request bursts.
+          await new Promise((resolve) => setTimeout(resolve, 75));
+        }
+        setReloadMessage(`Reload complete: ${filteredCards.length} cards`);
+      } catch (error) {
+        console.error('[Reload All] Failed:', error);
+        setReloadMessage('Bulk reload failed (see console)');
+      } finally {
+        setBulkReloading(false);
+        setBulkProgress((prev) =>
+          prev
+            ? {
+                ...prev,
+                completed: prev.total,
+              }
+            : prev
+        );
+      }
+    }
+
+    window.addEventListener('reload-all-cards', onReloadAllCards);
+    return () => {
+      window.removeEventListener('reload-all-cards', onReloadAllCards);
+    };
+  }, [filteredCards, bulkReloading]);
+
+  const bulkProgressUi = useMemo(() => {
+    if (!bulkProgress) return null;
+    const { total, completed, startedAtMs } = bulkProgress;
+    const pct = total > 0 ? Math.min(100, Math.round((completed / total) * 100)) : 0;
+    const elapsedMs = Date.now() - startedAtMs;
+    const avgPerCardMs = completed > 0 ? elapsedMs / completed : 0;
+    const remaining = Math.max(0, total - completed);
+    const etaMs = remaining > 0 ? remaining * avgPerCardMs : 0;
+    return {
+      total,
+      completed,
+      pct,
+      elapsedMs,
+      etaMs,
+    };
+  }, [bulkProgress, reloadMessage, reloadingCardId]);
 
   return (
     <div>
@@ -139,11 +526,31 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
           <div>
             <p className="text-sm opacity-75">Last Updated</p>
             <p className="text-sm font-mono mt-1">
-              {lastUpdated ? new Date(lastUpdated).toLocaleDateString() : new Date().toLocaleDateString()}
+              {new Date(lastUpdatedOverride || lastUpdated || new Date().toISOString()).toLocaleString()}
             </p>
           </div>
         </div>
       </div>
+
+      {bulkProgressUi && (
+        <div className="bg-white/5 backdrop-blur-md rounded-lg p-4 mb-6 border border-white/10">
+          <div className="flex items-center justify-between mb-2">
+            <p className="text-white/85 text-sm font-semibold">Reload all progress</p>
+            <p className="text-white/75 text-sm font-mono">
+              {bulkProgressUi.completed}/{bulkProgressUi.total} ({bulkProgressUi.pct}%)
+            </p>
+          </div>
+          <div className="w-full h-2 bg-white/10 rounded overflow-hidden">
+            <div
+              className="h-full bg-emerald-500 transition-all duration-300"
+              style={{ width: `${bulkProgressUi.pct}%` }}
+            />
+          </div>
+          <p className="text-xs text-white/60 mt-2 font-mono">
+            Elapsed: {formatDuration(bulkProgressUi.elapsedMs)} | ETA: {formatDuration(bulkProgressUi.etaMs)}
+          </p>
+        </div>
+      )}
 
       {/* Filters */}
       <div className="bg-white/5 backdrop-blur-md rounded-lg p-4 mb-6 space-y-4">
@@ -459,7 +866,9 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
-                    target.parentElement!.innerHTML = `
+                    const parent = target.parentElement;
+                    if (!parent) return;
+                    parent.innerHTML = `
                       <div class="flex items-center justify-center h-full text-white/50">
                         <div class="text-center">
                           <div class="text-4xl mb-2">🎴</div>
@@ -499,9 +908,45 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                       {card.set} #{card.cardNumber}
                     </p>
                   </div>
-                  <span className={`text-xs px-2 py-1 rounded font-bold ${rarityBadgeClass(card.rarity)}`}>
-                    {card.rarity}
-                  </span>
+                  <div className="flex flex-col items-end gap-2">
+                    <div className="flex items-center gap-1">
+                      <button
+                        type="button"
+                        disabled={favoritePendingCardId === card.id}
+                        onClick={() => toggleFavorite(card)}
+                        className={`px-2 py-1 rounded border text-xs font-semibold transition disabled:opacity-50 ${
+                          card.favorite === true
+                            ? 'bg-amber-500/20 border-amber-400/50 text-amber-300'
+                            : 'bg-white/10 border-white/20 text-white/70 hover:bg-white/15'
+                        }`}
+                        title={card.favorite === true ? 'Remove favorite' : 'Add favorite'}
+                      >
+                        {favoritePendingCardId === card.id ? '...' : card.favorite === true ? '★' : '☆'}
+                      </button>
+                      <button
+                        type="button"
+                        disabled={reloadingCardId === card.id}
+                        onClick={() => reloadCardJPAndUS(card)}
+                        className="p-1 rounded bg-white/10 hover:bg-white/15 border border-white/20 text-white/80 transition disabled:opacity-50"
+                        title="Reload Japan-Toreca (A-/B) + US market price (updates only this card in the UI) and logs URLs + results in the console"
+                        aria-label="Reload card prices"
+                      >
+                        {reloadingCardId === card.id ? (
+                          <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                        ) : (
+                          <RefreshCw className="h-3.5 w-3.5" />
+                        )}
+                      </button>
+                      <span className={`text-xs px-2 py-1 rounded font-bold ${rarityBadgeClass(card.rarity)}`}>
+                        {card.rarity}
+                      </span>
+                    </div>
+                    {reloadMessage && lastReloadedCardId === card.id && (
+                      <p className="text-[11px] text-white/50 font-mono max-w-[160px] break-words text-right">
+                        {reloadMessage}
+                      </p>
+                    )}
+                  </div>
                 </div>
 
                 {/* Baseline JP Price */}

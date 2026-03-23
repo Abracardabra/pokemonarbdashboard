@@ -44,6 +44,9 @@ export interface BuilderOpportunity {
   number: string;
   name: string;
   rarity: RarityCode;
+  // Optional persisted pin/favorite marker.
+  // If absent, card is considered not favorited.
+  favorite?: boolean;
   images?: {
     small?: string | null;
     large?: string | null;
@@ -140,6 +143,9 @@ export interface ArbitrageOpportunity {
   cardNumber: string;
   rarity: RarityCode;
   set: string;
+  // Optional persisted pin/favorite marker.
+  // If absent, card is considered not favorited.
+  favorite?: boolean;
   tcgplayer: TCGPlayerData;
   japanesePrices: JapanesePrice[];
   lowestJapanesePrice: number;

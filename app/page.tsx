@@ -1,4 +1,5 @@
 import { CardsWithFilters } from '@/components/CardsWithFilters';
+import { ReloadAllCardsButton } from '@/components/ReloadAllCardsButton';
 import { BuilderDashboardData, DashboardData, ArbitrageOpportunity, JapanesePrice } from '@/lib/types';
 import { baseCardsData } from '@/lib/card-data';
 import Link from 'next/link';
@@ -81,7 +82,7 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
       });
     }
 
-    
+    
         // New shops: Hareruya2, Hobibinet, Dorasuta
         if (c.hareruya2?.aMinus) {
           jp.push({
@@ -155,6 +156,7 @@ function toArbitrageOpportunities(builder: BuilderDashboardData): ArbitrageOppor
       cardNumber: c.number,
       rarity: c.rarity,
       set: c.set,
+      favorite: c.favorite === true ? true : undefined,
       tcgplayer: {
         marketPrice: usMarketPrice ?? 0,
         sellerCount: c.usMarket?.tcgplayer?.sellerCount ?? 0,
@@ -262,6 +264,7 @@ export default async function Home() {
         </div>
 
         <div className="flex flex-wrap items-center gap-3 mb-4">
+          <ReloadAllCardsButton />
           <a
             href="/compare"
             className="inline-flex items-center gap-2 px-3 py-2 rounded bg-white/10 hover:bg-white/15 border border-white/20 text-white/80 text-sm"

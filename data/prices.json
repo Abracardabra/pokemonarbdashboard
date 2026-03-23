@@ -80868,7 +80868,8 @@
           "sellerCount": 9
         }
       },
-      "updatedAt": "2026-02-24T22:56:22.207Z"
+      "updatedAt": "2026-02-24T22:56:22.207Z",
+      "favorite": true
     },
     {
       "set": "SV4M",
