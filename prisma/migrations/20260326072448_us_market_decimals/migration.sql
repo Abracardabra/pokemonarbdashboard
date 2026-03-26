@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "UsMarket" ALTER COLUMN "marketPrice" SET DATA TYPE DECIMAL(65,30);

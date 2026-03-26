@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// We intentionally keep most string fields as String (not enums)
+// to make the migration resilient to older/partial datasets.
+model Card {
+  id        String   @id
+
+  // Identity
+  set       String
+  setId     String
+  number    String
+  name      String?
+  rarity    String
+  favorite  Boolean  @default(false)
+
+  // UI assets
+  imagesSmall String?
+  imagesLarge String?
+
+  updatedAt DateTime
+
+  // Relations
+  japanOffers JapanOffer[]
+  usMarket    UsMarket?
+
+  createdAt DateTime @default(now())
+
+  @@index([setId])
+  @@index([number])
+}
+
+model JapanOffer {
+  id String @id @default(cuid())
+
+  cardId   String
+  card     Card   @relation(fields: [cardId], references: [id], onDelete: Cascade)
+
+  // Source key (japan-toreca, toretoku, torecacamp, hobibinet, dorasuta)
+  source    String
+  quality   String // 'A-' or 'B'
+  priceJPY  Int
+  inStock   Boolean
+
+  url          String
+  extractedAt  DateTime @default(now())
+  updatedAt    DateTime @default(now())
+
+  @@unique([cardId, source, quality])
+  @@index([source])
+  @@index([cardId])
+}
+
+model UsMarket {
+  id String @id @default(cuid())
+
+  cardId   String @unique
+  card     Card   @relation(fields: [cardId], references: [id], onDelete: Cascade)
+
+  marketPrice Decimal?
+  sellerCount Int?
+  tcgPlayerUrl String?
+
+  updatedAt DateTime
+
+  @@index([updatedAt])
+}
+

@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import * as fs from 'fs';
-import * as path from 'path';
+import { prisma } from '@/lib/prisma';
 
 type PersistCardRequest = {
   cardId?: string;
@@ -21,86 +20,174 @@ type PersistCardRequest = {
   updatedAt?: string;
 };
 
-function applyFavorite<T extends Record<string, unknown>>(obj: T, favorite: boolean | undefined): T {
-  if (favorite === undefined) return obj;
-  if (favorite) return { ...obj, favorite: true };
-  const clone: Record<string, unknown> = { ...obj };
-  delete clone.favorite;
-  return clone as T;
+function parseCardId(cardId: string): { setId: string; number: string } | null {
+  const i = cardId.indexOf(':');
+  if (i <= 0 || i >= cardId.length - 1) return null;
+  return { setId: cardId.slice(0, i), number: cardId.slice(i + 1) };
 }
 
-function matchesBuilderCard(
-  c: Record<string, unknown>,
-  cardId: string,
-  set: string,
-  cardNumber: string
-): boolean {
-  const setId = String(c?.setId || '');
-  const number = String(c?.number || '');
-  const exactId = `${setId}:${number}`;
-  if (cardId && exactId === cardId) return true;
-  if (set && number && String(c?.set || '').toUpperCase() === set.toUpperCase() && number === cardNumber) return true;
-  if (setId && number && setId.toUpperCase() === set.toUpperCase() && number === cardNumber) return true;
-  return false;
+function normalizeDate(value?: string): Date {
+  if (!value) return new Date();
+  const d = new Date(value);
+  return Number.isFinite(d.getTime()) ? d : new Date();
+}
+
+function toDecimalInput(value: number | null): string | null {
+  if (value == null) return null;
+  if (!Number.isFinite(value)) return null;
+  // Pass decimal values as strings so Postgres DECIMAL stores exact scale values.
+  return String(value);
 }
 
 export async function POST(request: NextRequest) {
   try {
     const body = (await request.json()) as PersistCardRequest;
     const cardId = String(body.cardId || '').trim();
-    const set = String(body.set || '').trim();
+    const set = String(body.set || '').trim().toUpperCase();
     const cardNumber = String(body.cardNumber || '').trim();
 
     if (!cardId && !(set && cardNumber)) {
-      return NextResponse.json(
-        { error: 'Provide cardId or (set + cardNumber)' },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: 'Provide cardId or (set + cardNumber)' }, { status: 400 });
     }
 
-    const dataPath = path.join(process.cwd(), 'data', 'prices.json');
-    if (!fs.existsSync(dataPath)) {
-      return NextResponse.json({ error: 'data/prices.json not found' }, { status: 404 });
+    let resolvedId = cardId;
+    if (!resolvedId) {
+      const found = await prisma.card.findFirst({
+        where: {
+          set,
+          number: cardNumber,
+        },
+        select: { id: true },
+      });
+      if (!found) {
+        return NextResponse.json({ error: 'Card not found in database' }, { status: 404 });
+      }
+      resolvedId = found.id;
     }
 
-    const parsed = JSON.parse(fs.readFileSync(dataPath, 'utf-8')) as Record<string, unknown>;
-    let updated = false;
+    const idParts = parseCardId(resolvedId);
+    if (!idParts) {
+      return NextResponse.json({ error: `Invalid cardId format: ${resolvedId}` }, { status: 400 });
+    }
 
-    // Builder format
-    if (Array.isArray(parsed?.cards) && parsed?.meta) {
-      const cards = parsed.cards as Array<Record<string, unknown>>;
-      parsed.cards = cards.map((c) => {
-        if (!matchesBuilderCard(c, cardId, set, cardNumber)) return c;
-        updated = true;
-        let next = applyFavorite(c, body.favorite);
-        if (body.japanToreca) next = { ...next, japanToreca: body.japanToreca };
-        if (body.usMarket) next = { ...next, usMarket: body.usMarket };
-        if (body.updatedAt) next = { ...next, updatedAt: body.updatedAt };
-        return next;
+    const now = normalizeDate(body.updatedAt);
+
+    const cardUpdate: {
+      favorite?: boolean;
+      updatedAt?: Date;
+    } = {};
+    if (typeof body.favorite === 'boolean') {
+      cardUpdate.favorite = body.favorite;
+    }
+    if (body.updatedAt || body.japanToreca || body.usMarket) {
+      cardUpdate.updatedAt = now;
+    }
+
+    if (Object.keys(cardUpdate).length > 0) {
+      await prisma.card.update({
+        where: { id: resolvedId },
+        data: cardUpdate,
       });
     }
 
-    // Legacy format (favorite only fallback)
-    if (!updated && Array.isArray(parsed?.opportunities)) {
-      const opportunities = parsed.opportunities as Array<Record<string, unknown>>;
-      parsed.opportunities = opportunities.map((c) => {
-        const id = String(c?.id || '');
-        const setCode = String(c?.set || '');
-        const number = String(c?.cardNumber || '');
-        const byId = cardId && id === cardId;
-        const byFields = set && cardNumber && setCode.toUpperCase() === set.toUpperCase() && number === cardNumber;
-        if (!byId && !byFields) return c;
-        updated = true;
-        return applyFavorite(c, body.favorite);
+    // Persist Japan-Toreca A-/B offers when provided.
+    if (body.japanToreca) {
+      const aMinus = body.japanToreca.aMinus;
+      const b = body.japanToreca.b;
+
+      if (aMinus) {
+        await prisma.japanOffer.upsert({
+          where: {
+            cardId_source_quality: {
+              cardId: resolvedId,
+              source: 'japan-toreca',
+              quality: 'A-',
+            },
+          },
+          create: {
+            cardId: resolvedId,
+            source: 'japan-toreca',
+            quality: 'A-',
+            priceJPY: Number(aMinus.priceJPY),
+            inStock: aMinus.inStock !== false,
+            url: aMinus.url,
+            extractedAt: now,
+            updatedAt: now,
+          },
+          update: {
+            priceJPY: Number(aMinus.priceJPY),
+            inStock: aMinus.inStock !== false,
+            url: aMinus.url,
+            extractedAt: now,
+            updatedAt: now,
+          },
+        });
+      } else {
+        await prisma.japanOffer.deleteMany({
+          where: { cardId: resolvedId, source: 'japan-toreca', quality: 'A-' },
+        });
+      }
+
+      if (b) {
+        await prisma.japanOffer.upsert({
+          where: {
+            cardId_source_quality: {
+              cardId: resolvedId,
+              source: 'japan-toreca',
+              quality: 'B',
+            },
+          },
+          create: {
+            cardId: resolvedId,
+            source: 'japan-toreca',
+            quality: 'B',
+            priceJPY: Number(b.priceJPY),
+            inStock: b.inStock !== false,
+            url: b.url,
+            extractedAt: now,
+            updatedAt: now,
+          },
+          update: {
+            priceJPY: Number(b.priceJPY),
+            inStock: b.inStock !== false,
+            url: b.url,
+            extractedAt: now,
+            updatedAt: now,
+          },
+        });
+      } else {
+        await prisma.japanOffer.deleteMany({
+          where: { cardId: resolvedId, source: 'japan-toreca', quality: 'B' },
+        });
+      }
+    }
+
+    if (body.usMarket) {
+      const m = body.usMarket.tcgplayer;
+      await prisma.usMarket.upsert({
+        where: { cardId: resolvedId },
+        create: {
+          cardId: resolvedId,
+          marketPrice: toDecimalInput(m.marketPrice),
+          sellerCount: m.sellerCount == null ? null : Number(m.sellerCount),
+          tcgPlayerUrl: m.url ?? null,
+          updatedAt: now,
+        },
+        update: {
+          marketPrice: toDecimalInput(m.marketPrice),
+          sellerCount: m.sellerCount == null ? null : Number(m.sellerCount),
+          tcgPlayerUrl: m.url ?? null,
+          updatedAt: now,
+        },
       });
     }
 
-    if (!updated) {
-      return NextResponse.json({ error: 'Card not found in prices.json' }, { status: 404 });
-    }
-
-    fs.writeFileSync(dataPath, JSON.stringify(parsed, null, 2));
-    return NextResponse.json({ success: true });
+    return NextResponse.json({
+      success: true,
+      cardId: resolvedId,
+      setId: idParts.setId,
+      number: idParts.number,
+    });
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json({ error: 'Failed to persist card update', message }, { status: 500 });
