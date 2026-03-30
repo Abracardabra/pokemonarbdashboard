@@ -1,10 +1,12 @@
 /**
- * Unified Provider Scraper using Scrape.do
- * All Japanese card shop providers route through Scrape.do for Cloudflare bypass
+ * Cost-Optimized Provider Scraper
+ * 
+ * Strategy: Try direct fetch first (FREE), only use Scrape.do if blocked
+ * This minimizes costs since many sites work without bypass
  */
 
-import { scrapeDo, ScrapeDoConfig } from './scrape-do-client';
-import { parseProviderHtml, ParsedOffer, extractAllOffers } from './scrape-do-queries';
+import { smartFetch, SmartFetchResult } from './smart-fetch';
+import { parseProviderHtml, ParsedOffer } from './scrape-do-queries';
 import { prisma } from '@/lib/prisma';
 
 export interface ScrapeResult extends ParsedOffer {
@@ -12,6 +14,8 @@ export interface ScrapeResult extends ParsedOffer {
   success: boolean;
   cloudflareDetected: boolean;
   durationMs: number;
+  fetchMethod: 'direct' | 'scrape-do';
+  scrapeDoCost: number;  // Credits used (0 for direct, 1 for Scrape.do)
 }
 
 export interface ScrapeCardRequest {
@@ -23,35 +27,44 @@ export interface ScrapeCardRequest {
 
 /**
  * Scrape a single provider URL for card data
+ * Uses smart fetch: tries direct first, falls back to Scrape.do only if blocked
  */
 export async function scrapeProvider(
-  request: ScrapeCardRequest,
-  config: ScrapeDoConfig = {}
+  request: ScrapeCardRequest
 ): Promise<ScrapeResult> {
   const { cardId, url, provider, expectedCondition } = request;
 
   const start = Date.now();
   
   try {
-    // Use Scrape.do to fetch the page
-    const result = await scrapeDo(url, {
-      render: true,  // Required for JavaScript-heavy Japanese sites
-      timeout: 60000,  // 60 second timeout for headless rendering
-      geoCode: 'jp',   // Use Japan proxy for better performance
-      ...config,
+    // Use smart fetch: tries direct first, falls back to Scrape.do
+    const result = await smartFetch(url, {
+      timeout: 15000,  // Short timeout for direct, smartFetch handles Scrape.do separately
+      geoCode: 'jp',
+      render: true,
     });
 
     const durationMs = Date.now() - start;
 
     // Parse the HTML
-    const parsed = parseProviderHtml(provider, result, expectedCondition, url);
+    const parsed = parseProviderHtml(provider, {
+      success: result.success,
+      html: result.html,
+      status: result.status,
+      durationMs: result.durationMs,
+      isCloudflareChallenge: result.error?.includes('Cloudflare') || false,
+      isBlocked: !result.success,
+      title: null,
+    }, expectedCondition, url);
 
     const scrapeResult: ScrapeResult = {
       ...parsed,
       provider,
       success: result.success && !!parsed.priceJPY,
-      cloudflareDetected: result.isCloudflareChallenge,
+      cloudflareDetected: result.error?.includes('Cloudflare') || false,
       durationMs,
+      fetchMethod: result.method,
+      scrapeDoCost: result.scrapeDoCost || 0,
     };
 
     // Persist to database if successful
@@ -62,6 +75,9 @@ export async function scrapeProvider(
         url,
       });
     }
+
+    // Log metrics with cost
+    logScrapeMetrics(provider, scrapeResult);
 
     return scrapeResult;
 
@@ -78,6 +94,8 @@ export async function scrapeProvider(
       success: false,
       cloudflareDetected: false,
       durationMs,
+      fetchMethod: 'direct',
+      scrapeDoCost: 0,
       error: error instanceof Error ? error.message : 'Unknown error',
     };
   }
@@ -159,12 +177,12 @@ export async function scrapeCardProviders(
 }
 
 /**
- * Batch scrape multiple cards with rate limiting
+ * Batch scrape multiple cards with rate limiting and cost tracking
  */
 export async function scrapeBatch(
   requests: ScrapeCardRequest[],
   options: { delayMs?: number; concurrency?: number } = {}
-): Promise<ScrapeResult[]> {
+): Promise<{ results: ScrapeResult[]; metrics: ReturnType<typeof calculateBatchMetrics> }> {
   const { delayMs = 2000, concurrency = 2 } = options;
   
   const results: ScrapeResult[] = [];
@@ -174,6 +192,8 @@ export async function scrapeBatch(
   for (let i = 0; i < requests.length; i += concurrency) {
     chunks.push(requests.slice(i, i + concurrency));
   }
+
+  console.log(`[Scrape Batch] Processing ${requests.length} requests in ${chunks.length} chunks (concurrency: ${concurrency})`);
 
   for (const chunk of chunks) {
     // Process chunk concurrently
@@ -189,7 +209,19 @@ export async function scrapeBatch(
     }
   }
 
-  return results;
+  // Calculate metrics
+  const metrics = calculateBatchMetrics(results);
+  
+  console.log('[Scrape Batch] Complete:', {
+    total: metrics.total,
+    successRate: `${(metrics.successRate * 100).toFixed(1)}%`,
+    directFetches: metrics.direct,
+    scrapeDoFetches: metrics.scrapeDo,
+    totalCost: `${metrics.totalCost} credits`,
+    savings: `${metrics.savings} credits saved`,
+  });
+
+  return { results, metrics };
 }
 
 function sleep(ms: number): Promise<void> {
@@ -198,18 +230,48 @@ function sleep(ms: number): Promise<void> {
 
 /**
  * Get usage statistics from Scrape.do
- * Note: Scrape.do doesn't have a direct API for this, so we track internally
+ * Tracks costs and success rates by provider
  */
 export function logScrapeMetrics(
   provider: string,
   result: ScrapeResult
 ): void {
-  console.log('[Scrape.do]', {
+  console.log('[Scrape]', {
     provider,
     success: result.success,
     durationMs: result.durationMs,
+    fetchMethod: result.fetchMethod,
+    cost: result.scrapeDoCost,
     cloudflareDetected: result.cloudflareDetected,
     hasPrice: !!result.priceJPY,
     timestamp: new Date().toISOString(),
   });
+}
+
+/**
+ * Calculate batch cost savings
+ */
+export function calculateBatchMetrics(results: ScrapeResult[]): {
+  total: number;
+  direct: number;
+  scrapeDo: number;
+  totalCost: number;
+  savings: number;
+  successRate: number;
+} {
+  const total = results.length;
+  const direct = results.filter(r => r.fetchMethod === 'direct').length;
+  const scrapeDo = results.filter(r => r.fetchMethod === 'scrape-do').length;
+  const totalCost = results.reduce((sum, r) => sum + r.scrapeDoCost, 0);
+  const savings = direct;  // Each direct fetch saves 1 Scrape.do credit
+  const successRate = results.filter(r => r.success).length / total;
+
+  return {
+    total,
+    direct,
+    scrapeDo,
+    totalCost,
+    savings,
+    successRate,
+  };
 }

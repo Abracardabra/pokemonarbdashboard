@@ -3,31 +3,42 @@
 ## Decision Summary
 
 **Replacing:** Direct fetches (failing due to Cloudflare) + Browserless BQL (more expensive)
-**Using:** Scrape.do API for all Japanese provider scraping
+**Using:** Cost-optimized smart fetch - tries direct first (FREE), falls back to Scrape.do only when blocked
 
-## Why Scrape.do
+## Cost Optimization Strategy
 
-1. **Cost-effective** - 1,000 free credits/month, then competitive pricing
-2. **Simple REST API** - No GraphQL complexity, just HTTP GET with query params
-3. **99.98% success rate** - Built-in Cloudflare bypass and CAPTCHA solving
-4. **Headless rendering** - `render=true` parameter for JavaScript-heavy sites
-5. **Automatic proxy rotation** - Built-in residential proxy pool
-6. **Zero maintenance** - No browser management, sessions, or local agents
+### Smart Fetch Pattern
+1. **Try direct fetch first** - FREE, 15 second timeout
+2. **If Cloudflare blocks (403/challenge)** → Use Scrape.do (1 credit)
+3. **Track costs** - Log which method succeeded
+
+### Why This Saves Money
+
+| Provider | Direct Works? | Savings |
+|----------|--------------|---------|
+| Japan-Toreca | Maybe (light CF) | ~50% of requests FREE |
+| Dorasuta | No (heavy CF) | Always needs Scrape.do |
+| Toretoku | Unknown | Test needed |
+| Torecacamp | Unknown | Test needed |
+| Hobibinet | Unknown | Test needed |
+
+**Potential savings: 30-50% of requests can use direct fetch (FREE)**
 
 ## Pricing
 
-| Tier | Credits | Price | Our Use |
-|------|---------|-------|---------|
-| Free | 1,000/mo | $0 | Testing + light usage |
-| Starter | 10,000/mo | ~$29 | ~30 cards/day |
-| Growth | 50,000/mo | ~$99 | ~150 cards/day |
+Based on screenshot you shared:
 
-**Our Usage Estimate:**
-- 300 cards/day target
-- ~1-2 requests per card (product page load)
-- **Total: ~600-900 requests/day = ~18,000-27,000/month**
+| Plan | Credits | Price | Our Coverage |
+|------|---------|-------|--------------|
+| Hobby | 250,000 | **$29/mo** | ✅ 13.8× our usage |
+| Pro | 1,250,000 | $99/mo | 69× our usage |
 
-**Cost:** Growth plan at ~$99/month
+**With smart fetch cost reduction:**
+- Worst case (all need Scrape.do): 18,000 credits/month
+- Best case (50% direct): 9,000 credits/month
+- **Actual: Likely 12,000-15,000 credits/month**
+
+**Cost:** Hobby plan at **$29/month** is plenty!
 
 ## Environment Setup
 
@@ -41,206 +52,136 @@ SCRAPE_DO_API_KEY=a86dacd8070048d3aa6574451ca74ed2a10c37a5ae5
 ```
 lib/
   adapters/
-    scrape-do-client.ts    # Core API client
-    scrape-do-queries.ts   # Provider-specific selectors
-    provider-scraper.ts    # Unified scrape interface
+    smart-fetch.ts       # Cost-optimized: direct first, Scrape.do fallback
+    scrape-do-client.ts  # Core Scrape.do API client
+    scrape-do-queries.ts # Provider-specific selectors
+    provider-scraper.ts  # Unified scrape interface with cost tracking
 ```
 
-## Core Client
+## Smart Fetch Implementation
 
 ```typescript
-// lib/adapters/scrape-do-client.ts
-const API_KEY = process.env.SCRAPE_DO_API_KEY;
-
-export async function scrapeDo(
-  targetUrl: string,
-  config: { render?: boolean; timeout?: number; geoCode?: string }
-): Promise<ScrapeDoResult> {
-  const params = new URLSearchParams({
-    token: API_KEY,
-    url: targetUrl,
-    render: config.render ? 'true' : 'false',
-  });
-  
-  if (config.geoCode) {
-    params.set('geoCode', config.geoCode);
+// lib/adapters/smart-fetch.ts
+export async function smartFetch(url: string): Promise<SmartFetchResult> {
+  // Step 1: Try direct fetch (FREE)
+  const direct = await fetchWithTimeout(url, 15000);
+  if (!isCloudflareBlocked(direct)) {
+    return { success: true, html: direct.html, method: 'direct', cost: 0 };
   }
   
-  const apiUrl = `https://api.scrape.do/?${params.toString()}`;
-  const response = await fetch(apiUrl);
-  
-  return {
-    html: await response.text(),
-    success: response.ok,
-    // ... parsing
-  };
+  // Step 2: Fallback to Scrape.do (1 credit)
+  const scrapeDo = await scrapeDo(url, { render: true });
+  return { success: true, html: scrapeDo.html, method: 'scrape-do', cost: 1 };
 }
 ```
 
-## Provider Selectors
+## Usage with Cost Tracking
 
 ```typescript
-// lib/adapters/scrape-do-queries.ts
-export const PROVIDER_SELECTORS: Record<string, ProviderSelectors> = {
-  'japan-toreca': {
-    price: '.product-price .money, [data-price] .money',
-    stock: '.product-form__inventory, .inventory-quantity',
-    title: 'h1.product-title',
-    condition: '.variant-sku',  // Contains -a or -b
-  },
-  
-  'dorasuta': {
-    price: '.price-current, .product-price .current-price',
-    stock: '.stock-status, .availability',
-    title: 'h1.product-title',
-  },
-  
-  // ... other providers
-};
-```
-
-## Usage Example
-
-```typescript
-// Scrape a single card from Japan-Toreca
+// Scrape a single card
 const result = await scrapeProvider({
   cardId: 'sv3-123',
-  url: 'https://shop.japan-toreca.com/products/pokemon-xxxxx-a',
-  provider: 'japan-toreca',
+  url: 'https://dorasuta.jp/product?pid=123',
+  provider: 'dorasuta',
   expectedCondition: 'A-',
 });
 
 // Result includes:
 // - priceJPY: number | null
-// - inStock: boolean
-// - title: string | null
-// - success: boolean
-// - durationMs: number
-// - cloudflareDetected: boolean
+// - fetchMethod: 'direct' | 'scrape-do'  <-- NEW
+// - scrapeDoCost: 0 | 1                  <-- NEW
+
+// Batch with metrics
+const { results, metrics } = await scrapeBatch(requests);
+console.log(metrics);
+// {
+//   total: 100,
+//   direct: 45,      // 45 requests used direct (FREE)
+//   scrapeDo: 55,    // 55 requests used Scrape.do (55 credits)
+//   totalCost: 55,   // Total credits used
+//   savings: 45,    // Credits saved vs using Scrape.do for all
+//   successRate: 0.98
+// }
 ```
 
-## Integration with Dashboard
+## Verified Working Providers
 
-### API Routes Update
-
-Update `/api/cards/persist` to use the new scraper:
-
-```typescript
-// app/api/cards/persist/route.ts
-import { scrapeCardProviders } from '@/lib/adapters/provider-scraper';
-
-export async function POST(request: Request) {
-  // ... existing code ...
-  
-  // When reloading Japanese prices
-  if (reloadJapanese) {
-    const results = await scrapeCardProviders(cardId, japanesePrices);
-    
-    // Check for failures
-    const failures = results.filter(r => !r.success);
-    if (failures.length > 0) {
-      console.warn('Some providers failed:', failures);
-    }
-  }
-}
-```
-
-### Frontend Update
-
-No changes needed - the existing reload flow works the same way.
+| Provider | Status | Method | Test Result |
+|----------|--------|--------|-------------|
+| Japan-Toreca | ✅ Working | Scrape.do | 34s, price extracted |
+| Dorasuta | ✅ Working | Scrape.do | 40s, Cloudflare bypassed |
+| Toretoku | 🔲 Not tested | - | - |
+| Torecacamp | 🔲 Not tested | - | - |
+| Hobibinet | 🔲 Not tested | - | - |
 
 ## Capacity Analysis
 
-**Current Plan: 1,000 credits/month free**
+**Hobby Plan: 250,000 credits/month @ $29**
 
-| Activity | Credits | Daily Budget |
-|----------|---------|--------------|
-| Test runs | ~50 | - |
-| Favorites reload | ~50 cards × 2 providers = 100 | 3 cards/day |
-| Priority tier | ~100 cards × 2 providers = 200 | 6 cards/day |
-| Routine tier | ~150 cards × 2 providers = 300 | 9 cards/day |
-| **Total** | **~650** | **~18 cards/day** |
+| Scenario | Daily Cards | Credits/Day | Monthly | Cost |
+|----------|-------------|-------------|---------|------|
+| All Scrape.do | 300 | 600 | 18,000 | $29 (Hobby) |
+| 50% Smart fetch | 300 | 300 | 9,000 | $29 (Hobby) |
+| High volume | 1,000 | 1,000-2,000 | 30,000-60,000 | $29 (Hobby) |
+| Max capacity | 4,000+ | - | 250,000 | $29 (Hobby limit) |
 
-**Free tier gets us ~18 cards/day reliably**
-
-For 300 cards/day, we need the Growth plan (~$99/month).
-
-## Rate Limiting & Best Practices
-
-1. **Sequential by default** - Scrape.do handles concurrency on their end
-2. **2-3 second delays** between requests to same provider
-3. **Use geoCode=jp** for Japanese sites (better performance)
-4. **Always use render=true** for JavaScript-heavy sites
-5. **60 second timeout** for headless rendering
+**We're well within Hobby plan limits!**
 
 ## Monitoring
 
 ```typescript
-// Log metrics for each scrape
-logScrapeMetrics(provider, {
+// Each scrape logs method and cost
+console.log('[Scrape]', {
+  provider: 'dorasuta',
   success: true,
-  durationMs: 34000,
-  cloudflareDetected: false,
-  priceJPY: 1234,
+  fetchMethod: 'scrape-do',
+  cost: 1,
+  savings: 0,  // 0 because direct failed
 });
 
-// Output:
-// [Scrape.do] { provider: 'japan-toreca', success: true, durationMs: 34000, ... }
+console.log('[Scrape]', {
+  provider: 'toretoku',
+  success: true,
+  fetchMethod: 'direct',
+  cost: 0,
+  savings: 1,  // Saved 1 credit!
+});
 ```
-
-## Error Handling
-
-| Error | Cause | Solution |
-|-------|-------|----------|
-| Timeout | Page too slow | Increase timeout, retry |
-| CF Challenge | New protection | Scrape.do updates automatically |
-| No price found | Selector outdated | Update selector in queries.ts |
-| 403 Forbidden | IP blocked | Scrape.do rotates automatically |
 
 ## Implementation Roadmap
 
-### Phase 1: Integration (1 day) ✅
+### Phase 1: Smart Fetch ✅
 - [x] Add SCRAPE_DO_API_KEY to .env
-- [x] Create `lib/adapters/scrape-do-client.ts`
-- [x] Create `lib/adapters/scrape-do-queries.ts`
-- [x] Create `lib/adapters/provider-scraper.ts`
-- [x] Test script verifies API works
+- [x] Create `lib/adapters/smart-fetch.ts`
+- [x] Update `lib/adapters/provider-scraper.ts` with cost tracking
+- [x] Verified Japan-Toreca works
+- [x] Verified Dorasuta works
 
-### Phase 2: Provider Testing (1 day)
-- [ ] Test Japan-Toreca (working ✅)
-- [ ] Test Dorasuta (need URL)
-- [ ] Test Toretoku
+### Phase 2: Remaining Providers
+- [ ] Test Toretoku (check if direct works)
 - [ ] Test Torecacamp
 - [ ] Test Hobibinet
+- [ ] Document which providers can use direct fetch
 
-### Phase 3: Dashboard Integration (1 day)
-- [ ] Update `/api/cards/persist` to use scraper
-- [ ] Add fallback logic for failed scrapes
-- [ ] Test end-to-end reload flow
+### Phase 3: Dashboard Integration
+- [ ] Update `/api/cards/persist` to use smart scraper
+- [ ] Add cost metrics to API responses
+- [ ] Build simple usage dashboard
 
-### Phase 4: Production (1 day)
-- [ ] Monitor success rates
-- [ ] Track credit usage
-- [ ] Optimize selectors if needed
+### Phase 4: Production
+- [ ] Monitor monthly credit usage
+- [ ] Optimize by provider (use direct where possible)
+- [ ] Stay within Hobby plan ($29/mo)
 
-## Success Metrics
+## Comparison: Scrape.do Smart Fetch vs Browserless
 
-- [ ] All 5 providers working via Scrape.do
-- [ ] Success rate > 95% across all providers
-- [ ] Monthly usage within credit budget
-- [ ] Average scrape time < 40 seconds
-- [ ] No cards stuck in "failed" state
+| Metric | Scrape.do (Smart) | Browserless BQL |
+|--------|-------------------|-----------------|
+| **Monthly Cost** | **$29** (Hobby) | $500+ (Starter) |
+| **Credits** | 250,000 | 180,000 |
+| **Our Usage** | ~12,000/mo (with smart fetch) | ~18,000/mo |
+| **Cost per 1k scrapes** | ~$2.40 | ~$27.80 |
+| **Setup** | Simple REST | GraphQL |
+| **Savings** | **$471+/month (94%)** | - |
 
-## Comparison: Scrape.do vs Browserless
-
-| Feature | Scrape.do | Browserless |
-|---------|-----------|-------------|
-| Setup | One-line API | GraphQL complexity |
-| Cost | $99/mo for 50k | $200+/mo for similar |
-| Credits | 50k on Growth | 20k on Prototyping |
-| API | Simple REST | GraphQL |
-| Browser | Managed | 4 concurrent |
-| Maintenance | None | Session management |
-| Proxy | Built-in | Built-in |
-
-**Scrape.do wins on simplicity and cost for our use case.**
+**Scrape.do with smart fetch = 94% cheaper than Browserless!**
