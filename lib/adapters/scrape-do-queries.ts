@@ -39,9 +39,11 @@ export const PROVIDER_SELECTORS: Record<string, ProviderSelectors> = {
   },
   
   'dorasuta': {
-    price: '.price-current, .product-price .current-price, .price-box .price',
-    stock: '.stock-status, .availability, .product-stock',
-    title: 'h1.product-title, .product-name h1, h1[itemprop="name"]',
+    // Note: Test showed `.price` works, returns price like "300 円"
+    // Stock text contains "状態A 300 円 在庫数：363"
+    price: '.price, .price-current, .product-price .current-price, .price-box .price',
+    stock: '[class*="stock"], .stock-status, .availability, .product-stock',
+    title: 'h1, h1.product-title, .product-name h1, h1[itemprop="name"]',
     image: '.product-image img, .gallery-image img',
     condition: '.product-condition, .condition-badge',
   },
