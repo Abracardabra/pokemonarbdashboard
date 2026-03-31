@@ -164,19 +164,91 @@ export const PROVIDER_CONFIGS: Record<string, ProviderConfig> = {
 
   'hobibinet': {
     name: 'hobibinet',
-    baseUrl: 'https://hobibinet.com',
+    baseUrl: 'https://hobibinet-pokemon.com',
     selectors: {
-      price: '.item-price, .price-box .price, .price',
-      stock: '.stock-status, .availability, .inventory',
-      title: 'h1.item-title, .product-title',
+      price: '.item-price, .price-box .price, .price, .money',
+      stock: '.stock-status, .availability, .inventory, .product-stock',
+      title: 'h1.item-title, .product-title, h1',
     },
     qualityPatterns: {
       aMinus: [/A-/i, /状態A/i, /【A】/i, /美品/i],
       b: [/B/i, /状態B/i, /【B】/i, /並品/i],
     },
     stockIndicators: {
-      inStock: ['在庫あり', '在庫数', '購入可能'],
+      inStock: ['在庫あり', '在庫数', '購入可能', 'カートに追加'],
       outOfStock: ['売り切れ', '在庫なし', 'Sold Out'],
+    },
+  },
+
+  'cardrush': {
+    name: 'cardrush',
+    baseUrl: 'https://www.cardrush-pokemon.jp',
+    selectors: {
+      price: '.price, .item-price, .product-price, .price-value',
+      stock: '.stock-status, .inventory, .stock, .zaiko',
+      title: 'h1.item-name, .product-name, h1',
+    },
+    qualityPatterns: {
+      aMinus: [/美品/i, /A-/i, /状態A/i],
+      b: [/並品/i, /B/i, /状態B/i],
+    },
+    stockIndicators: {
+      inStock: ['在庫あり', '即納', '購入可能', 'カートに入れる'],
+      outOfStock: ['売り切れ', '在庫なし', 'Sold Out', '品切れ'],
+    },
+  },
+
+  'playze': {
+    name: 'playze',
+    baseUrl: 'https://playze.jp',
+    selectors: {
+      price: '.price, .money, .product-price, .current-price',
+      stock: '.stock-status, .availability, .inventory-quantity',
+      title: 'h1.product-title, .product-name, h1',
+    },
+    qualityPatterns: {
+      aMinus: [/A-/i, /状態A/i, /【A】/i],
+      b: [/B/i, /状態B/i, /【B】/i],
+    },
+    stockIndicators: {
+      inStock: ['在庫あり', 'カートに追加'],
+      outOfStock: ['売り切れ', '在庫なし', 'Sold Out'],
+    },
+  },
+
+  'c-labo': {
+    name: 'c-labo',
+    baseUrl: 'https://www.c-labo-online.jp',
+    selectors: {
+      price: '.price, .money, .product-price',
+      stock: '.stock-status, .availability, .inventory',
+      title: 'h1.product-title, .item-name, h1',
+    },
+    qualityPatterns: {
+      aMinus: [/A-/i, /状態A/i, /美品/i],
+      b: [/B/i, /状態B/i, /並品/i],
+    },
+    stockIndicators: {
+      inStock: ['在庫あり', '購入可能'],
+      outOfStock: ['売り切れ', '在庫なし'],
+    },
+  },
+
+  'fukufukutoreka': {
+    name: 'fukufukutoreka',
+    baseUrl: 'https://pokemon.fukufukutoreka.com',
+    selectors: {
+      price: '.price, .money, .product-price',
+      stock: '.stock-status, .availability, .inventory',
+      title: 'h1.product-title, h1',
+    },
+    qualityPatterns: {
+      aMinus: [/A-/i, /状態A/i, /【A】/i],
+      b: [/B/i, /状態B/i, /【B】/i],
+    },
+    stockIndicators: {
+      inStock: ['在庫あり', 'カートに追加'],
+      outOfStock: ['売り切れ', '在庫なし'],
     },
   },
 };

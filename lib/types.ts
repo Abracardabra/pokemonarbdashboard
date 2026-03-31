@@ -1,4 +1,4 @@
-export type PriceSource = 'japan-toreca' | 'toretoku' | 'torecacamp' | 'hobibinet' | 'dorasuta';
+export type PriceSource = 'japan-toreca' | 'toretoku' | 'torecacamp' | 'hobibinet' | 'dorasuta' | 'cardrush' | 'playze' | 'c-labo' | 'fukufukutoreka';
 
 export type RarityCode = 'AR' | 'SAR' | 'SR' | 'CHR' | 'UR' | 'SSR' | 'RRR';
 

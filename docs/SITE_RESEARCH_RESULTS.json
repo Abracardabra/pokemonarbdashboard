@@ -1,0 +1,330 @@
+[
+  {
+    "name": "japan-toreca",
+    "baseUrl": "https://shop.japan-toreca.com",
+    "pages": [
+      {
+        "url": "https://shop.japan-toreca.com/collections/all",
+        "success": false,
+        "status": 502,
+        "duration": 57754,
+        "error": "HTTP 502"
+      },
+      {
+        "url": "https://shop.japan-toreca.com/collections/pokemon",
+        "success": true,
+        "status": 200,
+        "duration": 7639,
+        "htmlLength": 697168,
+        "isCloudflareChallenge": false,
+        "html": "<!DOCTYPE html><html class=\"js\" lang=\"ja\" dir=\"ltr\" style=\"--theme-header-height: 1650px; --viewport-height: 866px; --scrollbar-width: 15px; --theme-sticky-header-height: 0px; --epw-high-contrast-white: #5936e3; --ep-mini-widget-primary-color: #5936e3; --epw-primary-color-rgb: 89, 54, 227; --epw-primary-color--500-rgb: 62, 28, 202; --epw-primary-color--700-rgb: 35, 15, 112; --epw-primary-color: #5936e3; --epw-primary-color--100: rgba(240, 237, 252, 1); --epw-primary-color--500: hsla(252, 76%, 45%, 1); --epw-primary-color--700: hsla(252, 76%, 25%, 1); --epw-primary-text-color: hsla(252, 76%, 35%, 1); --epw-background-color: rgba(248, 247, 254, 1); --epwa-zindex: 999; --epwa-position-bottom: 16px; --epwa-position-right: 16px;\"><head>\n\n  \n\n  \n\n    <!-- Google Tag Manager -->\n    <script type=\"text/javascript\" async=\"\" src=\"https://cdn.hextom.com/js/freeshippingbar.js?shop=424c6f-2.myshopify.com\"></script><script type=\"text/javascript\" async=\"\" src=\"//cdn.shopify.com/proxy/62acbe1d468e5bb159d4330e3e3a8635df0e5d39e716e52b0f28a3f434c6ea03/rebolt.webcontrive.com/theme_files/only_style.php?shop=424c6f-2.myshopify.com&amp;sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA\"></script><script type=\"text/javascript\" async=\"\" src=\"https://documents-app.mixlogue.jp/scripts/reorder.js?shop=424c6f-2.myshopify.com\"></script><script type=\"text/javascript\" async=\"\" src=\"https://documents-app.mixlogue.jp/scripts/delivery.js?shop=424c6f-2.myshopify.com\"></script><script type=\"text/javascript\" async=\"\" src=\"https://documents-app.mixlogue.jp/scripts/ue87f9sf8e7rd.min.js?shop=424c6f-2.myshopify.com\"></script><script type=\"text/javascript\" async=\"\" src=\"//shop.japan-toreca.com/cdn/s/trekkie.storefront.debbda03e9ac9faaa11b0ff77bcb79c971117f47.min.js\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-N5MSBXH5\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n    })(window,document,'script','dataLayer','GTM-N5MSBXH5');</script>\n    <!-- End Google Tag Manager --><meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>販売中のポケモンカード一覧\n      – トレカ（TCG）通販・買取ならトレカキングダム\n    </title><link rel=\"canonical\" href=\"https://shop.japan-toreca.com/collections/pokemon\"><link rel=\"icon\" href=\"//shop.japan-toreca.com/cdn/shop/files/favicon_v4.png?crop=center&amp;height=48&amp;v=1739155370&amp;width=48\" type=\"image/png\">\n  <link rel=\"apple-touch-icon\" href=\"//shop.japan-toreca.com/cdn/shop/files/favicon_v4.png?crop=center&amp;height=180&amp;v=1739155370&amp;width=180\"><meta name=\"description\" content=\"現在販売中のポケモンカード一覧ページです。コレクター用の希少カードからプレイ用カードまで幅広い品揃え！高額買取もお任せください。ポケカ、ワンピース、マジック・ザ・ギャザリング、デュエル・マスターズ、ヴァイスシュヴァルツなど多数のジャンルを取り扱っております。\"><meta property=\"og:site_name\" content=\"トレカ（",
+        "analysis": {
+          "hasProductGrid": false,
+          "hasProductList": false,
+          "hasSearch": false,
+          "hasPagination": false,
+          "hasFilters": false,
+          "productSelectors": [],
+          "priceSelectors": [],
+          "qualityIndicators": [],
+          "stockIndicators": []
+        },
+        "sampleProductUrls": []
+      }
+    ],
+    "productPage": {
+      "success": true,
+      "status": 200,
+      "duration": 25812,
+      "htmlLength": 525235,
+      "isCloudflareChallenge": false,
+      "html": "<!DOCTYPE html><html class=\"js\" lang=\"ja\" dir=\"ltr\" style=\"--theme-header-height: 1080px; --viewport-height: 973px; --scrollbar-width: 15px; --theme-sticky-header-height: 0px; --epw-high-contrast-white: #5936e3; --ep-mini-widget-primary-color: #5936e3; --epw-primary-color-rgb: 89, 54, 227; --epw-primary-color--500-rgb: 62, 28, 202; --epw-primary-color--700-rgb: 35, 15, 112; --epw-primary-color: #5936e3; --epw-primary-color--100: rgba(240, 237, 252, 1); --epw-primary-color--500: hsla(252, 76%, 45%, 1); --epw-primary-color--700: hsla(252, 76%, 25%, 1); --epw-primary-text-color: hsla(252, 76%, 35%, 1); --epw-background-color: rgba(248, 247, 254, 1); --epwa-zindex: 999; --epwa-position-bottom: 16px; --epwa-position-right: 16px;\"><head>\n\n  \n\n  \n\n    <!-- Google Tag Manager -->\n    <script type=\"text/javascript\" async=\"\" src=\"//shop.japan-toreca.com/cdn/s/trekkie.storefront.debbda03e9ac9faaa11b0ff77bcb79c971117f47.min.js\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-N5MSBXH5\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n    })(window,document,'script','dataLayer','GTM-N5MSBXH5');</script>\n    <!-- End Google Tag Manager --><meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>【状態A】ミロカロスV SR (099/096) [s2] の通販・買取価格（ポケモンカード）</title><link rel=\"canonical\" href=\"https://shop.japan-toreca.com/products/pokemon-10940-a\"><link rel=\"icon\" href=\"//shop.japan-toreca.com/cdn/shop/files/favicon_v4.png?crop=center&amp;height=48&amp;v=1739155370&amp;width=48\" type=\"image/png\">\n  <link rel=\"apple-touch-icon\" href=\"//shop.japan-toreca.com/cdn/shop/files/favicon_v4.png?crop=center&amp;height=180&amp;v=1739155370&amp;width=180\"><meta name=\"description\" content=\"ミロカロスV(099/096) [s2] {SR} を販売中！コレクター用の希少カードからプレイ用カードまで幅広い品揃え！高額買取もお任せください。ポケカ、ワンピース、マジック・ザ・ギャザリング、デュエル・マスターズ、ヴァイスシュヴァルツなど多数のジャンルを取り扱っております。\"><meta property=\"og:site_name\" content=\"トレカ（TCG）通販・買取ならトレカキングダム\">\n<meta property=\"og:url\" content=\"https://shop.japan-toreca.com/products/pokemon-10940-a\">\n<meta property=\"og:title\" content=\"ミロカロスV(099/096) [s2] {SR} | ポケカ通販・買取ならトレカキングダム\">\n<meta property=\"og:type\" content=\"product\">\n<meta property=\"og:description\" content=\"ミロカロスV(099/096) [s2] {SR} を販売中！コレクター用の希少カードからプレイ用カードまで幅広い品揃え！高額買取もお任せください。ポケカ、ワンピース、マジック・ザ・ギャザリング、デュエル・マスターズ、ヴァイスシュヴァルツなど多数のジャンルを取り扱っております。\"><meta property=\"og:image\" content=\"http://shop.japan-toreca.com/cdn/shop/files/image_b5b816ca-e4e8-4975-abd6-4e6acc928452.jpg?crop=center&amp;height=1200&amp;v=1721105867&amp;width=1200\">\n  <meta property=\"og:image:secure_url\" content=\"https://shop.japan-toreca.com/cdn/shop/files/image_b5b816ca-e4e8-4975-abd6-4e6acc928452.jpg?crop=center&amp;height=1200&amp;v=1721105867&amp;width="
+    },
+    "productAnalysis": {
+      "hasProductGrid": false,
+      "hasProductList": false,
+      "hasSearch": false,
+      "hasPagination": false,
+      "hasFilters": false,
+      "productSelectors": [
+        ".product"
+      ],
+      "priceSelectors": [],
+      "qualityIndicators": [
+        "状態A",
+        "【状態A】"
+      ],
+      "stockIndicators": []
+    }
+  },
+  {
+    "name": "cardrush",
+    "baseUrl": "https://www.cardrush-pokemon.jp",
+    "pages": [
+      {
+        "url": "https://www.cardrush-pokemon.jp",
+        "success": false,
+        "status": 502,
+        "duration": 57281,
+        "error": "HTTP 502"
+      },
+      {
+        "url": "https://www.cardrush-pokemon.jp/products/list.php",
+        "success": false,
+        "status": 404,
+        "duration": 4377,
+        "error": "HTTP 404"
+      }
+    ]
+  },
+  {
+    "name": "torecacamp",
+    "baseUrl": "https://torecacamp-pokemon.com",
+    "pages": [
+      {
+        "url": "https://torecacamp-pokemon.com",
+        "success": true,
+        "status": 200,
+        "duration": 8601,
+        "htmlLength": 988079,
+        "isCloudflareChallenge": false,
+        "html": "<!DOCTYPE html><html class=\"js\" lang=\"ja\" style=\"--announcement-bar-height: 21px; --header-height: 362544px;\"><head>\n\n    <!-- LINE Tag Base Code -->\n<!-- Do Not Modify -->\n<script src=\"https://connect.facebook.net/signals/config/826201565704679?v=2.9.285&amp;r=stable&amp;domain=torecacamp-pokemon.com&amp;hme=12c8cdc903a327d6c396005880a21a0a6c955fe6b6fb47b10c9022424ec9b3ee&amp;ex_m=101%2C194%2C143%2C22%2C69%2C70%2C136%2C65%2C64%2C11%2C151%2C87%2C16%2C130%2C123%2C72%2C75%2C129%2C148%2C153%2C8%2C4%2C5%2C7%2C6%2C3%2C88%2C98%2C154%2C159%2C208%2C59%2C175%2C176%2C52%2C264%2C30%2C71%2C220%2C219%2C218%2C23%2C32%2C100%2C58%2C10%2C60%2C94%2C95%2C96%2C102%2C126%2C31%2C29%2C128%2C125%2C124%2C144%2C73%2C147%2C145%2C146%2C47%2C57%2C119%2C15%2C150%2C42%2C251%2C252%2C250%2C26%2C27%2C28%2C45%2C137%2C74%2C109%2C18%2C20%2C41%2C37%2C39%2C38%2C80%2C89%2C93%2C107%2C135%2C138%2C43%2C108%2C24%2C21%2C115%2C66%2C35%2C140%2C139%2C141%2C132%2C131%2C25%2C34%2C56%2C106%2C149%2C67%2C17%2C142%2C111%2C78%2C63%2C19%2C82%2C83%2C112%2C81%2C33%2C280%2C201%2C190%2C191%2C189%2C283%2C275%2C49%2C202%2C104%2C127%2C77%2C117%2C51%2C44%2C46%2C110%2C116%2C122%2C55%2C61%2C50%2C53%2C97%2C152%2C1%2C120%2C14%2C118%2C12%2C2%2C54%2C90%2C62%2C114%2C86%2C85%2C155%2C156%2C91%2C92%2C9%2C121%2C99%2C48%2C133%2C84%2C76%2C68%2C113%2C103%2C40%2C134%2C0%2C79%2C36%2C105%2C13%2C157\" async=\"\"></script><script async=\"true\" src=\"https://connect.facebook.net/en_US/fbevents.js\"></script><script type=\"text/javascript\" async=\"\" src=\"//torecacamp-pokemon.com/cdn/s/trekkie.storefront.debbda03e9ac9faaa11b0ff77bcb79c971117f47.min.js\"></script><script async=\"\" src=\"https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js\"></script><script>\n(function(g,d,o){\n  g._ltq=g._ltq||[];g._lt=g._lt||function(){g._ltq.push(arguments)};\n  var h=location.protocol==='https:'?'https://d.line-scdn.net':'http://d.line-cdn.net';\n  var s=d.createElement('script');s.async=1;\n  s.src=o||h+'/n/line_tag/public/release/v1/lt.js';\n  var t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);\n    })(window, document);\n_lt('init', {\n  customerType: 'lap',\n  tagId: '8f3b15d1-8000-4778-a618-bfc4c041f965'\n});\n_lt('send', 'pv', ['8f3b15d1-8000-4778-a618-bfc4c041f965']);\n</script>\n<noscript>\n  <img height=\"1\" width=\"1\" style=\"display:none\"\n       src=\"https://tr.line.me/tag.gif?c_t=lap&t_id=8f3b15d1-8000-4778-a618-bfc4c041f965&e=pv&noscript=1\" />\n</noscript>\n<!-- End LINE Tag Base Code -->\n\n\n    \n\n    \n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0\">\n    <meta name=\"theme-color\" content=\"#ce045b\"><title>【トレカキャンプ】 ポケモンカード専門店 国内最大級のポケカ通販サイト\n</title><meta name=\"description\" content=\"国内最大級のポケカ通販サイトです。スタンダードレギュレーションから旧裏面のカード、サプライ、未開封パック、超高額カード、PSA鑑定品などを販売しております。ポケカが好きな方是非お越しください。\"><link rel=\"canonical\" href=\"https://torecacamp-pokemon.com/\"><link rel=\"shortcut icon\" href=\"//torecacamp-pokemon.com/cdn/shop/files/28bdaa98cbec6a3a04e",
+        "analysis": {
+          "hasProductGrid": false,
+          "hasProductList": false,
+          "hasSearch": true,
+          "hasPagination": false,
+          "hasFilters": false,
+          "productSelectors": [],
+          "priceSelectors": [],
+          "qualityIndicators": [],
+          "stockIndicators": []
+        },
+        "sampleProductUrls": []
+      },
+      {
+        "url": "https://torecacamp-pokemon.com/collections/all",
+        "success": true,
+        "status": 200,
+        "duration": 6295,
+        "htmlLength": 1094161,
+        "isCloudflareChallenge": false,
+        "html": "<!DOCTYPE html><html class=\"js\" lang=\"ja\" style=\"--announcement-bar-height: 21px; --header-height: 362458px;\"><head>\n\n    <!-- LINE Tag Base Code -->\n<!-- Do Not Modify -->\n<script async=\"true\" src=\"https://connect.facebook.net/en_US/fbevents.js\"></script><script type=\"text/javascript\" async=\"\" src=\"//torecacamp-pokemon.com/cdn/s/trekkie.storefront.debbda03e9ac9faaa11b0ff77bcb79c971117f47.min.js\"></script><script async=\"\" src=\"https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js\"></script><script>\n(function(g,d,o){\n  g._ltq=g._ltq||[];g._lt=g._lt||function(){g._ltq.push(arguments)};\n  var h=location.protocol==='https:'?'https://d.line-scdn.net':'http://d.line-cdn.net';\n  var s=d.createElement('script');s.async=1;\n  s.src=o||h+'/n/line_tag/public/release/v1/lt.js';\n  var t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);\n    })(window, document);\n_lt('init', {\n  customerType: 'lap',\n  tagId: '8f3b15d1-8000-4778-a618-bfc4c041f965'\n});\n_lt('send', 'pv', ['8f3b15d1-8000-4778-a618-bfc4c041f965']);\n</script>\n<noscript>\n  <img height=\"1\" width=\"1\" style=\"display:none\"\n       src=\"https://tr.line.me/tag.gif?c_t=lap&t_id=8f3b15d1-8000-4778-a618-bfc4c041f965&e=pv&noscript=1\" />\n</noscript>\n<!-- End LINE Tag Base Code -->\n\n\n    \n\n    \n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0\">\n    <meta name=\"theme-color\" content=\"#ce045b\"><title>All\n</title><link rel=\"canonical\" href=\"https://torecacamp-pokemon.com/collections/all\"><link rel=\"shortcut icon\" href=\"//torecacamp-pokemon.com/cdn/shop/files/28bdaa98cbec6a3a04e8b65b98efd44f_3e3ae75f-fe48-48dc-8a5b-2765e1b8a469_96x96.png?v=1671696602\" type=\"image/png\"><link rel=\"preload\" as=\"style\" href=\"//torecacamp-pokemon.com/cdn/shop/t/18/assets/theme.css?v=72173592322914942201670551165\">\n    <link rel=\"preload\" as=\"script\" href=\"//torecacamp-pokemon.com/cdn/shop/t/18/assets/theme.js?v=16450697847337996371670322470\">\n    <link rel=\"preconnect\" href=\"https://cdn.shopify.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.shopifycdn.com\">\n    <link rel=\"dns-prefetch\" href=\"https://productreviews.shopifycdn.com\">\n    <link rel=\"dns-prefetch\" href=\"https://ajax.googleapis.com\">\n    <link rel=\"dns-prefetch\" href=\"https://maps.googleapis.com\">\n    <link rel=\"dns-prefetch\" href=\"https://maps.gstatic.com\">\n\n    <meta property=\"og:type\" content=\"website\">\n  <meta property=\"og:title\" content=\"All\">\n  <meta property=\"og:image\" content=\"http://torecacamp-pokemon.com/cdn/shop/products/2617bldMZaAie6oFqnq2SoTZ1pCA70NIhrxVbOIO.jpg?v=1670755021\">\n  <meta property=\"og:image:secure_url\" content=\"https://torecacamp-pokemon.com/cdn/shop/products/2617bldMZaAie6oFqnq2SoTZ1pCA70NIhrxVbOIO.jpg?v=1670755021\">\n  <meta property=\"og:image:width\" content=\"748\">\n  <meta property=\"og:image:height\" content=\"1044\"><meta property=\"og:url\" content=\"https://torecacamp-pokemon.com/collections/all\">\n<meta property=\"og:si",
+        "analysis": {
+          "hasProductGrid": false,
+          "hasProductList": false,
+          "hasSearch": true,
+          "hasPagination": false,
+          "hasFilters": false,
+          "productSelectors": [
+            ".product"
+          ],
+          "priceSelectors": [],
+          "qualityIndicators": [],
+          "stockIndicators": []
+        },
+        "sampleProductUrls": [
+          "https://productreviews.shopifycdn.com"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "toretoku",
+    "baseUrl": "https://www.toretoku.jp",
+    "pages": [
+      {
+        "url": "https://www.toretoku.jp/pokemon",
+        "success": true,
+        "status": 200,
+        "duration": 9001,
+        "htmlLength": 1785959,
+        "isCloudflareChallenge": false,
+        "html": "<!DOCTYPE html><html lang=\"ja\"><head>\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n                <meta name=\"viewport\" content=\"width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no\">\n        \n        \n                \n\n        <!-- Google Tag Manager -->\n        <script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-KZSFQMQ\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,'script','dataLayer','GTM-KZSFQMQ');</script>\n        <!-- End Google Tag Manager -->\n\n        <!-- Each Header Settings -->\n        <title>ポケモンカード（ポケカ）の激安通販 | トレトク【公式】</title>\n<meta name=\"Description\" content=\"ポケモンカード（ポケカ）のシングルカードを買うなら、まずはトレトクをチェック！人気のカードから、他のお店では見つからないマニアックなカードが激安価格で見つかります。\">\n        <!-- End Each Header Settings -->\n\n                    <link rel=\"canonical\" href=\"https://www.toretoku.jp/pokemon\">\n        \n        <!-- Affiliate LP -->\n                <!-- End Affiliate LP -->\n\n        <!-- CSS -->\n        <link rel=\"stylesheet\" href=\"https://www.toretoku.jp/dist/css/style.css?version=20260325\">\n        <link href=\"https://www.toretoku.jp/img/common/favicon.ico\" rel=\"shortcut icon\" type=\"image/x-icon\">\n        <link href=\"https://www.toretoku.jp/img/common/apple-touch-icon.jpg\" rel=\"apple-touch-icon\">\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css\">\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css\">\n        <!-- End CSS  -->\n    </head>\n    <body class=\"\">\n        <!-- Google Tag Manager (noscript) -->\n        <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-KZSFQMQ\"\n        height=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n        <!-- End Google Tag Manager (noscript) -->\n        <header class=\"header \">\n            <div class=\"hTopArea\">\n                <div class=\"hInner flex flex-space-between flex-center\">\n                    \n                                        <div class=\"hLogo\">\n                        <h1>\n                                                                                    \n                                                                                                                                                                                                                                                                                                                                                    <a class=\"s-logo__genre\" href=\"https://www.toretoku.jp/pokemon\" title=\"\">\n                                            <picture>\n                                     ",
+        "analysis": {
+          "hasProductGrid": false,
+          "hasProductList": false,
+          "hasSearch": false,
+          "hasPagination": false,
+          "hasFilters": false,
+          "productSelectors": [],
+          "priceSelectors": [],
+          "qualityIndicators": [],
+          "stockIndicators": []
+        },
+        "sampleProductUrls": []
+      },
+      {
+        "url": "https://www.toretoku.jp/item/list",
+        "success": false,
+        "status": 404,
+        "duration": 50153,
+        "error": "HTTP 404"
+      }
+    ]
+  },
+  {
+    "name": "dorasuta",
+    "baseUrl": "https://dorasuta.jp",
+    "pages": [
+      {
+        "url": "https://dorasuta.jp/pokemon-card",
+        "success": true,
+        "status": 200,
+        "duration": 15893,
+        "htmlLength": 966826,
+        "isCloudflareChallenge": false,
+        "html": "<!DOCTYPE html><html lang=\"ja\"><!-- ヘッダ 開始 --><head>\n<!-- metaタグ 開始 -->\n<meta charset=\"UTF-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta name=\"robots\" content=\"index,follow\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n<meta name=\"referrer\" content=\"strict-origin-when-cross-origin\">\n<meta name=\"Identifier-URL\" content=\"/\">\n<meta name=\"index\" title=\"\" content=\"/\">\n<meta name=\"format-detection\" content=\"telephone=no\">\n<meta name=\"description\" content=\"ポケモンカード日本最大級の通販サイトです！最新シリーズからレア商品まで、豊富な品揃えでお買い得商品が盛り沢山！\">\n<!-- metaタグ 終了 -->\n\n<title>【ドラゴンスター】ポケモンカード日本最大級の通販サイト</title>\n\n<!-- linkタグ 開始 -->\n<link rel=\"icon\" href=\"/favicon.ico\">\n<link rel=\"apple-touch-icon\" href=\"/icon.png\">\n<link rel=\"shortcut icon\" href=\"/icon.png\">\n<link rel=\"index\" href=\"/\" title=\"\">\n<link rel=\"sitemap\" href=\"/sitemap\" title=\"\">\n\n<link rel=\"canonical\" href=\"https://dorasuta.jp/pokemon-card\">\n<!-- linkタグ 終了 -->\n\n<!-- cssタグ 共通 開始 -->\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/page/pc/normalize.css?1593588386\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/page/pc/site.common.css?1719798876\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/page/pc/column.guest.css?1695170481\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/page/pc/site.frame.css?1753319706\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/page/pc/site.style3.css?1599709261\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/plugin/Magnific-Popup-master/dist/magnific-popup.css?1578452266\">\n<!-- cssタグ 共通 終了 -->\n\n<!-- cssタグ ヘッダカラム 開始 -->\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/ec/header.css?1771893184\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/header_adjust_ec.css?1620630688\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11002.css?1727341944\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11015.css?1596099852\">\n<!-- cssタグ ヘッダカラム 終了 -->\n\n<!-- cssタグ センターカラム 開始 -->\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11205.css?1620268504\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11215.css?1596100068\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11225.css?1596100084\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11275.css?1600934849\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11255.css?1739406745\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11235.css?1739406624\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11245.css?1739406707\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11265.css?1739406786\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/500015.css?1631595970\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/10202.css?1634847941\">\n<!-- cssタグ センターカラム 終了 -->\n\n<!-- cssタグ 左カラム 開始 -->\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/",
+        "analysis": {
+          "hasProductGrid": false,
+          "hasProductList": false,
+          "hasSearch": false,
+          "hasPagination": false,
+          "hasFilters": false,
+          "productSelectors": [
+            ".item"
+          ],
+          "priceSelectors": [],
+          "qualityIndicators": [
+            "A-"
+          ],
+          "stockIndicators": []
+        },
+        "sampleProductUrls": []
+      },
+      {
+        "url": "https://dorasuta.jp/pokemon-card/series-list",
+        "success": false,
+        "status": 502,
+        "duration": 57243,
+        "error": "HTTP 502"
+      }
+    ],
+    "productPage": {
+      "success": true,
+      "status": 200,
+      "duration": 13934,
+      "htmlLength": 88778,
+      "isCloudflareChallenge": false,
+      "html": "<!DOCTYPE html><html lang=\"ja\"><!-- ヘッダ 開始 --><head>\n<!-- metaタグ 開始 -->\n<meta charset=\"UTF-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta name=\"robots\" content=\"index,follow\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\">\n<meta name=\"referrer\" content=\"strict-origin-when-cross-origin\">\n<meta name=\"Identifier-URL\" content=\"/\">\n<meta name=\"index\" title=\"\" content=\"/\">\n<meta name=\"format-detection\" content=\"telephone=no\">\n<meta name=\"description\" content=\"ドラゴンスター　トレカ専用通販サイトの、ポケモンカード「ロケット団のラムダ　コモン･アンコモン」の商品詳細ページです。関連商品もございます。ぜひご利用ください！\">\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta property=\"og:image\" content=\"https://dorasuta.jp/contents/product/0/11_0000605736_0_0_NN61Z1.jpg\">\n<meta property=\"og:url\" content=\"https://dorasuta.jp/pokemon-card/product?pid=605736\">\n<meta property=\"og:title\" content=\"ロケット団のラムダ | コモン･アンコモン | ドラゴンスター | ポケモンカード\">\n<meta property=\"og:description\" content=\"ドラゴンスター　トレカ専用通販サイトの、ポケモンカード「ロケット団のラムダ　コモン･アンコモン」の商品詳細ページです。関連商品もございます。ぜひご利用ください！\">\n<!-- metaタグ 終了 -->\n\n<title>ロケット団のラムダ | コモン･アンコモン | ドラゴンスター | ポケモンカード</title>\n\n<!-- linkタグ 開始 -->\n<link rel=\"icon\" href=\"/favicon.ico\">\n<link rel=\"apple-touch-icon\" href=\"/icon.png\">\n<link rel=\"shortcut icon\" href=\"/icon.png\">\n<link rel=\"index\" href=\"/\" title=\"\">\n<link rel=\"sitemap\" href=\"/sitemap\" title=\"\">\n\n<link rel=\"canonical\" href=\"https://dorasuta.jp/pokemon-card/product?pid=605736\">\n<!-- linkタグ 終了 -->\n\n<!-- cssタグ 共通 開始 -->\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/page/pc/normalize.css?1593588386\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/page/pc/site.common.css?1719798876\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/page/pc/column.guest.css?1695170481\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/page/pc/site.frame.css?1753319706\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/page/pc/site.style3.css?1599709261\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/plugin/Magnific-Popup-master/dist/magnific-popup.css?1578452266\">\n<!-- cssタグ 共通 終了 -->\n\n<!-- cssタグ ヘッダカラム 開始 -->\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/ec/header.css?1771893184\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/header_adjust_ec.css?1620630688\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/topic_list.css?1691556478\">\n<!-- cssタグ ヘッダカラム 終了 -->\n\n<!-- cssタグ センターカラム 開始 -->\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/product.css?1739432895\">\n\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11275.css?1600934849\">\n<!-- cssタグ センターカラム 終了 -->\n\n<!-- cssタグ 左カラム 開始 -->\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11105.css?1603765190\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/11125.css?1596266800\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block/pc/500007.css?1634866130\">\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/block"
+    },
+    "productAnalysis": {
+      "hasProductGrid": false,
+      "hasProductList": false,
+      "hasSearch": false,
+      "hasPagination": false,
+      "hasFilters": false,
+      "productSelectors": [
+        ".product",
+        ".item"
+      ],
+      "priceSelectors": [],
+      "qualityIndicators": [
+        "A-"
+      ],
+      "stockIndicators": []
+    }
+  },
+  {
+    "name": "hobibinet",
+    "baseUrl": "https://hobibinet-pokemon.com",
+    "pages": [
+      {
+        "url": "https://hobibinet-pokemon.com",
+        "success": true,
+        "status": 200,
+        "duration": 8051,
+        "htmlLength": 333708,
+        "isCloudflareChallenge": false,
+        "html": "<!DOCTYPE html><html class=\"js\" lang=\"ja\" style=\"--announcement-bar-height: 21px; --header-height: 106431px;\"><head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0\">\n    <meta name=\"theme-color\" content=\"#ff6128\">\n\n    <title>【ポケモン専門店】カードショップホビビ通販部</title><link rel=\"canonical\" href=\"https://hobibinet-pokemon.com/\"><link rel=\"preload\" as=\"style\" href=\"//hobibinet-pokemon.com/cdn/shop/t/50/assets/theme.css?v=22012611074204654401761428456\">\n    <link rel=\"preload\" as=\"script\" href=\"//hobibinet-pokemon.com/cdn/shop/t/50/assets/theme.js?v=53115532198094577391761428061\">\n    <link rel=\"preconnect\" href=\"https://cdn.shopify.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.shopifycdn.com\">\n    <link rel=\"dns-prefetch\" href=\"https://productreviews.shopifycdn.com\">\n    <link rel=\"dns-prefetch\" href=\"https://ajax.googleapis.com\">\n    <link rel=\"dns-prefetch\" href=\"https://maps.googleapis.com\">\n    <link rel=\"dns-prefetch\" href=\"https://maps.gstatic.com\">\n\n    <meta property=\"og:type\" content=\"website\">\n  <meta property=\"og:title\" content=\"【ポケモン専門店】カードショップホビビ通販部\"><meta property=\"og:url\" content=\"https://hobibinet-pokemon.com/\">\n<meta property=\"og:site_name\" content=\"【ポケカ専門店】カードショップホビビ通販部\"><meta name=\"twitter:card\" content=\"summary\"><meta name=\"twitter:title\" content=\"【ポケモン専門店】カードショップホビビ通販部\">\n  <meta name=\"twitter:description\" content=\"【ポケモン専門店】カードショップホビビ通販部\">\n    <style>\n  \n  \n\n\n  \n  \n  \n\n  :root {\n    --default-text-font-size : 15px;\n    --base-text-font-size    : 15px;\n    --heading-font-family    : \"system_ui\", -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';\n    --heading-font-weight    : 400;\n    --heading-font-style     : normal;\n    --text-font-family       : \"system_ui\", -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';\n    --text-font-weight       : 400;\n    --text-font-style        : normal;\n    --text-font-bolder-weight: bolder;\n    --text-link-decoration   : underline;\n\n    --text-color               : #3a2a2f;\n    --text-color-rgb           : 58, 42, 47;\n    --heading-color            : #3a392a;\n    --border-color             : #e7e2de;\n    --border-color-rgb         : 231, 226, 222;\n    --form-border-color        : #dcd5cf;\n    --accent-color             : #ff6128;\n    --accent-color-rgb         : 255, 97, 40;\n    --link-color               : #ff6128;\n    --link-color-hover         : #da3a00;\n    --background               : #f7f4f2;\n    --secondary-background     : #ffffff;\n    --secondary-background-rgb : 255, 255, 255;\n    --accent-background        : rgba(255, 97, 40, 0.08);\n\n    --input-background: #ffffff;\n\n    --error-color       : #f71b1b;\n    --error-background",
+        "analysis": {
+          "hasProductGrid": false,
+          "hasProductList": false,
+          "hasSearch": false,
+          "hasPagination": false,
+          "hasFilters": false,
+          "productSelectors": [
+            ".product"
+          ],
+          "priceSelectors": [],
+          "qualityIndicators": [],
+          "stockIndicators": []
+        },
+        "sampleProductUrls": [
+          "https://productreviews.shopifycdn.com"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "playze",
+    "baseUrl": "https://playze.jp",
+    "pages": [
+      {
+        "url": "https://playze.jp/collections/pokemon",
+        "success": true,
+        "status": 200,
+        "duration": 24228,
+        "htmlLength": 990144,
+        "isCloudflareChallenge": false,
+        "html": "<!DOCTYPE html><html class=\"js wf-inactive spf-has-filter gf-left theme-store-id-871 gf-theme-version-3 spf-layout-theme wf-loading wf-futura-pt-n7-loading wf-futura-pt-n4-loading wf-futura-pt-bold-n7-loading wf-yu-gothic-pr6n-n4-loading\" lang=\"ja\" style=\"--announcement-bar-height: 54px; --header-height: 2158px;\"><head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0\">\n    <meta name=\"theme-color\" content=\"#1d91d1\">\n\n<!-- Google Tag Manager -->\n<script id=\"swym-ext-shopify-script\" type=\"text/javascript\" async=\"\" defer=\"\" src=\"https://cdn.shopify.com/extensions/019d4260-9de1-7abc-af4c-81c58bd63006/swym-relay-713/assets/swym-ext-shopify.js\"></script><script type=\"text/javascript\" async=\"\" src=\"//playze.jp/cdn/s/trekkie.storefront.debbda03e9ac9faaa11b0ff77bcb79c971117f47.min.js\"></script><script src=\"https://use.typekit.net/yzk0zzt.js\" async=\"\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtm.js?id=GTM-KM9D6HX\"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-KM9D6HX');</script>\n<!-- End Google Tag Manager --><title>ポケモンカード\n</title><link rel=\"canonical\" href=\"https://playze.jp/collections/pokemon\"><link rel=\"shortcut icon\" href=\"//playze.jp/cdn/shop/files/favicon-2_96x96.png?v=1681789779\" type=\"image/png\"><link rel=\"preload\" as=\"style\" href=\"//playze.jp/cdn/shop/t/24/assets/theme.css?v=128475572879175639641729150287\">\n    <link rel=\"preload\" as=\"script\" href=\"//playze.jp/cdn/shop/t/24/assets/theme.js?v=129600914072076092621743296123\">\n    <link rel=\"preconnect\" href=\"https://cdn.shopify.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.shopifycdn.com\">\n    <link rel=\"dns-prefetch\" href=\"https://productreviews.shopifycdn.com\">\n    <link rel=\"dns-prefetch\" href=\"https://ajax.googleapis.com\">\n    <link rel=\"dns-prefetch\" href=\"https://maps.googleapis.com\">\n    <link rel=\"dns-prefetch\" href=\"https://maps.gstatic.com\">\n\n    <script> (function(d) { var config = { kitId: 'yzk0zzt', scriptTimeout: 3000, async: true }, h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\\bwf-loading\\b/g,\"\")+\" wf-inactive\";},config.scriptTimeout),tk=d.createElement(\"script\"),f=false,s=d.getElementsByTagName(\"script\")[0],a;h.className+=\" wf-loading\";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!=\"complete\"&&a!=\"loaded\")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s) })(document); </script>\n\n    <meta property=\"og:type\" content=\"website\">\n  <meta property=\"og:title\" content=\"ポケモンカード\">\n  ",
+        "analysis": {
+          "hasProductGrid": false,
+          "hasProductList": false,
+          "hasSearch": false,
+          "hasPagination": false,
+          "hasFilters": true,
+          "productSelectors": [
+            ".product"
+          ],
+          "priceSelectors": [],
+          "qualityIndicators": [],
+          "stockIndicators": []
+        },
+        "sampleProductUrls": [
+          "https://productreviews.shopifycdn.com"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "c-labo",
+    "baseUrl": "https://www.c-labo-online.jp",
+    "pages": [
+      {
+        "url": "https://www.c-labo-online.jp/page/125",
+        "success": true,
+        "status": 200,
+        "duration": 17217,
+        "htmlLength": 1405807,
+        "isCloudflareChallenge": false,
+        "html": "<!DOCTYPE html><html lang=\"ja\" class=\"responsive use_hover column_layout wide_layout touch003\"><head>\n    <meta charset=\"utf-8\">\n    <title>ポケモンカード（ポケカ）通販ならカードラボ</title>\n    <meta name=\"keywords\" content=\"ポケモンカードゲーム,ポケカ,カード,TCG,専門,ショップ,通販,買取,シングルカード,デッキレシピ,最強,環境,優勝デッキ,カードリスト,カード,トレカ,ガチ,ピカチュウ,イーブイ,オリパ\">\n    <meta name=\"description\" content=\"ポケモンカードゲーム（ポケカ）通販するならカードラボ！シングルカード高価買取中です！限定の高額カードやコレクション用、傷あり激安品まで各種シングルカードを取り揃えました！TCG関連のスリーブなどのサプライも販売・買取中！\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover\">\n    <meta name=\"format-detection\" content=\"telephone=no\">\n    <meta name=\"apple-touch-fullscreen\" content=\"YES\">\n    <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS\" href=\"https://www.c-labo-online.jp/rss/rss.php\">\n    <link rel=\"canonical\" href=\"https://www.c-labo-online.jp/page/125\">\n    <link href=\"https://www.c-labo-online.jp/res/font/icon_font/ocnkiconf.min.css?v=11\" rel=\"stylesheet\">\n    <link href=\"https://www.c-labo-online.jp/res/touch001/style/ocnk.min.css?v=74\" rel=\"stylesheet\">\n    <link href=\"https://www.c-labo-online.jp/res/touch003/style/template.css?1811011564\" rel=\"stylesheet\">\n    <link href=\"https://www.c-labo-online.jp/data/c-labo/responsive/2018031910461917f0c6.css?1752122549\" rel=\"stylesheet\">\n    <script async=\"\" src=\"https://scripts.clarity.ms/0.8.59/clarity.js\"></script><script async=\"\" src=\"https://www.clarity.ms/tag/4yexysqlds\"></script><script src=\"https://www.c-labo-online.jp/res/touch003/js/jquery.min.js?1517808840\"></script>\n<meta name=\"google-site-verification\" content=\"riky9ZT6ncbHBDoJIP6QuGZDSa5V39NwXqPXRVgPBQk\">\n<meta name=\"google-site-verification\" content=\"OLzA1Zz1rEBt1Fbn5X6HP2WbssjA_dmuBhvpVr4FTcA\">\n\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\n<script src=\"https://kit.fontawesome.com/6833c829d5.js\" crossorigin=\"anonymous\"></script>\n\n<link rel=\"shortcut icon\" type=\"image/vnd.microsoft.icon\" href=\"https://c-labo-online.jp/data/c-labo/image/favicon/site-tile-150x150.pngdata/c-labo/image/favicon/favicon.ico\">\n<link rel=\"icon\" type=\"image/vnd.microsoft.icon\" href=\"https://c-labo-online.jp/data/c-labo/image/favicon/favicon.ico\">\n<link rel=\"apple-touch-icon\" href=\"https://www.c-labo-online.jp/data/c-labo/image/favicon/apple-touch-icon-57x57.png\">\n<link rel=\"apple-touch-icon\" href=\"https://www.c-labo-online.jp/data/c-labo/image/favicon/apple-touch-icon-60x60.png\">\n<link rel=\"apple-touch-icon\" href=\"https://www.c-labo-online.jp/data/c-labo/image/favicon/apple-touch-icon-72x72.png\">\n<link rel=\"apple-touch-icon\" href=\"https://www.c-labo-online.jp/data/c-labo/image/favicon/apple-touch-icon-76x76.png\">\n<link rel=\"apple-touch-icon\" href=\"https://www.c-labo-online.jp/data/c-labo/image/favicon/apple-touch-icon-114x114.png\">\n<link rel=\"apple-touch-icon\" href=\"https://www.c-labo-online.jp/data/c-labo/image/favicon/apple-touch-icon-120x120.png\">\n<link rel=\"apple-touch-icon\" href=\"https://www.c-labo-online.jp/data/",
+        "analysis": {
+          "hasProductGrid": false,
+          "hasProductList": false,
+          "hasSearch": false,
+          "hasPagination": false,
+          "hasFilters": false,
+          "productSelectors": [],
+          "priceSelectors": [],
+          "qualityIndicators": [],
+          "stockIndicators": []
+        },
+        "sampleProductUrls": []
+      }
+    ]
+  },
+  {
+    "name": "fukufukutoreka",
+    "baseUrl": "https://pokemon.fukufukutoreka.com",
+    "pages": [
+      {
+        "url": "https://pokemon.fukufukutoreka.com",
+        "success": false,
+        "status": 502,
+        "duration": 57676,
+        "error": "HTTP 502"
+      }
+    ]
+  }
+]

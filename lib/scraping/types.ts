@@ -8,7 +8,11 @@ export type Provider =
   | 'dorasuta'
   | 'toretoku'
   | 'torecacamp'
-  | 'hobibinet';
+  | 'hobibinet'
+  | 'cardrush'
+  | 'playze'
+  | 'c-labo'
+  | 'fukufukutoreka';
 
 export interface ScrapedOffer {
   cardId: string; // Our internal ID (set:number)

@@ -1,0 +1,244 @@
+[dotenv@17.3.1] injecting env (3) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+🔬 JAPANESE CARD SHOP SITE RESEARCH
+=====================================
+
+Using Scrape.do API: 1d8e566da1314f4...
+Testing all sites for:
+- Directory/listing page structure
+- Product page extraction
+- Quality/condition indicators
+- Stock status patterns
+- Pagination and filtering
+
+
+============================================================
+🔍 RESEARCHING: JAPAN-TORECA
+============================================================
+
+🌐 Scraping: https://shop.japan-toreca.com/collections/all...
+
+🌐 Scraping: https://shop.japan-toreca.com/collections/pokemon...
+
+📦 Testing product page...
+
+🌐 Scraping: https://shop.japan-toreca.com/products/pokemon-10940-a...
+
+============================================================
+🔍 RESEARCHING: CARDRUSH
+============================================================
+
+🌐 Scraping: https://www.cardrush-pokemon.jp...
+
+🌐 Scraping: https://www.cardrush-pokemon.jp/products/list.php...
+
+============================================================
+🔍 RESEARCHING: TORECACAMP
+============================================================
+
+🌐 Scraping: https://torecacamp-pokemon.com...
+
+🌐 Scraping: https://torecacamp-pokemon.com/collections/all...
+
+============================================================
+🔍 RESEARCHING: TORETOKU
+============================================================
+
+🌐 Scraping: https://www.toretoku.jp/pokemon...
+
+🌐 Scraping: https://www.toretoku.jp/item/list...
+
+============================================================
+🔍 RESEARCHING: DORASUTA
+============================================================
+
+🌐 Scraping: https://dorasuta.jp/pokemon-card...
+
+🌐 Scraping: https://dorasuta.jp/pokemon-card/series-list...
+
+📦 Testing product page...
+
+🌐 Scraping: https://dorasuta.jp/pokemon-card/product?pid=605736...
+
+============================================================
+🔍 RESEARCHING: HOBIBINET
+============================================================
+
+🌐 Scraping: https://hobibinet-pokemon.com...
+
+============================================================
+🔍 RESEARCHING: PLAYZE
+============================================================
+
+🌐 Scraping: https://playze.jp/collections/pokemon...
+
+============================================================
+🔍 RESEARCHING: C-LABO
+============================================================
+
+🌐 Scraping: https://www.c-labo-online.jp/page/125...
+
+============================================================
+🔍 RESEARCHING: FUKUFUKUTOREKA
+============================================================
+
+🌐 Scraping: https://pokemon.fukufukutoreka.com...
+
+
+
+📊 RESEARCH REPORT
+==================
+
+
+## JAPAN-TORECA
+Base URL: https://shop.japan-toreca.com
+
+### Page: https://shop.japan-toreca.com/collections/all
+❌ Failed: HTTP 502
+
+### Page: https://shop.japan-toreca.com/collections/pokemon
+✅ Status: 200 (7639ms)
+📄 HTML Size: 697168 chars
+🔒 CF Challenge: No ✅
+
+Structure:
+  - Product Grid: ❌
+  - Search: ❌
+  - Pagination: ❌
+  - Filters: ❌
+
+### Product Page Test
+✅ Product page accessible
+   Quality markers found: 状態A, 【状態A】
+
+## CARDRUSH
+Base URL: https://www.cardrush-pokemon.jp
+
+### Page: https://www.cardrush-pokemon.jp
+❌ Failed: HTTP 502
+
+### Page: https://www.cardrush-pokemon.jp/products/list.php
+❌ Failed: HTTP 404
+
+## TORECACAMP
+Base URL: https://torecacamp-pokemon.com
+
+### Page: https://torecacamp-pokemon.com
+✅ Status: 200 (8601ms)
+📄 HTML Size: 988079 chars
+🔒 CF Challenge: No ✅
+
+Structure:
+  - Product Grid: ❌
+  - Search: ✅
+  - Pagination: ❌
+  - Filters: ❌
+
+### Page: https://torecacamp-pokemon.com/collections/all
+✅ Status: 200 (6295ms)
+📄 HTML Size: 1094161 chars
+🔒 CF Challenge: No ✅
+
+Structure:
+  - Product Grid: ❌
+  - Search: ✅
+  - Pagination: ❌
+  - Filters: ❌
+
+Sample Product URLs:
+  - https://productreviews.shopifycdn.com
+
+## TORETOKU
+Base URL: https://www.toretoku.jp
+
+### Page: https://www.toretoku.jp/pokemon
+✅ Status: 200 (9001ms)
+📄 HTML Size: 1785959 chars
+🔒 CF Challenge: No ✅
+
+Structure:
+  - Product Grid: ❌
+  - Search: ❌
+  - Pagination: ❌
+  - Filters: ❌
+
+### Page: https://www.toretoku.jp/item/list
+❌ Failed: HTTP 404
+
+## DORASUTA
+Base URL: https://dorasuta.jp
+
+### Page: https://dorasuta.jp/pokemon-card
+✅ Status: 200 (15893ms)
+📄 HTML Size: 966826 chars
+🔒 CF Challenge: No ✅
+
+Structure:
+  - Product Grid: ❌
+  - Search: ❌
+  - Pagination: ❌
+  - Filters: ❌
+  - Quality Indicators: A-
+
+### Page: https://dorasuta.jp/pokemon-card/series-list
+❌ Failed: HTTP 502
+
+### Product Page Test
+✅ Product page accessible
+   Quality markers found: A-
+
+## HOBIBINET
+Base URL: https://hobibinet-pokemon.com
+
+### Page: https://hobibinet-pokemon.com
+✅ Status: 200 (8051ms)
+📄 HTML Size: 333708 chars
+🔒 CF Challenge: No ✅
+
+Structure:
+  - Product Grid: ❌
+  - Search: ❌
+  - Pagination: ❌
+  - Filters: ❌
+
+Sample Product URLs:
+  - https://productreviews.shopifycdn.com
+
+## PLAYZE
+Base URL: https://playze.jp
+
+### Page: https://playze.jp/collections/pokemon
+✅ Status: 200 (24228ms)
+📄 HTML Size: 990144 chars
+🔒 CF Challenge: No ✅
+
+Structure:
+  - Product Grid: ❌
+  - Search: ❌
+  - Pagination: ❌
+  - Filters: ✅
+
+Sample Product URLs:
+  - https://productreviews.shopifycdn.com
+
+## C-LABO
+Base URL: https://www.c-labo-online.jp
+
+### Page: https://www.c-labo-online.jp/page/125
+✅ Status: 200 (17217ms)
+📄 HTML Size: 1405807 chars
+🔒 CF Challenge: No ✅
+
+Structure:
+  - Product Grid: ❌
+  - Search: ❌
+  - Pagination: ❌
+  - Filters: ❌
+
+## FUKUFUKUTOREKA
+Base URL: https://pokemon.fukufukutoreka.com
+
+### Page: https://pokemon.fukufukutoreka.com
+❌ Failed: HTTP 502
+
+
+💾 Detailed results saved to: ./docs/SITE_RESEARCH_RESULTS.json
