@@ -1,0 +1,507 @@
+{
+  "timestamp": "2026-04-01T17:55:17.520267",
+  "strategy": "FREE (direct) for Shopify sites, PAID (Browserless) for Cloudflare sites",
+  "cards": [
+    {
+      "card": {
+        "set": "SV2A",
+        "number": "185/165",
+        "name": "Charizard ex",
+        "rarity": "SR",
+        "jpn_name": "リザードンex",
+        "search_keyword": "リザードンex"
+      },
+      "scrapes": {
+        "japanToreca": {
+          "site": "Japan-Toreca",
+          "siteKey": "japanToreca",
+          "method": "direct",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Search failed"
+        },
+        "torecacamp": {
+          "site": "TorecaCamp",
+          "siteKey": "torecacamp",
+          "method": "direct",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "No listings found"
+        },
+        "dorasuta": {
+          "site": "Dorasuta",
+          "siteKey": "dorasuta",
+          "method": "browserless_unblock",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Browserless failed"
+        },
+        "toretoku": {
+          "site": "Toretoku",
+          "siteKey": "toretoku",
+          "method": "suggestion_api",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Card not found in suggestion list"
+        },
+        "hobibinet": {
+          "site": "Hobibinet",
+          "siteKey": "hobibinet",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "playze": {
+          "site": "Playze",
+          "siteKey": "playze",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "cLabo": {
+          "site": "C-Labo",
+          "siteKey": "cLabo",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "fukufuku": {
+          "site": "Fukufuku",
+          "siteKey": "fukufuku",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "cardrush": {
+          "site": "Cardrush",
+          "siteKey": "cardrush",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        }
+      }
+    },
+    {
+      "card": {
+        "set": "S12A",
+        "number": "262/172",
+        "name": "Arceus VSTAR",
+        "rarity": "UR",
+        "jpn_name": "アルセウスVSTAR",
+        "search_keyword": "アルセウスVSTAR"
+      },
+      "scrapes": {
+        "japanToreca": {
+          "site": "Japan-Toreca",
+          "siteKey": "japanToreca",
+          "method": "direct",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Search failed"
+        },
+        "torecacamp": {
+          "site": "TorecaCamp",
+          "siteKey": "torecacamp",
+          "method": "direct",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "No listings found"
+        },
+        "dorasuta": {
+          "site": "Dorasuta",
+          "siteKey": "dorasuta",
+          "method": "browserless_unblock",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Browserless failed"
+        },
+        "toretoku": {
+          "site": "Toretoku",
+          "siteKey": "toretoku",
+          "method": "suggestion_api",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Card not found in suggestion list"
+        },
+        "hobibinet": {
+          "site": "Hobibinet",
+          "siteKey": "hobibinet",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "playze": {
+          "site": "Playze",
+          "siteKey": "playze",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "cLabo": {
+          "site": "C-Labo",
+          "siteKey": "cLabo",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "fukufuku": {
+          "site": "Fukufuku",
+          "siteKey": "fukufuku",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "cardrush": {
+          "site": "Cardrush",
+          "siteKey": "cardrush",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        }
+      }
+    },
+    {
+      "card": {
+        "set": "SV3",
+        "number": "139/108",
+        "name": "Charizard ex",
+        "rarity": "SR",
+        "jpn_name": "リザードンex",
+        "search_keyword": "リザードンex 139"
+      },
+      "scrapes": {
+        "japanToreca": {
+          "site": "Japan-Toreca",
+          "siteKey": "japanToreca",
+          "method": "direct",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Search failed"
+        },
+        "torecacamp": {
+          "site": "TorecaCamp",
+          "siteKey": "torecacamp",
+          "method": "direct",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "No listings found"
+        },
+        "dorasuta": {
+          "site": "Dorasuta",
+          "siteKey": "dorasuta",
+          "method": "browserless_unblock",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [
+            {
+              "title": "Charizard ex",
+              "condition": "Unknown",
+              "price": 7500,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=%E3%83%AA%E3%82%B6%E3%83%BC%E3%83%89%E3%83%B3ex%20139"
+            },
+            {
+              "title": "Charizard ex",
+              "condition": "Unknown",
+              "price": 250,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=%E3%83%AA%E3%82%B6%E3%83%BC%E3%83%89%E3%83%B3ex%20139"
+            },
+            {
+              "title": "Charizard ex",
+              "condition": "Unknown",
+              "price": 350,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=%E3%83%AA%E3%82%B6%E3%83%BC%E3%83%89%E3%83%B3ex%20139"
+            },
+            {
+              "title": "Charizard ex",
+              "condition": "Unknown",
+              "price": 800,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=%E3%83%AA%E3%82%B6%E3%83%BC%E3%83%89%E3%83%B3ex%20139"
+            },
+            {
+              "title": "Charizard ex",
+              "condition": "Unknown",
+              "price": 900,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=%E3%83%AA%E3%82%B6%E3%83%BC%E3%83%89%E3%83%B3ex%20139"
+            }
+          ],
+          "error": null
+        },
+        "toretoku": {
+          "site": "Toretoku",
+          "siteKey": "toretoku",
+          "method": "suggestion_api",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Card not found in suggestion list"
+        },
+        "hobibinet": {
+          "site": "Hobibinet",
+          "siteKey": "hobibinet",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "playze": {
+          "site": "Playze",
+          "siteKey": "playze",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "cLabo": {
+          "site": "C-Labo",
+          "siteKey": "cLabo",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "fukufuku": {
+          "site": "Fukufuku",
+          "siteKey": "fukufuku",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "cardrush": {
+          "site": "Cardrush",
+          "siteKey": "cardrush",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        }
+      }
+    },
+    {
+      "card": {
+        "set": "S12A",
+        "number": "261/172",
+        "name": "Giratina VSTAR",
+        "rarity": "UR",
+        "jpn_name": "ギラティナVSTAR",
+        "search_keyword": "ギラティナVSTAR"
+      },
+      "scrapes": {
+        "japanToreca": {
+          "site": "Japan-Toreca",
+          "siteKey": "japanToreca",
+          "method": "direct",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Search failed"
+        },
+        "torecacamp": {
+          "site": "TorecaCamp",
+          "siteKey": "torecacamp",
+          "method": "direct",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "No listings found"
+        },
+        "dorasuta": {
+          "site": "Dorasuta",
+          "siteKey": "dorasuta",
+          "method": "browserless_unblock",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Browserless failed"
+        },
+        "toretoku": {
+          "site": "Toretoku",
+          "siteKey": "toretoku",
+          "method": "suggestion_api",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Card not found in suggestion list"
+        },
+        "hobibinet": {
+          "site": "Hobibinet",
+          "siteKey": "hobibinet",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "playze": {
+          "site": "Playze",
+          "siteKey": "playze",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "cLabo": {
+          "site": "C-Labo",
+          "siteKey": "cLabo",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "fukufuku": {
+          "site": "Fukufuku",
+          "siteKey": "fukufuku",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "cardrush": {
+          "site": "Cardrush",
+          "siteKey": "cardrush",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        }
+      }
+    },
+    {
+      "card": {
+        "set": "SV2A",
+        "number": "215/165",
+        "name": "Pikachu",
+        "rarity": "SAR",
+        "jpn_name": "ピカチュウ",
+        "search_keyword": "ピカチュウ 215"
+      },
+      "scrapes": {
+        "japanToreca": {
+          "site": "Japan-Toreca",
+          "siteKey": "japanToreca",
+          "method": "direct",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Search failed"
+        },
+        "torecacamp": {
+          "site": "TorecaCamp",
+          "siteKey": "torecacamp",
+          "method": "direct",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "No listings found"
+        },
+        "dorasuta": {
+          "site": "Dorasuta",
+          "siteKey": "dorasuta",
+          "method": "browserless_unblock",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Browserless failed"
+        },
+        "toretoku": {
+          "site": "Toretoku",
+          "siteKey": "toretoku",
+          "method": "suggestion_api",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Card not found in suggestion list"
+        },
+        "hobibinet": {
+          "site": "Hobibinet",
+          "siteKey": "hobibinet",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "playze": {
+          "site": "Playze",
+          "siteKey": "playze",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "cLabo": {
+          "site": "C-Labo",
+          "siteKey": "cLabo",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "fukufuku": {
+          "site": "Fukufuku",
+          "siteKey": "fukufuku",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        },
+        "cardrush": {
+          "site": "Cardrush",
+          "siteKey": "cardrush",
+          "method": "not_implemented",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Scraper not yet implemented - needs search URL or API endpoint"
+        }
+      }
+    }
+  ]
+}

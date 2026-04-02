@@ -3,7 +3,20 @@ import { baseCardsData } from '@/lib/card-data';
 import { ArbitrageOpportunity, DashboardData, JapanesePrice, PriceSource } from '@/lib/types';
 
 const JPY_TO_USD = 0.0065;
-const ACTIVE_SOURCES: PriceSource[] = ['japan-toreca', 'toretoku', 'torecacamp', 'hobibinet', 'dorasuta'];
+// All 9 Japanese card shop sources
+// FREE (direct HTTP): japan-toreca, torecacamp, hobibinet, playze, c-labo, fukufukutoreka
+// PAID (Browserless): dorasuta, toretoku, cardrush (Cloudflare protected or JS-heavy)
+const ACTIVE_SOURCES: PriceSource[] = [
+  'japan-toreca',   // Shopify JSON - FREE
+  'torecacamp',     // Shopify .js - FREE
+  'hobibinet',      // Shopify HTML - FREE
+  'playze',         // Shopify HTML - FREE
+  'c-labo',         // Direct HTML - FREE
+  'fukufukutoreka', // EC-CUBE HTML - FREE
+  'dorasuta',       // Browserless /unblock - PAID (Cloudflare)
+  'toretoku',       // Browserless /content - PAID (JS SPA)
+  'cardrush',       // Browserless /unblock - PAID (Cloudflare)
+];
 
 export async function getDashboardData(): Promise<DashboardData> {
   try {

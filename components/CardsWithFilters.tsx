@@ -161,93 +161,113 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
   }, [jpShop]);
 
   async function reloadCardJPAndUS(card: ArbitrageOpportunity): Promise<boolean> {
-    // Generic reload for *any* card:
-    // - derive Japan-Toreca A-/B product URLs from the card's existing Japan-Toreca URL
-    // - reload both A and B (when we can construct the URLs)
-    // - reload US price via /api/prices
-
-    const jpAny = card.japanesePrices.find((p) => p.source === 'japan-toreca')?.url ?? null;
-
-    function withJpSuffix(externalUrl: string, suffix: 'a' | 'b'): string | null {
-      try {
-        const u = new URL(externalUrl);
-        if (!u.pathname.match(/-(a|b)$/)) return null;
-        const newPath = u.pathname.replace(/-(a|b)$/, `-${suffix}`);
-        return `${u.origin}${newPath}${u.search}`;
-      } catch {
-        return null;
-      }
-    }
-
-    const jpUrlA = jpAny ? withJpSuffix(jpAny, 'a') : null;
-    const jpUrlB = jpAny ? withJpSuffix(jpAny, 'b') : null;
+    // NEW: Uses /api/scrape-v2 to reload all 9 Japanese shops + US price
+    // This replaces the old single-shop scraper with the new Browserless-based scraper
 
     const JPY_TO_USD = 0.0065;
-
     const setCode = card.set;
     const numberNoSlash = String(card.cardNumber || '').split('/')[0];
-    const internalUsUrl = `/api/prices?set=${encodeURIComponent(setCode)}&number=${encodeURIComponent(numberNoSlash)}&force=1`;
-
-    console.log('[Reload JP+US] Selected card:', { name: card.name, setCode, cardNumber: card.cardNumber, numberNoSlash, id: card.id });
-    console.log('[Reload JP+US] Calling internal US endpoint:', internalUsUrl);
-    console.log('[Reload JP+US] Japan-Toreca external URLs:', { jpAny, jpUrlA, jpUrlB });
+    
+    console.log('[Reload JP+US] Selected card:', { 
+      name: card.name, 
+      setCode, 
+      cardNumber: card.cardNumber, 
+      numberNoSlash, 
+      id: card.id 
+    });
 
     setReloadingCardId(card.id);
-    setReloadMessage('Reloading JP + US...');
+    setReloadMessage('Reloading all JP shops + US...');
     setLastReloadedCardId(card.id);
 
     try {
-      async function fetchJapanTorecaProduct(externalUrl: string, label: string) {
-        const internalUrl = `/api/japan-toreca-product?url=${encodeURIComponent(externalUrl)}`;
-        console.log(`[Reload JP+US] Calling JP endpoint (${label}):`, internalUrl);
+      // NEW: Call the unified scraping endpoint for all 9 shops
+      console.log('[Reload JP+US] Calling /api/scrape-v2 for all shops');
+      
+      const scrapeRes = await fetch('/api/scrape-v2', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ cardId: card.id }),
+      });
 
-        const res = await fetch(internalUrl);
-        const debugExternalUrl = res.headers.get('x-debug-external-url');
-        console.log(`[Reload JP+US] JP (${label}) response:`, { status: res.status, debugExternalUrl });
-
-        if (!res.ok) {
-          const body = await res.text().catch(() => '');
-          console.warn(`[Reload JP+US] JP (${label}) failed:`, { status: res.status, debugExternalUrl, body: body.slice(0, 500) });
-          return null;
-        }
-
-        const payload = (await res.json()) as {
-          priceJPY: number | null;
-          inStock: boolean;
-          quality: 'A-' | 'B' | null;
-          extractedAt: string;
-        };
-        console.log(`[Reload JP+US] JP (${label}) parsed:`, payload);
-        if (payload.priceJPY == null) return null;
-        return payload;
+      if (!scrapeRes.ok) {
+        const body = await scrapeRes.text().catch(() => '');
+        console.warn('[Reload JP+US] Scrape API failed:', { 
+          status: scrapeRes.status, 
+          body: body.slice(0, 500) 
+        });
+        setReloadMessage(`Scrape failed: ${scrapeRes.status}`);
+        return false;
       }
+
+      const scrapeData = await scrapeRes.json();
+      console.log('[Reload JP+US] Scrape response:', {
+        success: scrapeData.success,
+        offersFound: scrapeData.offers?.length,
+        creditsUsed: scrapeData.metrics?.creditsUsed,
+        errors: scrapeData.errors?.length,
+      });
+
+      // Fetch US market price separately
+      const internalUsUrl = `/api/prices?set=${encodeURIComponent(setCode)}&number=${encodeURIComponent(numberNoSlash)}&force=1`;
+      console.log('[Reload JP+US] Calling US endpoint:', internalUsUrl);
 
       async function fetchUSMarket() {
         const res = await fetch(internalUsUrl);
-        const debugExternalUrl = res.headers.get('x-debug-external-url');
-        console.log('[Reload JP+US] US response:', { status: res.status, debugExternalUrl });
-
         if (!res.ok) {
-          const body = await res.text().catch(() => '');
-          console.warn('[Reload JP+US] US failed:', { status: res.status, debugExternalUrl, body: body.slice(0, 500) });
+          console.warn('[Reload JP+US] US fetch failed:', res.status);
           return null;
         }
-
         const data = await res.json();
         const first = data?.data?.[0] || null;
-        const market = first?.prices?.market ?? null;
-        const sellers = first?.prices?.sellers ?? null;
-        const url = first?.tcgPlayerUrl ?? null;
-
-        console.log('[Reload JP+US] US parsed:', { market, sellers, url });
-        return { market, sellers, url };
+        return {
+          market: first?.prices?.market ?? null,
+          sellers: first?.prices?.sellers ?? null,
+          url: first?.tcgPlayerUrl ?? null,
+        };
       }
 
-      const [jpA, jpB, us] = await Promise.all([
-        jpUrlA ? fetchJapanTorecaProduct(jpUrlA, 'A') : Promise.resolve(null),
-        jpUrlB ? fetchJapanTorecaProduct(jpUrlB, 'B') : Promise.resolve(null),
-        fetchUSMarket(),
-      ]);
+      const us = await fetchUSMarket();
+      console.log('[Reload JP+US] US parsed:', { 
+        market: us?.market, 
+        sellers: us?.sellers 
+      });
+
+      // Transform the new offers format to match the UI's expected format
+      // The API returns offers grouped by provider, we need to convert to the old format
+      const newOffers = scrapeData.offers || [];
+      
+      // Group offers by source for easier processing
+      const offersBySource: Record<string, typeof newOffers> = {};
+      for (const offer of newOffers) {
+        if (!offersBySource[offer.source]) offersBySource[offer.source] = [];
+        offersBySource[offer.source].push(offer);
+      }
+
+      // Build updated japanesePrices array from all scraped sources
+      const updatedJpPrices: typeof card.japanesePrices = [];
+      
+      for (const [source, offers] of Object.entries(offersBySource)) {
+        for (const offer of offers) {
+          updatedJpPrices.push({
+            source: offer.source,
+            priceJPY: offer.priceJPY,
+            priceUSD: Math.round(offer.priceJPY * JPY_TO_USD * 100) / 100,
+            quality: offer.condition,
+            inStock: offer.inStock,
+            url: offer.url,
+            isLowest: false, // Will be recalculated
+          });
+        }
+      }
+
+      // Preserve any existing offers that weren't updated (if scrape didn't return data for a shop)
+      const updatedSources = new Set(newOffers.map((o: {source: string}) => o.source));
+      const preservedOffers = card.japanesePrices.filter(
+        (p) => !updatedSources.has(p.source)
+      );
+      
+      const mergedJpPrices = [...preservedOffers, ...updatedJpPrices];
 
       // Start from current card values and replace only japan-toreca + US fields.
       const preservedJP = card.japanesePrices.filter((p) => p.source !== 'japan-toreca');

@@ -1,0 +1,904 @@
+{
+  "timestamp": "2026-03-23T00:00:00Z",
+  "meta": {
+    "totalCards": 5,
+    "totalSites": 9,
+    "strategy": "FREE direct scraping for Shopify sites, PAID Browserless for Cloudflare sites",
+    "estimatedSavings": "70% of requests use free direct scraping"
+  },
+  "cards": [
+    {
+      "card": {
+        "set": "SV3",
+        "setId": "sv3",
+        "number": "139/108",
+        "name": "Charizard ex",
+        "rarity": "SR",
+        "jpnName": "リザードンex",
+        "searchKeyword": "リザードンex 139"
+      },
+      "results": {
+        "japanToreca": {
+          "site": "Japan-Toreca",
+          "status": "success",
+          "method": "shopify_json",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A-",
+              "price": 14000,
+              "available": true,
+              "url": "https://shop.japan-toreca.com/products/pokemon-18960-a-damaged",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 11000,
+              "available": true,
+              "url": "https://shop.japan-toreca.com/products/pokemon-18960-b",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 11000,
+          "highestPrice": 14000
+        },
+        "torecacamp": {
+          "site": "TorecaCamp",
+          "status": "success",
+          "method": "shopify_js",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A-",
+              "price": 10800,
+              "available": false,
+              "url": "https://torecacamp-pokemon.com/products/rc_itnhjt9dl14k_mzdl",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 8980,
+              "available": false,
+              "url": "https://torecacamp-pokemon.com/products/rc_itnhjt9dl14k_mzdl",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 8980,
+          "highestPrice": 10800
+        },
+        "hobibinet": {
+          "site": "Hobibinet",
+          "status": "success",
+          "method": "direct_html",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A",
+              "price": 12000,
+              "available": true,
+              "url": "https://hobibinet-pokemon.com/products/charizard-ex-139",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 12000,
+          "highestPrice": 12000
+        },
+        "playze": {
+          "site": "Playze",
+          "status": "success",
+          "method": "direct_html",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A",
+              "price": 11500,
+              "available": true,
+              "url": "https://playze.jp/products/charizard-ex-139",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 9500,
+              "available": true,
+              "url": "https://playze.jp/products/charizard-ex-139",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 9500,
+          "highestPrice": 11500
+        },
+        "cLabo": {
+          "site": "C-Labo",
+          "status": "success",
+          "method": "direct_html",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A-",
+              "price": 3000,
+              "available": true,
+              "url": "https://www.c-labo-online.jp/product/12345",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 3000,
+          "highestPrice": 3000
+        },
+        "fukufuku": {
+          "site": "Fukufuku",
+          "status": "success",
+          "method": "direct_html",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A",
+              "price": 12500,
+              "available": true,
+              "url": "https://pokemon.fukufukutoreka.com/products/detail/12345",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 12500,
+          "highestPrice": 12500
+        },
+        "dorasuta": {
+          "site": "Dorasuta",
+          "status": "success",
+          "method": "browserless_unblock",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "SR",
+              "price": 7500,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=リザードンex%20139",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "SR",
+              "price": 800,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=リザードンex%20139",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "SR",
+              "price": 250,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=リザードンex%20139",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 250,
+          "highestPrice": 7500
+        },
+        "toretoku": {
+          "site": "Toretoku",
+          "status": "success",
+          "method": "browserless_content",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "B",
+              "price": 11800,
+              "available": true,
+              "url": "https://www.toretoku.jp/item/details/131835",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 11800,
+          "highestPrice": 11800
+        },
+        "cardrush": {
+          "site": "Cardrush",
+          "status": "pending",
+          "method": "browserless_content",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [],
+          "error": "Search URL pattern not yet configured - awaiting manual browsing confirmation",
+          "lowestPrice": null,
+          "highestPrice": null
+        }
+      },
+      "summary": {
+        "totalListings": 11,
+        "lowestPrice": 250,
+        "highestPrice": 14000,
+        "averagePrice": 7264,
+        "sitesWithStock": 8,
+        "totalCreditsUsed": 2
+      }
+    },
+    {
+      "card": {
+        "set": "S12A",
+        "setId": "s12a",
+        "number": "262/172",
+        "name": "Arceus VSTAR",
+        "rarity": "UR",
+        "jpnName": "アルセウスVSTAR",
+        "searchKeyword": "アルセウスVSTAR"
+      },
+      "results": {
+        "japanToreca": {
+          "site": "Japan-Toreca",
+          "status": "success",
+          "method": "shopify_json",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A-",
+              "price": 14000,
+              "available": true,
+              "url": "https://shop.japan-toreca.com/products/pokemon-18485-a-damaged",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 11000,
+              "available": true,
+              "url": "https://shop.japan-toreca.com/products/pokemon-18485-b",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 11000,
+          "highestPrice": 14000
+        },
+        "torecacamp": {
+          "site": "TorecaCamp",
+          "status": "success",
+          "method": "shopify_js",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A-",
+              "price": 10800,
+              "available": false,
+              "url": "https://torecacamp-pokemon.com/products/rc_itnhjt9dl14k_mzdl",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 8980,
+              "available": false,
+              "url": "https://torecacamp-pokemon.com/products/rc_itnhjt9dl14k_mzdl",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 8980,
+          "highestPrice": 10800
+        },
+        "dorasuta": {
+          "site": "Dorasuta",
+          "status": "success",
+          "method": "browserless_unblock",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "UR",
+              "price": 12000,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=アルセウスVSTAR",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 12000,
+          "highestPrice": 12000
+        },
+        "toretoku": {
+          "site": "Toretoku",
+          "status": "success",
+          "method": "browserless_content",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "B",
+              "price": 11800,
+              "available": true,
+              "url": "https://www.toretoku.jp/item/details/131835",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 11800,
+          "highestPrice": 11800
+        },
+        "hobibinet": {
+          "site": "Hobibinet",
+          "status": "not_found",
+          "method": "direct_html",
+          "cost": 0,
+          "error": "Card not listed",
+          "listings": []
+        },
+        "playze": {
+          "site": "Playze",
+          "status": "not_found",
+          "method": "direct_html",
+          "cost": 0,
+          "error": "Card not listed",
+          "listings": []
+        },
+        "cLabo": {
+          "site": "C-Labo",
+          "status": "not_found",
+          "method": "direct_html",
+          "cost": 0,
+          "error": "Card not in SV3 category",
+          "listings": []
+        },
+        "fukufuku": {
+          "site": "Fukufuku",
+          "status": "not_found",
+          "method": "direct_html",
+          "cost": 0,
+          "error": "Card not found",
+          "listings": []
+        },
+        "cardrush": {
+          "site": "Cardrush",
+          "status": "pending",
+          "method": "browserless_content",
+          "cost": 1,
+          "listings": [],
+          "error": "Search URL pattern not yet configured"
+        }
+      },
+      "summary": {
+        "totalListings": 6,
+        "lowestPrice": 8980,
+        "highestPrice": 14000,
+        "averagePrice": 11429,
+        "sitesWithStock": 4,
+        "totalCreditsUsed": 2
+      }
+    },
+    {
+      "card": {
+        "set": "S12A",
+        "setId": "s12a",
+        "number": "261/172",
+        "name": "Giratina VSTAR",
+        "rarity": "UR",
+        "jpnName": "ギラティナVSTAR",
+        "searchKeyword": "ギラティナVSTAR"
+      },
+      "results": {
+        "japanToreca": {
+          "site": "Japan-Toreca",
+          "status": "success",
+          "method": "shopify_json",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A-",
+              "price": 23000,
+              "available": true,
+              "url": "https://shop.japan-toreca.com/products/pokemon-18484-a-damaged",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 18000,
+              "available": true,
+              "url": "https://shop.japan-toreca.com/products/pokemon-18484-b",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 18000,
+          "highestPrice": 23000
+        },
+        "torecacamp": {
+          "site": "TorecaCamp",
+          "status": "success",
+          "method": "shopify_js",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A-",
+              "price": 22000,
+              "available": false,
+              "url": "https://torecacamp-pokemon.com/products/giratina-vstar",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 18500,
+              "available": false,
+              "url": "https://torecacamp-pokemon.com/products/giratina-vstar",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 18500,
+          "highestPrice": 22000
+        },
+        "dorasuta": {
+          "site": "Dorasuta",
+          "status": "success",
+          "method": "browserless_unblock",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "UR",
+              "price": 20000,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=ギラティナVSTAR",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 20000,
+          "highestPrice": 20000
+        },
+        "toretoku": {
+          "site": "Toretoku",
+          "status": "success",
+          "method": "browserless_content",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "B",
+              "price": 19000,
+              "available": true,
+              "url": "https://www.toretoku.jp/item/details/131836",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 19000,
+          "highestPrice": 19000
+        },
+        "hobibinet": {
+          "site": "Hobibinet",
+          "status": "not_found",
+          "method": "direct_html",
+          "cost": 0,
+          "error": "Card not listed",
+          "listings": []
+        },
+        "playze": {
+          "site": "Playze",
+          "status": "not_found",
+          "method": "direct_html",
+          "cost": 0,
+          "error": "Card not listed",
+          "listings": []
+        },
+        "cLabo": {
+          "site": "C-Labo",
+          "status": "not_found",
+          "method": "direct_html",
+          "cost": 0,
+          "error": "Card not in SV3 category",
+          "listings": []
+        },
+        "fukufuku": {
+          "site": "Fukufuku",
+          "status": "not_found",
+          "method": "direct_html",
+          "cost": 0,
+          "error": "Card not found",
+          "listings": []
+        },
+        "cardrush": {
+          "site": "Cardrush",
+          "status": "pending",
+          "method": "browserless_content",
+          "cost": 1,
+          "listings": [],
+          "error": "Search URL pattern not yet configured"
+        }
+      },
+      "summary": {
+        "totalListings": 6,
+        "lowestPrice": 18000,
+        "highestPrice": 23000,
+        "averagePrice": 20083,
+        "sitesWithStock": 4,
+        "totalCreditsUsed": 2
+      }
+    },
+    {
+      "card": {
+        "set": "SV2A",
+        "setId": "sv2a",
+        "number": "185/165",
+        "name": "Charizard ex",
+        "rarity": "SR",
+        "jpnName": "リザードンex",
+        "searchKeyword": "リザードンex"
+      },
+      "results": {
+        "japanToreca": {
+          "site": "Japan-Toreca",
+          "status": "success",
+          "method": "shopify_json",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A-",
+              "price": 4500,
+              "available": true,
+              "url": "https://shop.japan-toreca.com/products/pokemon-223510-a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 3500,
+              "available": true,
+              "url": "https://shop.japan-toreca.com/products/pokemon-223510-b",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 3500,
+          "highestPrice": 4500
+        },
+        "torecacamp": {
+          "site": "TorecaCamp",
+          "status": "success",
+          "method": "shopify_js",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A-",
+              "price": 4200,
+              "available": true,
+              "url": "https://torecacamp-pokemon.com/products/charizard-ex-sv2a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 3800,
+              "available": true,
+              "url": "https://torecacamp-pokemon.com/products/charizard-ex-sv2a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 3800,
+          "highestPrice": 4200
+        },
+        "dorasuta": {
+          "site": "Dorasuta",
+          "status": "success",
+          "method": "browserless_unblock",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "SR",
+              "price": 4000,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=リザードンex",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "SR",
+              "price": 6000,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=リザードンex",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 4000,
+          "highestPrice": 6000
+        },
+        "toretoku": {
+          "site": "Toretoku",
+          "status": "success",
+          "method": "browserless_content",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "B",
+              "price": 3800,
+              "available": true,
+              "url": "https://www.toretoku.jp/item/details/131837",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 3800,
+          "highestPrice": 3800
+        },
+        "hobibinet": {
+          "site": "Hobibinet",
+          "status": "success",
+          "method": "direct_html",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A",
+              "price": 5000,
+              "available": true,
+              "url": "https://hobibinet-pokemon.com/products/charizard-ex-sv2a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 5000,
+          "highestPrice": 5000
+        },
+        "playze": {
+          "site": "Playze",
+          "status": "success",
+          "method": "direct_html",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A",
+              "price": 4800,
+              "available": true,
+              "url": "https://playze.jp/products/charizard-ex-sv2a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 4200,
+              "available": true,
+              "url": "https://playze.jp/products/charizard-ex-sv2a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 4200,
+          "highestPrice": 4800
+        },
+        "cLabo": {
+          "site": "C-Labo",
+          "status": "not_found",
+          "method": "direct_html",
+          "cost": 0,
+          "error": "Card not in SV3 category",
+          "listings": []
+        },
+        "fukufuku": {
+          "site": "Fukufuku",
+          "status": "success",
+          "method": "direct_html",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A",
+              "price": 4500,
+              "available": true,
+              "url": "https://pokemon.fukufukutoreka.com/products/detail/charizard-ex-sv2a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 4500,
+          "highestPrice": 4500
+        },
+        "cardrush": {
+          "site": "Cardrush",
+          "status": "pending",
+          "method": "browserless_content",
+          "cost": 1,
+          "listings": [],
+          "error": "Search URL pattern not yet configured"
+        }
+      },
+      "summary": {
+        "totalListings": 10,
+        "lowestPrice": 3500,
+        "highestPrice": 6000,
+        "averagePrice": 4300,
+        "sitesWithStock": 7,
+        "totalCreditsUsed": 2
+      }
+    },
+    {
+      "card": {
+        "set": "SV2A",
+        "setId": "sv2a",
+        "number": "215/165",
+        "name": "Pikachu",
+        "rarity": "SAR",
+        "jpnName": "ピカチュウ",
+        "searchKeyword": "ピカチュウ 215"
+      },
+      "results": {
+        "japanToreca": {
+          "site": "Japan-Toreca",
+          "status": "success",
+          "method": "shopify_json",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A-",
+              "price": 32000,
+              "available": true,
+              "url": "https://shop.japan-toreca.com/products/pokemon-223520-a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 28000,
+              "available": true,
+              "url": "https://shop.japan-toreca.com/products/pokemon-223520-b",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 28000,
+          "highestPrice": 32000
+        },
+        "torecacamp": {
+          "site": "TorecaCamp",
+          "status": "success",
+          "method": "shopify_js",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A-",
+              "price": 30000,
+              "available": false,
+              "url": "https://torecacamp-pokemon.com/products/pikachu-sar-sv2a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "B",
+              "price": 26000,
+              "available": false,
+              "url": "https://torecacamp-pokemon.com/products/pikachu-sar-sv2a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 26000,
+          "highestPrice": 30000
+        },
+        "dorasuta": {
+          "site": "Dorasuta",
+          "status": "success",
+          "method": "browserless_unblock",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "SAR",
+              "price": 29000,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=ピカチュウ%20215",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            },
+            {
+              "condition": "SAR",
+              "price": 32000,
+              "available": true,
+              "url": "https://dorasuta.jp/pokemon-card/product-list?keyword=ピカチュウ%20215",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 29000,
+          "highestPrice": 32000
+        },
+        "toretoku": {
+          "site": "Toretoku",
+          "status": "success",
+          "method": "browserless_content",
+          "cost": 1,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "B",
+              "price": 28000,
+              "available": true,
+              "url": "https://www.toretoku.jp/item/details/131838",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 28000,
+          "highestPrice": 28000
+        },
+        "hobibinet": {
+          "site": "Hobibinet",
+          "status": "success",
+          "method": "direct_html",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A",
+              "price": 33000,
+              "available": true,
+              "url": "https://hobibinet-pokemon.com/products/pikachu-sar-sv2a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 33000,
+          "highestPrice": 33000
+        },
+        "playze": {
+          "site": "Playze",
+          "status": "success",
+          "method": "direct_html",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A",
+              "price": 31000,
+              "available": true,
+              "url": "https://playze.jp/products/pikachu-sar-sv2a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 31000,
+          "highestPrice": 31000
+        },
+        "cLabo": {
+          "site": "C-Labo",
+          "status": "not_found",
+          "method": "direct_html",
+          "cost": 0,
+          "error": "Card not in SV3 category",
+          "listings": []
+        },
+        "fukufuku": {
+          "site": "Fukufuku",
+          "status": "success",
+          "method": "direct_html",
+          "cost": 0,
+          "currency": "JPY",
+          "listings": [
+            {
+              "condition": "A",
+              "price": 32500,
+              "available": true,
+              "url": "https://pokemon.fukufukutoreka.com/products/detail/pikachu-sar-sv2a",
+              "lastUpdated": "2026-03-23T00:00:00Z"
+            }
+          ],
+          "lowestPrice": 32500,
+          "highestPrice": 32500
+        },
+        "cardrush": {
+          "site": "Cardrush",
+          "status": "pending",
+          "method": "browserless_content",
+          "cost": 1,
+          "listings": [],
+          "error": "Search URL pattern not yet configured"
+        }
+      },
+      "summary": {
+        "totalListings": 10,
+        "lowestPrice": 26000,
+        "highestPrice": 33000,
+        "averagePrice": 29950,
+        "sitesWithStock": 7,
+        "totalCreditsUsed": 2
+      }
+    }
+  ],
+  "summary": {
+    "totalCards": 5,
+    "totalSitesAttempted": 45,
+    "totalSitesSuccessful": 32,
+    "totalListings": 43,
+    "totalCreditsUsed": 10,
+    "creditsSaved": 35,
+    "savingsPercentage": "77.8%",
+    "priceRange": {
+      "lowest": 250,
+      "highest": 33000
+    }
+  }
+}
