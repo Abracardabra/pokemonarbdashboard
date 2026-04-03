@@ -245,11 +245,11 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
       }
 
       // Build updated japanesePrices array from all scraped sources
-      const updatedJpPrices: typeof card.japanesePrices = [];
-      
+      const scrapedJpPrices: typeof card.japanesePrices = [];
+
       for (const [source, offers] of Object.entries(offersBySource)) {
         for (const offer of offers) {
-          updatedJpPrices.push({
+          scrapedJpPrices.push({
             source: offer.source,
             priceJPY: offer.priceJPY,
             priceUSD: Math.round(offer.priceJPY * JPY_TO_USD * 100) / 100,
@@ -267,13 +267,17 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
         (p) => !updatedSources.has(p.source)
       );
       
-      const mergedJpPrices = [...preservedOffers, ...updatedJpPrices];
-
       // Start from current card values and replace only japan-toreca + US fields.
       const preservedJP = card.japanesePrices.filter((p) => p.source !== 'japan-toreca');
       const normalizeQ = (q: unknown) => String(q || '').toUpperCase().replace('－', '-');
       const oldA = card.japanesePrices.find((p) => p.source === 'japan-toreca' && normalizeQ(p.quality) === 'A-') || null;
       const oldB = card.japanesePrices.find((p) => p.source === 'japan-toreca' && normalizeQ(p.quality) === 'B') || null;
+
+      // Pull fresh japan-toreca entries from the newly scraped offers.
+      const jpA = scrapedJpPrices.find((p) => p.source === 'japan-toreca' && normalizeQ(p.quality) === 'A-') || null;
+      const jpB = scrapedJpPrices.find((p) => p.source === 'japan-toreca' && normalizeQ(p.quality) === 'B') || null;
+      const jpUrlA = jpA?.url ?? null;
+      const jpUrlB = jpB?.url ?? null;
 
       const jpAOk = jpA?.priceJPY != null;
       const jpBOk = jpB?.priceJPY != null;

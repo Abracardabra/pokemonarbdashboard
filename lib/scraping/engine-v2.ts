@@ -167,10 +167,11 @@ export async function scrapeCard(
       try {
         const dorasutaResult = await scrapeDorasutaCard(setId, cardNumber, '');
         if (dorasutaResult && dorasutaResult.priceJPY > 0) {
+          const dorasutaCondition = dorasutaResult.condition === 'Unknown' ? 'B' : dorasutaResult.condition;
           offers.push({
             cardId,
             provider: 'dorasuta' as Provider,
-            condition: dorasutaResult.condition,
+            condition: dorasutaCondition,
             priceJPY: dorasutaResult.priceJPY,
             inStock: dorasutaResult.inStock,
             url: dorasutaResult.url,
