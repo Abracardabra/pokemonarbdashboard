@@ -3,6 +3,35 @@ import { baseCardsData } from '@/lib/card-data';
 import { ArbitrageOpportunity, DashboardData, JapanesePrice, PriceSource } from '@/lib/types';
 
 const JPY_TO_USD = 0.0065;
+
+type DashboardOfferRecord = {
+  source: string;
+  priceJPY: number;
+  quality: string;
+  inStock: boolean;
+  url: string;
+};
+
+type DashboardUsMarketRecord = {
+  marketPrice: unknown;
+  sellerCount: number | null;
+  tcgPlayerUrl: string | null;
+} | null;
+
+type DashboardCardRecord = {
+  id: string;
+  name: string | null;
+  number: string;
+  rarity: string;
+  set: string;
+  setId: string;
+  favorite: boolean | null;
+  imagesSmall: string | null;
+  imagesLarge: string | null;
+  updatedAt: Date;
+  usMarket: DashboardUsMarketRecord;
+  japanOffers: DashboardOfferRecord[];
+};
 // All 9 Japanese card shop sources
 // FREE (direct HTTP): japan-toreca, torecacamp, hobibinet, playze, c-labo, fukufukutoreka
 // PAID (Browserless): dorasuta, toretoku, cardrush (Cloudflare protected or JS-heavy)
@@ -20,13 +49,13 @@ const ACTIVE_SOURCES: PriceSource[] = [
 
 export async function getDashboardData(): Promise<DashboardData> {
   try {
-    const cards = await prisma.card.findMany({
+    const cards = (await prisma.card.findMany({
       include: {
         usMarket: true,
         japanOffers: true,
       },
       orderBy: [{ setId: 'asc' }, { number: 'asc' }],
-    });
+    })) as DashboardCardRecord[];
 
     if (!cards.length) {
       return {
