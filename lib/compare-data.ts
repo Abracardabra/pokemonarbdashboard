@@ -8,6 +8,34 @@ import { BuilderDashboardData, BuilderOpportunity, RarityCode } from '@/lib/type
 
 const JPY_TO_USD = 0.0065;
 
+type JapanOffer = {
+  source: string;
+  quality: string;
+  priceJPY: number;
+  url: string;
+  inStock: boolean;
+};
+
+type UsMarket = {
+  marketPrice: unknown;
+  tcgPlayerUrl: string | null;
+  sellerCount: number | null;
+} | null;
+
+type CompareCardRecord = {
+  set: string;
+  setId: string;
+  number: string;
+  name: string | null;
+  rarity: string;
+  favorite: boolean | null;
+  imagesSmall: string | null;
+  imagesLarge: string | null;
+  japanOffers: JapanOffer[];
+  usMarket: UsMarket;
+  updatedAt: Date;
+};
+
 /**
  * Fetch all cards with their Japanese shop prices for comparison
  * Uses the database as the primary source (replaces JSON file)
@@ -15,7 +43,7 @@ const JPY_TO_USD = 0.0065;
 export async function getCompareData(): Promise<BuilderDashboardData> {
   try {
     // Query all cards with their offers from the database
-    const cards = await prisma.card.findMany({
+    const cards = (await prisma.card.findMany({
       include: {
         japanOffers: true,  // All 9 Japanese shops
         usMarket: true,     // TCGPlayer data
@@ -24,7 +52,7 @@ export async function getCompareData(): Promise<BuilderDashboardData> {
         { setId: 'asc' },
         { number: 'asc' },
       ],
-    });
+    })) as CompareCardRecord[];
 
     // If no cards in database, return empty structure
     if (cards.length === 0) {
@@ -43,11 +71,11 @@ export async function getCompareData(): Promise<BuilderDashboardData> {
     const uniqueSets = [...new Set(cards.map((c: { setId: string }) => c.setId.toUpperCase()))].sort();
 
     // Transform database records to BuilderOpportunity format
-    const builderCards: BuilderOpportunity[] = cards.map((card) => {
+    const builderCards: BuilderOpportunity[] = cards.map((card: CompareCardRecord) => {
       // Helper to find offer by source and quality
       const findOffer = (source: string, quality: string) => {
         const offer = card.japanOffers.find(
-          (o) => o.source === source && o.quality === quality
+          (o: JapanOffer) => o.source === source && o.quality === quality
         );
         if (!offer) return null;
         return {
@@ -81,10 +109,10 @@ export async function getCompareData(): Promise<BuilderDashboardData> {
         toretoku: {
           a: findOffer('toretoku', 'A-'),
           b: findOffer('toretoku', 'B'),
-          stockA: card.japanOffers.find((o) => o.source === 'toretoku' && o.quality === 'A-')?.inStock
+          stockA: card.japanOffers.find((o: JapanOffer) => o.source === 'toretoku' && o.quality === 'A-')?.inStock
             ? 1
             : 0,
-          stockB: card.japanOffers.find((o) => o.source === 'toretoku' && o.quality === 'B')?.inStock
+          stockB: card.japanOffers.find((o: JapanOffer) => o.source === 'toretoku' && o.quality === 'B')?.inStock
             ? 1
             : 0,
         },
