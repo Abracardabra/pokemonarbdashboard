@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "pnpm run prisma:generate && next build",
     "start": "next start",
+    "prisma:generate": "prisma generate",
     "build:s12a": "node scripts/build-s12a.js",
     "build:s12a:force": "node scripts/build-s12a.js --force",
     "build:sets": "node scripts/build-sets.js --sets s12a,sv2a,sv2d,sv2p",
