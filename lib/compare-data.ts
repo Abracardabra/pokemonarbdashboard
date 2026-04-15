@@ -40,7 +40,7 @@ export async function getCompareData(): Promise<BuilderDashboardData> {
     }
 
     // Get unique sets for the filter dropdown
-    const uniqueSets = [...new Set(cards.map((c) => c.setId.toUpperCase()))].sort();
+    const uniqueSets = [...new Set(cards.map((c: { setId: string }) => c.setId.toUpperCase()))].sort();
 
     // Transform database records to BuilderOpportunity format
     const builderCards: BuilderOpportunity[] = cards.map((card) => {
