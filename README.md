@@ -15,9 +15,9 @@ A Next.js dashboard that tracks arbitrage opportunities for **Japanese S12a (VST
 ## Quick start
 
 ```bash
-npm install
-npm run build:s12a   # generates data/prices.json
-npm run dev
+pnpm install
+pnpm run build:s12a   # generates data/prices.json
+pnpm run dev
 ```
 
 Optional API key:
@@ -29,7 +29,7 @@ POKEPRICE_API_KEY=your_api_key_here
 
 ## How data/prices.json is generated
 
-`npm run build:s12a` runs `scripts/build-s12a.js`, which:
+`pnpm run build:s12a` runs `scripts/build-s12a.js`, which:
 
 1. Fetches **all S12a cards** from PokemonPriceTracker API (paged)
 2. Filters to the allowed rarities
@@ -47,7 +47,7 @@ To minimize calls and avoid rate limits, the script caches responses:
 To refresh everything:
 
 ```bash
-npm run build:s12a:force
+pnpm run build:s12a:force
 ```
 
 ## Project structure (relevant)
