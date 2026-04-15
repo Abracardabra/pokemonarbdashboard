@@ -1,4 +1,4 @@
-# Pokemon TCG Japanese Arbitrage Dashboard (S12a) 1
+# Pokemon TCG Japanese Arbitrage Dashboard (S12a)
 
 A Next.js dashboard that tracks arbitrage opportunities for **Japanese S12a (VSTAR Universe)** cards.
 
