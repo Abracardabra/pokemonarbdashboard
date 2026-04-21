@@ -50,6 +50,7 @@ export interface ScrapeCardInput {
   urls: Array<{
     url: string;
     expectedCondition: 'A-' | 'B';
+    provider?: Provider;
   }>;
 }
 

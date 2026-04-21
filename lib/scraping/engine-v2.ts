@@ -106,7 +106,12 @@ function parseOffer(
   const $ = cheerio.load(html);
 
   // Extract price
-  const priceText = $(config.selectors.price).first().text().trim();
+  const priceEl = $(config.selectors.price).first();
+  const priceText =
+    priceEl.text().trim() ||
+    (priceEl.attr('content') || '').trim() ||
+    (priceEl.attr('value') || '').trim() ||
+    (priceEl.attr('data-price') || '').trim();
   const priceJPY = config.extractPrice
     ? config.extractPrice(priceText)
     : extractPriceJPY(priceText);
@@ -121,8 +126,10 @@ function parseOffer(
 
   // Detect quality from page
   const htmlText = $.text();
+  // Prefer the URL-linked expected condition to avoid cross-variant bleeding.
+  // Some storefront pages contain multiple quality labels in scripts/markup.
   const detectedQuality = detectQuality(htmlText, config.qualityPatterns);
-  const condition = detectedQuality || expectedCondition;
+  const condition = expectedCondition || detectedQuality || 'B';
 
   // Extract title
   const title = $(config.selectors.title).first().text().trim();
@@ -151,16 +158,26 @@ export async function scrapeCard(
   const errors: string[] = [];
   let creditsUsed = 0;
 
-  for (const { url, expectedCondition } of urls) {
-    // Determine provider from URL
-    const provider = detectProviderFromUrl(url);
+  const pushOfferUnique = (offer: ScrapedOffer) => {
+    const exists = offers.some(
+      (o) =>
+        o.provider === offer.provider &&
+        o.condition === offer.condition &&
+        o.url === offer.url
+    );
+    if (!exists) offers.push(offer);
+  };
+
+  for (const { url, expectedCondition, provider: explicitProvider } of urls) {
+    // Prefer explicit provider from DB source to avoid bad historic URL mappings.
+    const provider = explicitProvider || detectProviderFromUrl(url);
     if (!provider) {
       errors.push(`Could not detect provider from URL: ${url}`);
       continue;
     }
 
-    // Extract setId and cardNumber from cardId for special handlers
-    const [setId, cardNumber] = cardId.split('-');
+    // Extract setId/cardNumber from canonical id format: "setId:number"
+    const [setId, cardNumber] = cardId.split(':');
 
     // === SPECIAL HANDLING: Dorasuta uses set-based browsing ===
     if (provider === 'dorasuta' && setId && cardNumber) {
@@ -168,7 +185,7 @@ export async function scrapeCard(
         const dorasutaResult = await scrapeDorasutaCard(setId, cardNumber, '');
         if (dorasutaResult && dorasutaResult.priceJPY > 0) {
           const dorasutaCondition = dorasutaResult.condition === 'Unknown' ? 'B' : dorasutaResult.condition;
-          offers.push({
+          pushOfferUnique({
             cardId,
             provider: 'dorasuta' as Provider,
             condition: dorasutaCondition,
@@ -179,13 +196,14 @@ export async function scrapeCard(
             scrapedAt: new Date(),
           });
           creditsUsed += 1;
+          continue;
         } else {
-          errors.push('dorasuta: No products found in set');
+          // Fallback to generic URL scrape when set-based strategy has no match.
+          errors.push('dorasuta: No products found in set; falling back to URL parser');
         }
       } catch (error) {
-        errors.push(`dorasuta: ${error instanceof Error ? error.message : 'Strategy error'}`);
+        errors.push(`dorasuta: ${error instanceof Error ? error.message : 'Strategy error'}; falling back to URL parser`);
       }
-      continue;
     }
 
     // === SPECIAL HANDLING: Toretoku uses detail pages with known IDs ===
@@ -194,7 +212,7 @@ export async function scrapeCard(
         const toretokuResult = await scrapeToretokuCard(setId, cardNumber);
         if (toretokuResult) {
           if (toretokuResult.a !== null) {
-            offers.push({
+            pushOfferUnique({
               cardId,
               provider: 'toretoku' as Provider,
               condition: 'A-',
@@ -206,7 +224,7 @@ export async function scrapeCard(
             });
           }
           if (toretokuResult.b !== null) {
-            offers.push({
+            pushOfferUnique({
               cardId,
               provider: 'toretoku' as Provider,
               condition: 'B',
@@ -248,12 +266,34 @@ export async function scrapeCard(
       );
 
       if (parsed) {
-        offers.push({
+        pushOfferUnique({
           cardId,
           ...parsed,
           scrapedAt: new Date(),
         });
       } else {
+        // Fallback: if a "free/direct" fetch parsed nothing, try Browserless /content once.
+        // This helps when storefronts require JS-rendered price fragments.
+        if (!PAID_SITES.has(provider)) {
+          const fallback = await browserless(url, { unblock: false, timeout: 120000 });
+          if (fallback.success) {
+            const reparsed = parseOffer(
+              fallback.html,
+              provider,
+              url,
+              expectedCondition
+            );
+            if (reparsed) {
+              pushOfferUnique({
+                cardId,
+                ...reparsed,
+                scrapedAt: new Date(),
+              });
+              creditsUsed += 1;
+              continue;
+            }
+          }
+        }
         errors.push(`${provider}: Could not extract price from page`);
       }
     } catch (error) {

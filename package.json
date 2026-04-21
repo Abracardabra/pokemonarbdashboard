@@ -7,6 +7,8 @@
     "build": "pnpm run prisma:generate && next build",
     "start": "next start",
     "prisma:generate": "prisma generate",
+    "scrape:estimate": "node --env-file=.env scripts/scrape-estimate.mjs",
+    "scrape:daily": "node --env-file=.env scripts/scrape-daily.mjs",
     "build:s12a": "node scripts/build-s12a.js",
     "build:s12a:force": "node scripts/build-s12a.js --force",
     "build:sets": "node scripts/build-sets.js --sets s12a,sv2a,sv2d,sv2p",

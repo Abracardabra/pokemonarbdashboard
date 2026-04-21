@@ -39,7 +39,7 @@ export function extractToretokuDetailIds(): Map<string, string> {
     }
 
     for (const card of data.cards) {
-      const key = `${card.setId}-${card.number}`;
+      const key = `${card.setId}:${card.number}`;
       
       // Extract detail ID from toretoku URL
       if (card.toretoku) {
@@ -204,8 +204,8 @@ export async function scrapeToretokuCard(
   cardNumber: string
 ): Promise<ToretokuPrice | null> {
   const idMap = extractToretokuDetailIds();
-  const key = `${setId}-${cardNumber}`;
-  const detailId = idMap.get(key);
+  const key = `${setId}:${cardNumber}`;
+  const detailId = idMap.get(key) || idMap.get(`${setId}-${cardNumber}`);
   
   if (!detailId) {
     console.log(`[Toretoku] No detail ID for ${key}`);

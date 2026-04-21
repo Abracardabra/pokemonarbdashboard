@@ -1,6 +1,6 @@
 /**
  * Dorasuta Scraping Strategy
- * Uses set-based browsing via Browserless /function endpoint
+ * Uses keyword search via Browserless /unblock endpoint
  */
 
 // Known Dorasuta set IDs for set-based browsing
@@ -19,30 +19,31 @@ export interface DorasutaProduct {
 }
 
 /**
- * Execute Browserless function with Puppeteer
+ * Fetch a rendered page via Browserless /unblock
  */
-async function browserlessFunction(code: string): Promise<{ html: string; url: string } | null> {
+async function browserlessUnblock(url: string): Promise<{ html: string; url: string } | null> {
   const TOKEN = process.env.BROWSERLESS_TOKEN;
   if (!TOKEN) {
     console.warn('[Browserless] Token not configured');
     return null;
   }
 
-  const endpoint = `https://production-sfo.browserless.io/function?token=${TOKEN}`;
+  const endpoint = `https://production-sfo.browserless.io/unblock?token=${TOKEN}`;
   
   try {
     const response = await fetch(endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ code, context: {} }),
+      body: JSON.stringify({ url }),
     });
 
     if (!response.ok) {
-      console.warn('[Browserless] Function error:', response.status);
+      console.warn('[Browserless] Unblock error:', response.status);
       return null;
     }
-
-    return await response.json();
+    const data = await response.json();
+    const html = data?.content || data?.html || '';
+    return { html, url };
   } catch (error) {
     console.error('[Browserless] Request failed:', error);
     return null;
@@ -57,53 +58,32 @@ export async function scrapeDorasutaCard(
   cardNumber: string,
   cardName: string
 ): Promise<DorasutaProduct | null> {
-  const sid = DORASUTA_SET_IDS[setCode.toUpperCase()];
-  
-  if (!sid) {
-    console.warn(`[Dorasuta] Unknown set code: ${setCode}`);
-    return null;
-  }
-
-  const url = `https://dorasuta.jp/pokemon-card/product-list?sid=${sid}`;
+  const sid = DORASUTA_SET_IDS[setCode.toUpperCase()] || null;
+  const normalizedNumber = cardNumber.replace(/^0+/, '');
+  const kwUrl = `https://dorasuta.jp/pokemon-card/product-list?kw=${encodeURIComponent(cardNumber)}`;
+  const sidUrl = sid ? `https://dorasuta.jp/pokemon-card/product-list?sid=${sid}&kw=${encodeURIComponent(cardNumber)}` : null;
   
   try {
-    // Use Browserless /function to wait for AJAX content
-    const code = `
-      export default async function ({ page }) {
-        await page.goto('${url}', { 
-          waitUntil: 'networkidle2',
-          timeout: 30000 
-        });
-        
-        // Wait for initial products
-        await new Promise(r => setTimeout(r, 3000));
-        
-        // Scroll to trigger lazy loading
-        await page.evaluate(() => {
-          window.scrollTo(0, document.body.scrollHeight);
-        });
-        
-        // Wait for more products
-        await new Promise(r => setTimeout(r, 3000));
-        
-        const html = await page.content();
-        return { html, url: page.url() };
-      }
-    `;
-    
-    const result = await browserlessFunction(code);
-    
-    if (!result) {
-      console.warn('[Dorasuta] Function returned null');
-      return null;
+    // 1) Try direct keyword search by card number.
+    const kwResult = await browserlessUnblock(kwUrl);
+    if (kwResult?.html) {
+      const parsed = parseDorasutaProducts(kwResult.html, cardNumber, cardName, normalizedNumber, kwUrl);
+      if (parsed) return parsed;
     }
-    
-    return parseDorasutaProducts(result.html, cardNumber, cardName, sid);
+
+    // 2) Fallback: set-constrained search when SID is known.
+    if (sidUrl) {
+      const sidResult = await browserlessUnblock(sidUrl);
+      if (sidResult?.html) {
+        const parsed = parseDorasutaProducts(sidResult.html, cardNumber, cardName, normalizedNumber, sidUrl);
+        if (parsed) return parsed;
+      }
+    }
     
   } catch (error) {
     console.error('[Dorasuta] Scraping failed:', error);
-    return null;
   }
+  return null;
 }
 
 /**
@@ -113,36 +93,43 @@ function parseDorasutaProducts(
   html: string, 
   cardNumber: string,
   cardName: string,
-  sid: string
+  normalizedNumber: string,
+  pageUrl: string
 ): DorasutaProduct | null {
-  // Look for product name + price patterns
-  const nameMatches = [...html.matchAll(/<h3[^>]*>([^<]+)<\/h3>/gi)];
-  const priceMatches = [...html.matchAll(/(\d{1,3}(?:,\d{3})*)円/g)];
-  
-  for (let i = 0; i < nameMatches.length; i++) {
-    const name = nameMatches[i][1].trim();
-    
-    // Match by card number in name
-    if (name.includes(cardNumber) || name.includes(cardName.replace(' ', ''))) {
-      const price = priceMatches[i] ? parseInt(priceMatches[i][1].replace(',', '')) : 0;
-      
-      // Determine condition from name
-      let condition: 'A-' | 'B' | 'Unknown' = 'Unknown';
-      if (name.includes('A') || name.includes('美品')) condition = 'A-';
-      else if (name.includes('B') || name.includes('並品')) condition = 'B';
-      
-      // Check stock
-      const inStock = !name.includes('売切') && !name.includes('Sold Out');
-      
-      return {
-        name,
-        priceJPY: price,
-        condition,
-        inStock,
-        url: `https://dorasuta.jp/pokemon-card/product-list?sid=${sid}`,
-      };
-    }
+  // Parse listing blocks that include product URL + title + price.
+  const blocks = [...html.matchAll(
+    /<a href="(\/pokemon-card\/product\?pid=\d+)">[\s\S]*?<a href="\/pokemon-card\/product\?pid=\d+">[\s\S]*?([\s\S]*?)<\/a>[\s\S]*?<li>([\d,]+)円<\/li>/g
+  )];
+
+  for (const m of blocks) {
+    const relUrl = m[1];
+    const rawName = m[2].replace(/<[^>]+>/g, '').trim();
+    const price = parseInt(m[3].replace(/,/g, ''), 10);
+    if (!Number.isFinite(price) || price <= 0) continue;
+
+    const nameNorm = rawName.replace(/\s+/g, '');
+    const numNoLeading = cardNumber.replace(/^0+/, '');
+    const hasNumber =
+      nameNorm.includes(cardNumber) ||
+      nameNorm.includes(normalizedNumber) ||
+      nameNorm.includes(numNoLeading);
+    const hasCardName = cardName ? nameNorm.includes(cardName.replace(/\s+/g, '')) : false;
+    if (!hasNumber && !hasCardName) continue;
+
+    const condition: 'A-' | 'B' | 'Unknown' =
+      rawName.includes('プレイ用') || rawName.includes('並品') ? 'B' : 'A-';
+    const inStock = !rawName.includes('売り切れ') && !rawName.includes('売切');
+
+    return {
+      name: rawName,
+      priceJPY: price,
+      condition,
+      inStock,
+      url: `https://dorasuta.jp${relUrl}`,
+    };
   }
-  
+
+  // Fallback: no precise hit
+  console.warn('[Dorasuta] No matching listing found for', { cardNumber, pageUrl });
   return null;
 }

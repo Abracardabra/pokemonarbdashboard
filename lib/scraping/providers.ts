@@ -94,7 +94,8 @@ export const PROVIDER_CONFIGS: Record<string, ProviderConfig> = {
     name: 'japan-toreca',
     baseUrl: 'https://shop.japan-toreca.com',
     selectors: {
-      price: '.product-price .money, .price__current .money, [data-price] .money',
+      price:
+        '.product-price .money, .price__current .money, .price__current, .price, meta[property="og:price:amount"], meta[property="product:price:amount"]',
       stock: '.product-form__inventory, .inventory-quantity, .stock-status',
       title: 'h1.product-title, .product__title h1',
     },
@@ -166,7 +167,8 @@ export const PROVIDER_CONFIGS: Record<string, ProviderConfig> = {
     name: 'hobibinet',
     baseUrl: 'https://hobibinet-pokemon.com',
     selectors: {
-      price: '.item-price, .price-box .price, .price, .money',
+      price:
+        '.item-price, .price-box .price, .price, .money, .product-form__info-content, meta[property="product:price:amount"], meta[property="og:price:amount"]',
       stock: '.stock-status, .availability, .inventory, .product-stock',
       title: 'h1.item-title, .product-title, h1',
     },

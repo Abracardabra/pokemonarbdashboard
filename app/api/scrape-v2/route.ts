@@ -194,8 +194,9 @@ async function handleBatchScrape(batch: Array<{ cardId: string; provider?: Provi
 function getProviderUrls(
   card: any,
   specificProvider?: Provider
-): Array<{ url: string; expectedCondition: 'A-' | 'B' }> {
-  const urls: Array<{ url: string; expectedCondition: 'A-' | 'B' }> = [];
+): Array<{ url: string; expectedCondition: 'A-' | 'B'; provider: Provider }> {
+  const urls: Array<{ url: string; expectedCondition: 'A-' | 'B'; provider: Provider }> = [];
+  const seen = new Set<string>();
 
   // Check all possible offer sources
   const offerSources = card.japanOffers || [];
@@ -209,13 +210,42 @@ function getProviderUrls(
     // Skip if URL not available
     if (!offer.url) continue;
 
-    urls.push({
-      url: offer.url,
-      expectedCondition: offer.quality as 'A-' | 'B',
-    });
+    // Prefer provider derived from URL domain when source/url are inconsistent in old data.
+    const providerFromUrl = detectProviderFromUrlSafe(offer.url);
+    const provider = (providerFromUrl || offer.source) as Provider;
+
+    // If caller asked for one provider, do not leak mismatched URL-domain rows.
+    if (specificProvider && provider !== specificProvider) {
+      continue;
+    }
+    const expectedCondition = offer.quality as 'A-' | 'B';
+    // Dedupe by provider+condition so duplicate historical URLs do not double-scrape.
+    const key = `${provider}|${expectedCondition}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+
+    urls.push({ url: offer.url, expectedCondition, provider });
   }
 
   return urls;
+}
+
+function detectProviderFromUrlSafe(url: string): Provider | null {
+  try {
+    const host = new URL(url).hostname;
+    if (host.includes('japan-toreca.com')) return 'japan-toreca';
+    if (host.includes('dorasuta.jp')) return 'dorasuta';
+    if (host.includes('toretoku.jp')) return 'toretoku';
+    if (host.includes('torecacamp')) return 'torecacamp';
+    if (host.includes('hobibinet.com')) return 'hobibinet';
+    if (host.includes('cardrush-pokemon.jp')) return 'cardrush';
+    if (host.includes('playze.jp')) return 'playze';
+    if (host.includes('c-labo-online.jp')) return 'c-labo';
+    if (host.includes('fukufukutoreka.com') || host.includes('pokemon.fukufukutoreka.com')) return 'fukufukutoreka';
+    return null;
+  } catch {
+    return null;
+  }
 }
 
 /**

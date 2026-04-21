@@ -1116,6 +1116,10 @@ export function CardsWithFilters({ initialCards, lastUpdated }: CardsWithFilters
                           ? 'Toretoku'
                           : jpShop === 'torecacamp'
                             ? 'Torecacamp'
+                            : jpShop === 'hobibinet'
+                              ? 'Hobibinet'
+                              : jpShop === 'dorasuta'
+                                ? 'Dorasuta'
                             : 'Japan-Toreca'}
                     </p>
                     <div className="space-y-2">

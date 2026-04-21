@@ -59,3 +59,70 @@ lib/                  # Types + helpers
 data/prices.json      # Generated dataset used by the dashboard
 scripts/build-s12a.js # Main data builder
 ```
+
+## Customer: Daily DB Refresh
+
+This project includes two commands so you can refresh prices daily without manual coding.
+
+### 1) Estimate first (recommended)
+
+Run:
+
+```bash
+pnpm run scrape:estimate
+```
+
+This prints:
+- how many cards are due for refresh
+- estimated API calls
+- estimated Browserless credit usage
+- rough runtime estimate
+
+### 2) Run daily scrape
+
+Run:
+
+```bash
+pnpm run scrape:daily
+```
+
+What it does:
+- selects cards using the scrape policy tiers (favorites/in-range/out-of-range)
+- calls the internal scrape API (`/api/scrape-v2`) card-by-card
+- writes results directly to PostgreSQL via Prisma
+- prints a JSON summary (processed, success, offers, credits, errors)
+
+### Optional limits (to control usage)
+
+You can set caps and delays via env vars before running:
+
+```bash
+SCRAPE_DAILY_CAP=100 SCRAPE_DELAY_MIN_MS=3000 SCRAPE_DELAY_MAX_MS=9000 pnpm run scrape:daily
+```
+
+Useful env vars:
+- `SCRAPE_DAILY_CAP` (default from policy: 300)
+- `SCRAPE_DELAY_MIN_MS` (default: 3000)
+- `SCRAPE_DELAY_MAX_MS` (default: 9000)
+- `SCRAPE_BASE_URL` (default: `http://localhost:3000`)
+
+### Dry-run mode (no writes)
+
+To test selection/planning without scraping:
+
+```bash
+SCRAPE_DRY_RUN=1 pnpm run scrape:daily
+```
+
+### Practical customer flow
+
+1. Start app/API locally (`pnpm dev`) or use hosted deployment  
+2. Run `pnpm run scrape:estimate`  
+3. Run `pnpm run scrape:daily` once per day  
+4. Check output JSON summary for success/errors
+
+### Run fully automatic on local Mac
+
+If the customer wants this to run daily without touching the terminal, follow:
+
+- [`docs/LOCAL_DAILY_AUTORUN_MAC.md`](docs/LOCAL_DAILY_AUTORUN_MAC.md)
